@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -7,7 +8,6 @@ import {
   AirplaneTilt,
   Coins,
   Sparkle,
-  Rocket,
 } from "@phosphor-icons/react";
 import { casinos } from "@/content/casinos";
 import { guides } from "@/content/guides";
@@ -80,11 +80,23 @@ export default function HomePage() {
 
   return (
     <>
-      {/* Hero - asymmetric split, 2-line headline, max 4 elements */}
+      {/* Hero - asymmetric split with background image */}
       <section className="relative overflow-hidden border-b border-border">
+        {/* Background image - subtle */}
+        <div className="pointer-events-none absolute inset-0">
+          <Image
+            src="/images/hero-plane.jpg"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover opacity-20"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/40" />
+        </div>
+
         {/* Ambient glow */}
         <div className="pointer-events-none absolute -right-40 -top-20 h-96 w-96 rounded-full bg-primary/10 blur-[120px]" />
-        <div className="pointer-events-none absolute left-0 top-40 h-64 w-64 rounded-full bg-emerald-600/5 blur-[100px]" />
 
         <div className="relative mx-auto grid max-w-7xl gap-12 px-4 pb-16 pt-20 sm:px-6 lg:grid-cols-2 lg:items-center lg:pb-24 lg:pt-24">
           {/* Left: content */}
@@ -122,16 +134,30 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* How it works - horizontal step flow, not generic 3 cards */}
+      {/* How it works - image + steps */}
       <section className="border-b border-border py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <Reveal>
-            <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
-              How Aviator Works
-            </h2>
-            <p className="mt-3 max-w-xl text-muted-foreground">
-              Three steps. That is the entire game.
-            </p>
+            <div className="grid items-center gap-10 lg:grid-cols-2">
+              <div>
+                <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
+                  How Aviator Works
+                </h2>
+                <p className="mt-3 max-w-xl text-muted-foreground">
+                  Three steps. That is the entire game.
+                </p>
+              </div>
+              {/* Visual */}
+              <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border">
+                <Image
+                  src="/images/how-to-play.jpg"
+                  alt="How the Aviator multiplier curve works"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover"
+                />
+              </div>
+            </div>
           </Reveal>
 
           <RevealStagger className="mt-12 grid gap-px overflow-hidden rounded-2xl border border-border bg-border md:grid-cols-3">
@@ -205,7 +231,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Featured guides - bento grid with visual diversity */}
+      {/* Featured guides - bento grid with real images */}
       <section className="border-b border-border py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <Reveal>
@@ -218,20 +244,22 @@ export default function HomePage() {
           </Reveal>
 
           <div className="mt-10 grid gap-4 md:grid-cols-3 md:grid-rows-2">
-            {/* Large featured guide - gradient + icon */}
+            {/* Large featured guide - image background */}
             <Reveal delay={0.1} className="md:col-span-2 md:row-span-1">
               <Link
                 href={`/guides/${featuredGuides[0].slug}`}
-                className="group relative flex h-full min-h-[200px] flex-col justify-end overflow-hidden rounded-2xl border border-border bg-gradient-to-br from-primary/20 via-card to-card p-8"
+                className="group relative flex h-full min-h-[220px] flex-col justify-end overflow-hidden rounded-2xl border border-border"
               >
-                {/* Decorative icon */}
-                <Rocket
-                  size={120}
-                  weight="duotone"
-                  className="pointer-events-none absolute -right-4 -top-4 text-primary/10 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-12"
+                <Image
+                  src="/images/guide-beginner.jpg"
+                  alt=""
+                  fill
+                  sizes="(max-width: 768px) 100vw, 66vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="relative">
-                  <span className="inline-flex w-fit items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/20" />
+                <div className="relative p-8">
+                  <span className="inline-flex w-fit items-center gap-1.5 rounded-full bg-primary/90 px-3 py-1 text-xs font-medium text-primary-foreground backdrop-blur-sm">
                     <Sparkle size={12} weight="fill" />
                     Most Popular
                   </span>
@@ -253,34 +281,37 @@ export default function HomePage() {
               </Link>
             </Reveal>
 
-            {/* Second featured - different gradient */}
+            {/* Second featured - image background */}
             <Reveal delay={0.2}>
               <Link
                 href={`/guides/${featuredGuides[1].slug}`}
-                className="group flex h-full min-h-[200px] flex-col justify-between overflow-hidden rounded-2xl border border-border bg-gradient-to-br from-amber-500/10 via-card to-card p-6 transition-colors hover:border-amber-500/40"
+                className="group relative flex h-full min-h-[220px] flex-col justify-end overflow-hidden rounded-2xl border border-border"
               >
-                <div>
-                  <ShieldCheck
-                    size={32}
-                    weight="duotone"
-                    className="text-amber-400/60"
-                  />
-                  <h3 className="mt-4 text-lg font-bold leading-tight">
+                <Image
+                  src="/images/guide-predictor.jpg"
+                  alt=""
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-transparent" />
+                <div className="relative p-6">
+                  <h3 className="text-lg font-bold leading-tight">
                     {featuredGuides[1].title}
                   </h3>
+                  <span className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-muted-foreground">
+                    {featuredGuides[1].readingTime}
+                    <ArrowRight
+                      size={14}
+                      weight="bold"
+                      className="transition-transform group-hover:translate-x-1"
+                    />
+                  </span>
                 </div>
-                <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-muted-foreground">
-                  {featuredGuides[1].readingTime}
-                  <ArrowRight
-                    size={14}
-                    weight="bold"
-                    className="transition-transform group-hover:translate-x-1"
-                  />
-                </span>
               </Link>
             </Reveal>
 
-            {/* Remaining guides - subtle tinted cards */}
+            {/* Remaining guides */}
             {featuredGuides.slice(2, 5).map((guide, i) => (
               <Reveal key={guide.slug} delay={0.15 + i * 0.08}>
                 <Link
@@ -322,22 +353,27 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Trust strip - 18+ info lives here, not in hero */}
+      {/* Trust strip with responsible gambling image */}
       <section className="py-12">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <Reveal>
-            <div className="flex flex-col items-center justify-between gap-6 rounded-2xl border border-border bg-card p-8 text-center sm:flex-row sm:text-left">
-              <div className="flex items-center gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
-                  <ShieldCheck size={24} weight="duotone" />
-                </div>
-                <div>
-                  <p className="font-semibold">Independently reviewed</p>
-                  <p className="text-sm text-muted-foreground">
-                    Every casino tested for licensing, payout speed, and fair
-                    bonus terms. 18+ Play responsibly. Updated July 2026.
-                  </p>
-                </div>
+            <div className="grid items-center gap-6 rounded-2xl border border-border bg-card p-8 sm:grid-cols-[auto_1fr_auto]">
+              {/* Shield image */}
+              <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-xl">
+                <Image
+                  src="/images/responsible-gambling.jpg"
+                  alt="Responsible gambling shield"
+                  fill
+                  sizes="80px"
+                  className="object-cover"
+                />
+              </div>
+              <div>
+                <p className="font-semibold">Independently reviewed</p>
+                <p className="text-sm text-muted-foreground">
+                  Every casino tested for licensing, payout speed, and fair
+                  bonus terms. 18+ Play responsibly. Updated July 2026.
+                </p>
               </div>
               <Link
                 href="/about"

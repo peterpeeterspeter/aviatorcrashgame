@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { casinos } from "@/content/casinos";
 import { CasinoCard } from "@/components/casino-card";
 import {
@@ -84,8 +85,18 @@ export default function CasinosHubPage() {
   return (
     <>
       {/* Header */}
-      <section className="border-b border-border">
-        <div className="mx-auto max-w-7xl px-4 pb-16 pt-16 sm:px-6 lg:pb-20 lg:pt-20">
+      <section className="relative overflow-hidden border-b border-border">
+        <div className="pointer-events-none absolute right-0 top-0 h-full w-1/2 opacity-15">
+          <Image
+            src="/images/casino-reviews.jpg"
+            alt=""
+            fill
+            priority
+            sizes="50vw"
+            className="object-cover"
+          />
+        </div>
+        <div className="relative mx-auto max-w-7xl px-4 pb-16 pt-16 sm:px-6 lg:pb-20 lg:pt-20">
           {/* Breadcrumb */}
           <nav className="mb-8 flex items-center gap-2 text-sm text-muted-foreground">
             <Link href="/" className="transition-colors hover:text-foreground">
