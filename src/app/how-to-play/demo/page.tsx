@@ -294,8 +294,8 @@ export default function DemoPage() {
             A long streak of high multipliers does not mean a crash is due. The odds are the same every round.
           </li>
           <li>
-            <strong className="text-foreground">This demo is more forgiving than the real game.</strong>{" "}
-            We set the RTP to 99% so beginners can practice without getting discouraged. Real Aviator has a 97% RTP, meaning the house edge is 3% and you will lose about 3 cents per dollar bet over time.
+            <strong className="text-foreground">The house edge is 3%.</strong>{" "}
+            Over thousands of rounds, you will lose about 3 cents per dollar bet. No strategy changes this.
           </li>
         </ul>
       </div>
