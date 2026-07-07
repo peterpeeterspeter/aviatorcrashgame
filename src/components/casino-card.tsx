@@ -1,18 +1,26 @@
 "use client";
 import Link from "next/link";
 import { Star, ArrowRight } from "@phosphor-icons/react";
+import { motion } from "motion/react";
 import type { Casino } from "@/content/casinos";
 import { affiliateHref } from "@/lib/affiliate-links";
 
 export function CasinoCard({ casino }: { casino: Casino }) {
   return (
-    <div className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition-all hover:border-primary/50">
+    <motion.div
+      whileHover={{ y: -4 }}
+      transition={{ type: "spring", stiffness: 300, damping: 20 }}
+      className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card transition-colors hover:border-primary/50"
+    >
       {/* Rank badge */}
       <div className="absolute left-4 top-4 z-10 flex h-7 w-7 items-center justify-center rounded-full bg-primary text-sm font-bold text-primary-foreground">
         {casino.rank}
       </div>
 
-      <div className="flex flex-col gap-4 p-6 pt-12">
+      {/* Top accent strip */}
+      <div className="h-1 w-full bg-gradient-to-r from-primary/40 via-primary to-primary/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+
+      <div className="flex flex-1 flex-col gap-4 p-6 pt-8">
         {/* Name + rating */}
         <div className="flex items-start justify-between gap-3">
           <div>
@@ -60,6 +68,6 @@ export function CasinoCard({ casino }: { casino: Casino }) {
           </Link>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

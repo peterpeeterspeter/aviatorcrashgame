@@ -45,7 +45,7 @@ export function Navigation() {
             href="/casinos"
             className="rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.02] active:scale-[0.98]"
           >
-            Top Casinos
+            Browse Casinos
           </Link>
         </div>
 
