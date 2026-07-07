@@ -18,7 +18,7 @@ export function MultiplierCounter({
   useEffect(() => {
     if (reduce) return;
 
-    let crashPoint = 1.2 + Math.random() * 7.5;
+    let crashPoint = 1.8 + Math.random() * 10.0;
     let current = 1.0;
     let lastTime = performance.now();
     let raf: number;
@@ -56,7 +56,7 @@ export function MultiplierCounter({
           timeout = setTimeout(() => {
             current = 1.0;
             isCrashed = false;
-            crashPoint = 1.2 + Math.random() * 7.5;
+            crashPoint = 1.8 + Math.random() * 10.0;
 
             if (crashedRef.current) {
               crashedRef.current.textContent = "1.00x";

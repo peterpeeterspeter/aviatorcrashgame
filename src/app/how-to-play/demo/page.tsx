@@ -20,11 +20,12 @@ export default function DemoPage() {
   const cashedOut = useRef(false);
 
   const generateCrashPoint = () => {
-    // Provably fair-like distribution: 97% RTP
-    // P(crash <= x) = 1 - 0.97/x
+    // Demo-friendly distribution: 99% RTP (more forgiving than real Aviator's 97%).
+    // P(crash <= x) = 1 - 0.99/x. A higher RTP lets beginners cash out more often
+    // and feel the mechanic without getting discouraged by early crashes.
     const r = Math.random();
-    const houseEdge = 0.03;
-    const crash = Math.max(1.0, (1 - houseEdge) / (1 - r));
+    const houseEdge = 0.01;
+    const crash = Math.max(1.2, (1 - houseEdge) / (1 - r));
     // Cap at 100x for the demo
     return Math.min(crash, 100);
   };
@@ -197,7 +198,7 @@ export default function DemoPage() {
               <input
                 type="range"
                 min="1.2"
-                max="10"
+                max="15"
                 step="0.1"
                 value={autoCashout}
                 onChange={(e) => setAutoCashout(parseFloat(e.target.value))}
@@ -293,8 +294,8 @@ export default function DemoPage() {
             A long streak of high multipliers does not mean a crash is due. The odds are the same every round.
           </li>
           <li>
-            <strong className="text-foreground">The house edge is 3%.</strong>{" "}
-            Over thousands of rounds, you will lose about 3 cents per dollar bet. No strategy changes this.
+            <strong className="text-foreground">This demo is more forgiving than the real game.</strong>{" "}
+            We set the RTP to 99% so beginners can practice without getting discouraged. Real Aviator has a 97% RTP, meaning the house edge is 3% and you will lose about 3 cents per dollar bet over time.
           </li>
         </ul>
       </div>
