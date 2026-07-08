@@ -37,6 +37,9 @@ export const metadata: Metadata = {
     description:
       "Learn how Aviator crash games work. Beginner guides, honest casino reviews, and real strategy tips.",
   },
+  verification: {
+    google: "eoco52Hkv8X7D1CjYx_vGY1d8K9eCJHAJkKRvficx_U",
+  },
 };
 
 export default function RootLayout({
