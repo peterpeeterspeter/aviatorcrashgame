@@ -12,27 +12,7 @@ import {
   breadcrumbSchema,
   faqSchema,
 } from "@/lib/seo";
-
-// Dynamically import guide content
-const guideContentModules: Record<string, () => Promise<{ guideContent: GuideContent }>> = {
-  "how-to-play-aviator": () => import("@/content/guide-content/how-to-play-aviator"),
-  "aviator-strategy-tips": () => import("@/content/guide-content/aviator-strategy-tips"),
-  "aviator-predictor-apps-truth": () => import("@/content/guide-content/aviator-predictor-apps-truth"),
-  "aviator-patterns-explained": () => import("@/content/guide-content/aviator-patterns-explained"),
-  "aviator-multiplier-guide": () => import("@/content/guide-content/aviator-multiplier-guide"),
-  "aviator-signals-explained": () => import("@/content/guide-content/aviator-signals-explained"),
-  "aviator-provably-fair": () => import("@/content/guide-content/aviator-provably-fair"),
-  "aviator-rtp-house-edge": () => import("@/content/guide-content/aviator-rtp-house-edge"),
-  "aviator-common-mistakes": () => import("@/content/guide-content/aviator-common-mistakes"),
-  "aviator-bankroll-management": () => import("@/content/guide-content/aviator-bankroll-management"),
-  "aviator-glossary": () => import("@/content/guide-content/aviator-glossary"),
-  "aviator-vs-jetx-vs-spaceman": () => import("@/content/guide-content/aviator-vs-jetx-vs-spaceman"),
-};
-
-interface GuideContent {
-  sections: { heading: string; paragraphs: string[] }[];
-  faqs: { question: string; answer: string }[];
-}
+import { guideContentMap, type GuideContent } from "@/content/guide-content";
 
 type Params = { slug: string };
 
@@ -89,13 +69,8 @@ export default async function GuideDetailPage({
     notFound();
   }
 
-  // Load guide content
-  let content: GuideContent = { sections: [], faqs: [] };
-  const loader = guideContentModules[slug];
-  if (loader) {
-    const mod = await loader();
-    content = mod.guideContent;
-  }
+  // Load guide content from static import map
+  const content: GuideContent = guideContentMap[slug] || { sections: [], faqs: [] };
 
   const related = guides
     .filter(
