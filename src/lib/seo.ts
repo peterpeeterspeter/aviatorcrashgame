@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-const SITE_URL = "https://aviatorcrashgame.com";
+const SITE_URL = "https://www.aviatorcrashgame.com";
 
 export const siteConfig = {
   name: "Aviator Crash Game",

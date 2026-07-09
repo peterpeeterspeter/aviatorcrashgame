@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/go/"],
     },
-    sitemap: "https://aviatorcrashgame.com/sitemap.xml",
+    sitemap: "https://www.aviatorcrashgame.com/sitemap.xml",
   };
 }

@@ -18,7 +18,7 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://aviatorcrashgame.com"),
+  metadataBase: new URL("https://www.aviatorcrashgame.com"),
   title: {
     default: "Aviator Crash Game - Learn How to Play, Strategies & Casino Reviews",
     template: "%s | Aviator Crash Game",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://aviatorcrashgame.com",
+    url: "https://www.aviatorcrashgame.com",
     siteName: "Aviator Crash Game",
     title: "Aviator Crash Game - Learn How to Play, Strategies & Casino Reviews",
     description:
@@ -79,11 +79,11 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebSite",
               name: "Aviator Crash Game",
-              url: "https://aviatorcrashgame.com",
+              url: "https://www.aviatorcrashgame.com",
               description: "Beginner guides, honest casino reviews, and real strategy tips for Aviator crash games.",
               potentialAction: {
                 "@type": "SearchAction",
-                target: "https://aviatorcrashgame.com/guides?q={search_term_string}",
+                target: "https://www.aviatorcrashgame.com/guides?q={search_term_string}",
                 "query-input": "required name=search_term_string",
               },
             }),

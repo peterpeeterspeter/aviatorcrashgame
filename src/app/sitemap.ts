@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { casinos } from "@/content/casinos";
 import { guides } from "@/content/guides";
 
-const SITE_URL = "https://aviatorcrashgame.com";
+const SITE_URL = "https://www.aviatorcrashgame.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
