@@ -36,6 +36,14 @@ export const metadata: Metadata = {
     title: "Aviator Crash Game - Learn How to Play, Strategies & Casino Reviews",
     description:
       "Learn how Aviator crash games work. Beginner guides, honest casino reviews, and real strategy tips.",
+    images: [
+      {
+        url: "https://www.aviatorcrashgame.com/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Aviator Crash Game - Honest guides and casino reviews",
+      },
+    ],
   },
   verification: {
     google: "eoco52Hkv8X7D1CjYx_vGY1d8K9eCJHAJkKRvficx_U",

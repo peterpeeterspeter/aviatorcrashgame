@@ -11,15 +11,21 @@ const footerLinks = {
   ],
   Casinos: [
     { href: "/casinos", label: "All Reviews" },
+    { href: "/bonuses", label: "Best Bonuses" },
     { href: "/casinos/cybet", label: "Cybet" },
     { href: "/casinos/bitstarz", label: "BitStarz" },
-    { href: "/casinos/trustdice", label: "TrustDice" },
   ],
   Learn: [
     { href: "/how-to-play/demo", label: "Free Demo" },
     { href: "/guides/aviator-common-mistakes", label: "Common Mistakes" },
     { href: "/guides/aviator-bankroll-management", label: "Bankroll Management" },
     { href: "/guides/aviator-rtp-house-edge", label: "RTP & House Edge" },
+  ],
+  About: [
+    { href: "/about", label: "About Us" },
+    { href: "/responsible-gambling", label: "Responsible Gambling" },
+    { href: "/privacy", label: "Privacy Policy" },
+    { href: "/terms", label: "Terms of Service" },
   ],
 };
 
@@ -71,6 +77,13 @@ export function Footer() {
           <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
               <span className="font-semibold text-foreground">18+</span>
+              <span>|</span>
+              <Link
+                href="/responsible-gambling"
+                className="hover:text-foreground"
+              >
+                Responsible Gambling
+              </Link>
               <span>|</span>
               <Link
                 href="https://www.begambleaware.org"

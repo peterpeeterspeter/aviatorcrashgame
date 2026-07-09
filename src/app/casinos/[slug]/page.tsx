@@ -7,6 +7,7 @@ import {
   constructMetadata,
   casinoReviewSchema,
   breadcrumbSchema,
+  faqSchema,
 } from "@/lib/seo";
 
 type Params = { slug: string };
@@ -144,6 +145,27 @@ export default async function CasinoReviewPage({
     { name: "Casinos", url: "/casinos" },
     { name: casino.name, url: `/casinos/${casino.slug}` },
   ]);
+
+  // Casino-specific FAQs for rich snippets
+  const casinoFaqs = [
+    {
+      question: `Does ${casino.name} have Aviator?`,
+      answer: casino.aviatorNotes.split(".")[0] + ".",
+    },
+    {
+      question: `What is the welcome bonus at ${casino.name}?`,
+      answer: `${casino.name} offers a ${casino.bonus} welcome bonus. ${casino.wageringContribution}.`,
+    },
+    {
+      question: `How fast are withdrawals at ${casino.name}?`,
+      answer: `${casino.name} processes withdrawals in ${casino.payouts.toLowerCase()}. The casino has been operating since ${casino.established}.`,
+    },
+    {
+      question: `Is ${casino.name} licensed?`,
+      answer: `Yes, ${casino.name} operates under a ${casino.license} license.`,
+    },
+  ];
+  const faqJsonLd = faqSchema(casinoFaqs);
 
   return (
     <>
@@ -419,6 +441,25 @@ export default async function CasinoReviewPage({
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="border-b border-border py-16">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6">
+          <h2 className="text-2xl font-bold tracking-tight md:text-3xl">
+            {casino.name} FAQ
+          </h2>
+          <div className="mt-8 space-y-6">
+            {casinoFaqs.map((faq, i) => (
+              <div key={i} className="rounded-xl border border-border bg-card p-5">
+                <h3 className="font-semibold text-foreground">{faq.question}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  {faq.answer}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* JSON-LD */}
       <script
         type="application/ld+json"
@@ -427,6 +468,10 @@ export default async function CasinoReviewPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
     </>
   );

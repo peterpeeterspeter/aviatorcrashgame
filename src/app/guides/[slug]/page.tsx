@@ -10,7 +10,29 @@ import {
   constructMetadata,
   articleSchema,
   breadcrumbSchema,
+  faqSchema,
 } from "@/lib/seo";
+
+// Dynamically import guide content
+const guideContentModules: Record<string, () => Promise<{ guideContent: GuideContent }>> = {
+  "how-to-play-aviator": () => import("@/content/guide-content/how-to-play-aviator"),
+  "aviator-strategy-tips": () => import("@/content/guide-content/aviator-strategy-tips"),
+  "aviator-predictor-apps-truth": () => import("@/content/guide-content/aviator-predictor-apps-truth"),
+  "aviator-patterns-explained": () => import("@/content/guide-content/aviator-patterns-explained"),
+  "aviator-multiplier-guide": () => import("@/content/guide-content/aviator-multiplier-guide"),
+  "aviator-signals-explained": () => import("@/content/guide-content/aviator-signals-explained"),
+  "aviator-provably-fair": () => import("@/content/guide-content/aviator-provably-fair"),
+  "aviator-rtp-house-edge": () => import("@/content/guide-content/aviator-rtp-house-edge"),
+  "aviator-common-mistakes": () => import("@/content/guide-content/aviator-common-mistakes"),
+  "aviator-bankroll-management": () => import("@/content/guide-content/aviator-bankroll-management"),
+  "aviator-glossary": () => import("@/content/guide-content/aviator-glossary"),
+  "aviator-vs-jetx-vs-spaceman": () => import("@/content/guide-content/aviator-vs-jetx-vs-spaceman"),
+};
+
+interface GuideContent {
+  sections: { heading: string; paragraphs: string[] }[];
+  faqs: { question: string; answer: string }[];
+}
 
 type Params = { slug: string };
 
@@ -67,6 +89,14 @@ export default async function GuideDetailPage({
     notFound();
   }
 
+  // Load guide content
+  let content: GuideContent = { sections: [], faqs: [] };
+  const loader = guideContentModules[slug];
+  if (loader) {
+    const mod = await loader();
+    content = mod.guideContent;
+  }
+
   const related = guides
     .filter(
       (g) => g.category === guide.category && g.slug !== guide.slug,
@@ -91,6 +121,8 @@ export default async function GuideDetailPage({
     { name: "Guides", url: "/guides" },
     { name: guide.title, url: `/guides/${guide.slug}` },
   ]);
+
+  const faqJsonLd = content.faqs.length > 0 ? faqSchema(content.faqs) : null;
 
   return (
     <>
@@ -162,69 +194,48 @@ export default async function GuideDetailPage({
               </p>
             </div>
 
-            {/* Overview */}
-            <div>
-              <h2 className="text-2xl font-bold tracking-tight md:text-3xl">
-                Overview
-              </h2>
-              <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-                {guide.description}
-              </p>
-              <p className="mt-4 leading-relaxed text-muted-foreground">
-                This guide is part of our {categoryLabel[guide.category]}{" "}
-                series. We wrote it to give you a clear, jargon-free
-                explanation of the topic, with practical takeaways you can
-                apply the next time you play. Every claim is backed by either
-                the published game mechanics or by data we collected
-                ourselves from real rounds.
-              </p>
-            </div>
+            {/* Real content sections */}
+            {content.sections.map((section, i) => (
+              <div key={i}>
+                <h2 className="text-2xl font-bold tracking-tight md:text-3xl">
+                  {section.heading}
+                </h2>
+                <div className="mt-4 space-y-4">
+                  {section.paragraphs.map((para, j) => (
+                    <p
+                      key={j}
+                      className="text-lg leading-relaxed text-muted-foreground"
+                    >
+                      {para}
+                    </p>
+                  ))}
+                </div>
+              </div>
+            ))}
 
-            {/* Key points */}
-            <div>
-              <h2 className="text-2xl font-bold tracking-tight md:text-3xl">
-                Key Points
-              </h2>
-              <ul className="mt-6 space-y-4">
-                {guide.keywords.map((kw, i) => (
-                  <li
-                    key={kw}
-                    className="flex gap-4 rounded-xl border border-border bg-card p-5"
-                  >
-                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-primary/10 font-mono text-sm font-semibold text-primary">
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                    <div>
-                      <p className="font-semibold capitalize">{kw}</p>
-                      <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                        A core concept covered in detail in the full version
-                        of this guide. Read the related resources in the
-                        sidebar for the deeper treatment.
+            {/* FAQ section */}
+            {content.faqs.length > 0 && (
+              <div>
+                <h2 className="text-2xl font-bold tracking-tight md:text-3xl">
+                  Frequently Asked Questions
+                </h2>
+                <div className="mt-6 space-y-6">
+                  {content.faqs.map((faq, i) => (
+                    <div
+                      key={i}
+                      className="rounded-xl border border-border bg-card p-5"
+                    >
+                      <h3 className="font-semibold text-foreground">
+                        {faq.question}
+                      </h3>
+                      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                        {faq.answer}
                       </p>
                     </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* What you will learn */}
-            <div>
-              <h2 className="text-2xl font-bold tracking-tight md:text-3xl">
-                What You Will Learn
-              </h2>
-              <p className="mt-4 leading-relaxed text-muted-foreground">
-                By the end of this guide you will have a working understanding
-                of {guide.title.toLowerCase()} and how it applies to real
-                play. We keep the language plain and we do not exaggerate
-                results. If a tactic does not work, we say so.
-              </p>
-              <p className="mt-4 leading-relaxed text-muted-foreground">
-                Full long-form content for this page is in production and
-                will be published shortly. In the meantime, the short version
-                above covers the essentials, and the related guides in the
-                sidebar go deeper on adjacent topics.
-              </p>
-            </div>
+                  ))}
+                </div>
+              </div>
+            )}
 
             {/* Next steps CTA */}
             <div className="rounded-2xl border border-border bg-card p-6">
@@ -340,6 +351,12 @@ export default async function GuideDetailPage({
                 >
                   Best Aviator Casinos
                 </Link>
+                <Link
+                  href="/responsible-gambling"
+                  className="font-medium text-primary hover:underline"
+                >
+                  Responsible Gambling
+                </Link>
               </div>
             </div>
           </aside>
@@ -355,6 +372,12 @@ export default async function GuideDetailPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
       />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
     </>
   );
 }
