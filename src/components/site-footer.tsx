@@ -12,14 +12,14 @@ const footerLinks = {
   Casinos: [
     { href: "/casinos", label: "All Reviews" },
     { href: "/bonuses", label: "Best Bonuses" },
-    { href: "/casinos/cybet", label: "Cybet" },
-    { href: "/casinos/bitstarz", label: "BitStarz" },
+    { href: "/aviator-no-deposit-bonus", label: "No Deposit Bonus" },
+    { href: "/aviator-free-spins", label: "Free Spins" },
   ],
   Learn: [
     { href: "/how-to-play/demo", label: "Free Demo" },
-    { href: "/guides/aviator-common-mistakes", label: "Common Mistakes" },
-    { href: "/guides/aviator-bankroll-management", label: "Bankroll Management" },
-    { href: "/guides/aviator-rtp-house-edge", label: "RTP & House Edge" },
+    { href: "/aviator-tricks", label: "Aviator Tricks" },
+    { href: "/aviator-app", label: "Aviator App" },
+    { href: "/aviator-max-win", label: "Max Win" },
   ],
   About: [
     { href: "/about", label: "About Us" },
