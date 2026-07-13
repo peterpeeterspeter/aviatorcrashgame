@@ -131,6 +131,17 @@ export const guides: GuideSummary[] = [
     keywords: ["aviator terms", "aviator glossary", "crash game vocabulary"],
   },
   {
+    slug: "aviator-dual-bet-strategy",
+    title: "Aviator Dual Bet Strategy: How Two Bets Actually Work",
+    description:
+      "How Aviator's dual bet works: two independent bets per round, the math behind splitting stakes, best configurations, and why it doesn't beat the 3% house edge.",
+    category: "strategy",
+    readingTime: "10 min",
+    excerpt:
+      "The dual bet feature lets you place two independent bets per round, each with its own stake and cashout target. It does not reduce the house edge, but it changes your variance profile. Here is how to use it effectively.",
+    keywords: ["aviator dual bet", "aviator two bets", "aviator double bet"],
+  },
+  {
     slug: "aviator-vs-jetx-vs-spaceman",
     title: "Aviator vs JetX vs Spaceman: Crash Games Compared",
     description:

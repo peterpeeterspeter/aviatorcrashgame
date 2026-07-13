@@ -10,6 +10,7 @@ import { guideContent as aviatorRtpHouseEdge } from "./aviator-rtp-house-edge";
 import { guideContent as aviatorCommonMistakes } from "./aviator-common-mistakes";
 import { guideContent as aviatorBankrollManagement } from "./aviator-bankroll-management";
 import { guideContent as aviatorGlossary } from "./aviator-glossary";
+import { guideContent as aviatorDualBetStrategy } from "./aviator-dual-bet-strategy";
 import { guideContent as aviatorVsJetxVsSpaceman } from "./aviator-vs-jetx-vs-spaceman";
 
 export interface GuideContent {
@@ -29,5 +30,6 @@ export const guideContentMap: Record<string, GuideContent> = {
   "aviator-common-mistakes": aviatorCommonMistakes,
   "aviator-bankroll-management": aviatorBankrollManagement,
   "aviator-glossary": aviatorGlossary,
+  "aviator-dual-bet-strategy": aviatorDualBetStrategy,
   "aviator-vs-jetx-vs-spaceman": aviatorVsJetxVsSpaceman,
 };
