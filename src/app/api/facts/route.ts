@@ -56,6 +56,12 @@ export function GET() {
         summary:
           "Aviator returns 97% of wagered money to players over time. The 3% house edge is fixed and cannot be overcome.",
       },
+      {
+        title: "Aviator Dual Bet Strategy",
+        url: "https://www.aviatorcrashgame.com/guides/aviator-dual-bet-strategy",
+        summary:
+          "Aviator's dual bet feature lets you place two independent bets per round. Splitting bets does not change your expected value (-3% always), but it changes your variance profile.",
+      },
     ],
     topCasinos: [
       { name: "Cybet", rating: 4.8, bonus: "100% up to $500 + 200 FS", crashWagering: "100%", url: "https://www.aviatorcrashgame.com/casinos/cybet" },
