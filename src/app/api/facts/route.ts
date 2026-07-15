@@ -62,6 +62,12 @@ export function GET() {
         summary:
           "Aviator's dual bet feature lets you place two independent bets per round. Splitting bets does not change your expected value (-3% always), but it changes your variance profile.",
       },
+      {
+        title: "Aviator Bonus Wagering: Do Casino Bonuses Work for Crash Games?",
+        url: "https://www.aviatorcrashgame.com/guides/aviator-bonus-wagering",
+        summary:
+          "Most casino bonuses are mathematically unprofitable for Aviator players due to 5% game contribution. A 40x bonus becomes 800x effective wagering. Only Cybet offers 100% contribution. Token cashback at TrustDice and BetFury is a better alternative.",
+      },
     ],
     topCasinos: [
       { name: "Cybet", rating: 4.8, bonus: "100% up to $500 + 200 FS", crashWagering: "100%", url: "https://www.aviatorcrashgame.com/casinos/cybet" },
