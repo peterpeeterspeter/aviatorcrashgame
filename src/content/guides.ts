@@ -152,6 +152,17 @@ export const guides: GuideSummary[] = [
       "All three crash games share the same core mechanic, but they differ in RTP, maximum multipliers, visual style, and availability. Here is how they stack up.",
     keywords: ["aviator vs jetx", "crash games compared", "spaceman crash game"],
   },
+  {
+    slug: "aviator-bonus-wagering",
+    title: "Aviator Bonus Wagering: Do Casino Bonuses Work for Crash Games?",
+    description:
+      "Most casino bonuses are mathematically unprofitable for Aviator players because of the 5% game contribution rate. We break down the math at each casino and show when a bonus is actually worth taking.",
+    category: "casinos",
+    readingTime: "10 min",
+    excerpt:
+      "A 40x wagering requirement with a 5% crash game contribution means you need 800x the bonus amount in Aviator bets. At most casinos, the expected loss from clearing a bonus far exceeds the bonus itself. Here is the casino-by-casino math.",
+    keywords: ["aviator bonus", "aviator wagering", "crash game bonus", "aviator casino bonus"],
+  },
 ];
 
 export function getGuideBySlug(slug: string): GuideSummary | undefined {

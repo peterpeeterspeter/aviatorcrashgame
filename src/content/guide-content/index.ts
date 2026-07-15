@@ -12,6 +12,7 @@ import { guideContent as aviatorBankrollManagement } from "./aviator-bankroll-ma
 import { guideContent as aviatorGlossary } from "./aviator-glossary";
 import { guideContent as aviatorDualBetStrategy } from "./aviator-dual-bet-strategy";
 import { guideContent as aviatorVsJetxVsSpaceman } from "./aviator-vs-jetx-vs-spaceman";
+import { guideContent as aviatorBonusWagering } from "./aviator-bonus-wagering";
 
 export interface GuideContent {
   sections: { heading: string; paragraphs: string[] }[];
@@ -32,4 +33,5 @@ export const guideContentMap: Record<string, GuideContent> = {
   "aviator-glossary": aviatorGlossary,
   "aviator-dual-bet-strategy": aviatorDualBetStrategy,
   "aviator-vs-jetx-vs-spaceman": aviatorVsJetxVsSpaceman,
+  "aviator-bonus-wagering": aviatorBonusWagering,
 };

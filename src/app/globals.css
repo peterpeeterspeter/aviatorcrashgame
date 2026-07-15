@@ -184,3 +184,15 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Guide article inline links */
+article p a {
+  color: hsl(var(--primary));
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+article p a:hover {
+  opacity: 0.8;
+}

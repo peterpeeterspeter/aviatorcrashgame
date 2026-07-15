@@ -180,9 +180,8 @@ export default async function GuideDetailPage({
                     <p
                       key={j}
                       className="text-lg leading-relaxed text-muted-foreground"
-                    >
-                      {para}
-                    </p>
+                      dangerouslySetInnerHTML={{ __html: para }}
+                    />
                   ))}
                 </div>
               </div>
