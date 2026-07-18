@@ -66,7 +66,19 @@ export function GET() {
         title: "Aviator Bonus Wagering: Do Casino Bonuses Work for Crash Games?",
         url: "https://www.aviatorcrashgame.com/guides/aviator-bonus-wagering",
         summary:
-          "Most casino bonuses are mathematically unprofitable for Aviator players due to 5% game contribution. A 40x bonus becomes 800x effective wagering. Only Cybet offers 100% contribution. Token cashback at TrustDice and BetFury is a better alternative.",
+          "Most casino bonuses are mathematically unprofitable for Aviator players due to 5% game contribution. A 40x bonus becomes 800x effective wagering. Only Cybet offers 100% contribution. Token cashback at TrustDice and Betfury is a better alternative.",
+      },
+      {
+        title: "Best Aviator Casinos 2026: Honest Rankings for Crash Game Players",
+        url: "https://www.aviatorcrashgame.com/guides/best-aviator-casinos",
+        summary:
+          "Six casinos ranked by crash game wagering contribution, real payout speed, and licensing. Only Cybet gives crash games 100% contribution. At BitStarz, Mirax, and 7Bit (5% contribution), clearing a bonus on Aviator costs more than the bonus is worth, so skip it.",
+      },
+      {
+        title: "Aviator Auto-Cashout: Hit Rates, Target Selection, and Why It Beats Manual",
+        url: "https://www.aviatorcrashgame.com/guides/aviator-auto-cashout-guide",
+        summary:
+          "Auto-cashout removes timing errors but does not change the 3% house edge. Hit rate at 1.5x is 64.7%, at 2x is 48.5%, at 10x is 9.7%. Every target has the same -3% expected value. The override pattern (cancelling auto-cashout mid-round to chase higher multipliers) is how most auto-cashout strategies fail.",
       },
     ],
     topCasinos: [

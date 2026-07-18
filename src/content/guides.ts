@@ -163,6 +163,28 @@ export const guides: GuideSummary[] = [
       "A 40x wagering requirement with a 5% crash game contribution means you need 800x the bonus amount in Aviator bets. At most casinos, the expected loss from clearing a bonus far exceeds the bonus itself. Here is the casino-by-casino math.",
     keywords: ["aviator bonus", "aviator wagering", "crash game bonus", "aviator casino bonus"],
   },
+  {
+    slug: "best-aviator-casinos",
+    title: "Best Aviator Casinos 2026: Honest Rankings for Crash Game Players",
+    description:
+      "The six best casinos for Aviator in 2026, ranked by what actually matters for crash game players: bonus contribution rate, real payout speed, and licensing. Not just the biggest headline bonus.",
+    category: "casinos",
+    readingTime: "11 min",
+    excerpt:
+      "We tested deposits, withdrawals, and bonus clearing at six casinos using our own funds. Only one gives crash games full contribution toward wagering. Here are the honest rankings and the bonus math most lists hide.",
+    keywords: ["best aviator casinos", "aviator casinos 2026", "aviator casino sites", "where to play aviator"],
+  },
+  {
+    slug: "aviator-auto-cashout-guide",
+    title: "Aviator Auto-Cashout: Hit Rates, Target Selection, and Why It Beats Manual",
+    description:
+      "How Aviator auto-cashout works, the exact hit rate at every common multiplier from 1.2x to 100x, why every target has the same -3% expected value, and the override failure mode that ruins most auto-cashout strategies.",
+    category: "strategy",
+    readingTime: "10 min",
+    excerpt:
+      "Auto-cashout removes timing errors but does not change the 3% house edge. Here are the hit rates at every common target, the math behind why no target beats any other, and the override pattern that quietly wrecks most auto-cashout strategies.",
+    keywords: ["aviator auto cashout", "aviator auto cash out", "aviator cashout target", "aviator hit rate"],
+  },
 ];
 
 export function getGuideBySlug(slug: string): GuideSummary | undefined {
