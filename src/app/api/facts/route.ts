@@ -80,6 +80,12 @@ export function GET() {
         summary:
           "Auto-cashout removes timing errors but does not change the 3% house edge. Hit rate at 1.5x is 64.7%, at 2x is 48.5%, at 10x is 9.7%. Every target has the same -3% expected value. The override pattern (cancelling auto-cashout mid-round to chase higher multipliers) is how most auto-cashout strategies fail.",
       },
+      {
+        title: "Aviator Payments: How to Deposit and Withdraw at Every Casino (2026)",
+        url: "https://www.aviatorcrashgame.com/guides/aviator-payments-deposits-withdrawals",
+        summary:
+          "Deposits and withdrawals at Cybet, BitStarz, Mirax, 7Bit, TrustDice, and Betfury. USDT TRC-20 is the cheapest network (under $1, under 2 minutes). First withdrawal at any KYC-required casino takes hours to a day for document review; subsequent crypto withdrawals are fast (BitStarz under 10 minutes). TrustDice and Betfury skip KYC entirely for crypto users. Never send USDT on a network the casino deposit page does not list.",
+      },
     ],
     topCasinos: [
       { name: "Cybet", rating: 4.8, bonus: "100% up to $500 + 200 FS", crashWagering: "100%", url: "https://www.aviatorcrashgame.com/casinos/cybet" },
