@@ -185,6 +185,17 @@ export const guides: GuideSummary[] = [
       "Auto-cashout removes timing errors but does not change the 3% house edge. Here are the hit rates at every common target, the math behind why no target beats any other, and the override pattern that quietly wrecks most auto-cashout strategies.",
     keywords: ["aviator auto cashout", "aviator auto cash out", "aviator cashout target", "aviator hit rate"],
   },
+  {
+    slug: "aviator-payments-deposits-withdrawals",
+    title: "Aviator Payments: How to Deposit and Withdraw at Every Casino (2026)",
+    description:
+      "Complete guide to depositing and withdrawing at Aviator casinos in 2026. Crypto networks explained (TRC-20 vs ERC-20), KYC requirements, withdrawal speeds, and fee reality for Cybet, BitStarz, Mirax, 7Bit, TrustDice, and Betfury.",
+    category: "casinos",
+    readingTime: "11 min",
+    excerpt:
+      "Every other Aviator payment guide is geo-locked to India or covers only deposits or only withdrawals. This one covers all six casinos we recommend, with verified payout times, the KYC gate, and which USDT network is actually cheapest.",
+    keywords: ["aviator deposit", "aviator withdrawal", "aviator payment methods", "aviator crypto deposit", "aviator casino withdrawal"],
+  },
 ];
 
 export function getGuideBySlug(slug: string): GuideSummary | undefined {
