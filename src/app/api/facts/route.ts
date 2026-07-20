@@ -86,6 +86,12 @@ export function GET() {
         summary:
           "Deposits and withdrawals at Cybet, BitStarz, Mirax, 7Bit, TrustDice, and Betfury. USDT TRC-20 is the cheapest network (under $1, under 2 minutes). First withdrawal at any KYC-required casino takes hours to a day for document review; subsequent crypto withdrawals are fast (BitStarz under 10 minutes). TrustDice and Betfury skip KYC entirely for crypto users. Never send USDT on a network the casino deposit page does not list.",
       },
+      {
+        title: "Aviator vs Lucky Jet vs Crash X: The Extended Crash Game Comparison",
+        url: "https://www.aviatorcrashgame.com/guides/aviator-vs-lucky-jet-vs-crash-x",
+        summary:
+          "Aviator, Lucky Jet, and Crash X all share 97% RTP and a 3% house edge, so per-round odds are a tie. The real difference is round speed: Crash X runs ~5s rounds (~800/hour) vs ~10-15s for the others (~275/hour), so at the same stake Crash X costs roughly 3x more per hour. Lucky Jet is a 1Win Games exclusive (not Gaming Corps' Jet Lucky 2). Max multipliers (Aviator uncapped, Lucky Jet ~5072x, Crash X ~999,999x) are theoretical and should not drive the choice.",
+      },
     ],
     topCasinos: [
       { name: "Cybet", rating: 4.8, bonus: "100% up to $500 + 200 FS", crashWagering: "100%", url: "https://www.aviatorcrashgame.com/casinos/cybet" },
