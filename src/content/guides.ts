@@ -196,6 +196,17 @@ export const guides: GuideSummary[] = [
       "Every other Aviator payment guide is geo-locked to India or covers only deposits or only withdrawals. This one covers all six casinos we recommend, with verified payout times, the KYC gate, and which USDT network is actually cheapest.",
     keywords: ["aviator deposit", "aviator withdrawal", "aviator payment methods", "aviator crypto deposit", "aviator casino withdrawal"],
   },
+  {
+    slug: "aviator-vs-lucky-jet-vs-crash-x",
+    title: "Aviator vs Lucky Jet vs Crash X: The Extended Crash Game Comparison",
+    description:
+      "Aviator, Lucky Jet, and Crash X all run at 97% RTP, so the real difference is round speed and availability. Here is the hourly cost math that no other comparison shows, plus where to play each game.",
+    category: "strategy",
+    readingTime: "10 min",
+    excerpt:
+      "All three crash games share the same 97% RTP and 3% house edge, so the odds are a tie. What actually differs is round speed (Crash X runs ~3x more rounds per hour), availability (Lucky Jet is locked to the 1Win ecosystem), and the max-multiplier marketing most sites repeat without context.",
+    keywords: ["aviator vs lucky jet", "crash x crash game", "aviator vs crash x", "lucky jet vs aviator", "crash games compared"],
+  },
 ];
 
 export function getGuideBySlug(slug: string): GuideSummary | undefined {
