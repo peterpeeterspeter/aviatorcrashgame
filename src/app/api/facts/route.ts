@@ -92,6 +92,12 @@ export function GET() {
         summary:
           "Aviator, Lucky Jet, and Crash X all share 97% RTP and a 3% house edge, so per-round odds are a tie. The real difference is round speed: Crash X runs ~5s rounds (~800/hour) vs ~10-15s for the others (~275/hour), so at the same stake Crash X costs roughly 3x more per hour. Lucky Jet is a 1Win Games exclusive (not Gaming Corps' Jet Lucky 2). Max multipliers (Aviator uncapped, Lucky Jet ~5072x, Crash X ~999,999x) are theoretical and should not drive the choice.",
       },
+      {
+        title: "Is Aviator Legal? Country-by-Country Availability (2026)",
+        url: "https://www.aviatorcrashgame.com/guides/aviator-legal-countries",
+        summary:
+          "Aviator itself is not banned by any country. Spribe holds B2B supplier licenses from the MGA and UKGC. What varies is whether the casino offering it holds a license valid for your jurisdiction. The UK, Netherlands, and Belgium have regulated markets where locally licensed casinos can offer Aviator. The US has no state-licensed casino stocking it (Spribe has not pursued US state licenses). Germany's GlüNeuRStV treaty (€1 per spin cap, 5-second minimum spin) makes crash games impractical at German-licensed sites. Australia's Interactive Gambling Act 2001 bans online casinos for operators but does not criminalize players. Curacao licenses dominate crypto casinos, offering lighter oversight than UKGC/MGA but faster payouts and anonymous play.",
+      },
     ],
     topCasinos: [
       { name: "Cybet", rating: 4.8, bonus: "100% up to $500 + 200 FS", crashWagering: "100%", url: "https://www.aviatorcrashgame.com/casinos/cybet" },

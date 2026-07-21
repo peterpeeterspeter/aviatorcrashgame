@@ -207,6 +207,17 @@ export const guides: GuideSummary[] = [
       "All three crash games share the same 97% RTP and 3% house edge, so the odds are a tie. What actually differs is round speed (Crash X runs ~3x more rounds per hour), availability (Lucky Jet is locked to the 1Win ecosystem), and the max-multiplier marketing most sites repeat without context.",
     keywords: ["aviator vs lucky jet", "crash x crash game", "aviator vs crash x", "lucky jet vs aviator", "crash games compared"],
   },
+  {
+    slug: "aviator-legal-countries",
+    title: "Is Aviator Legal? Country-by-Country Availability (2026)",
+    description:
+      "Aviator itself is not banned anywhere, but whether your casino can legally serve you depends on its license. Here is the verified status for the UK, Netherlands, Belgium, Germany, US, Canada, Australia, India, and more.",
+    category: "safety",
+    readingTime: "9 min",
+    excerpt:
+      "Most Aviator legality guides get the framework wrong. The game is not individually banned. What matters is whether your casino holds a license valid for your country. Here is the country-by-country breakdown with the specific regulators and rules.",
+    keywords: ["is aviator legal", "aviator legal countries", "aviator banned countries", "aviator legality", "aviator gambling law"],
+  },
 ];
 
 export function getGuideBySlug(slug: string): GuideSummary | undefined {
