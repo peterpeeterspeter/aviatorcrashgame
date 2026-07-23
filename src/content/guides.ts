@@ -218,6 +218,17 @@ export const guides: GuideSummary[] = [
       "Most Aviator legality guides get the framework wrong. The game is not individually banned. What matters is whether your casino holds a license valid for your country. Here is the country-by-country breakdown with the specific regulators and rules.",
     keywords: ["is aviator legal", "aviator legal countries", "aviator banned countries", "aviator legality", "aviator gambling law"],
   },
+  {
+    slug: "aviator-mobile-guide",
+    title: "Aviator on Mobile: How to Play on Your Phone (No App Required)",
+    description:
+      "There is no standalone Aviator app. The game runs in your phone's browser. Here is how to get the best mobile experience at crypto casinos, why auto-cashout matters more on touchscreens, and what happens when your connection drops.",
+    category: "basics",
+    readingTime: "8 min",
+    excerpt:
+      "No official app exists. Aviator runs in your browser on any phone. We cover browser vs PWA vs casino apps, which crypto casinos have the best mobile UX, connection-drop behaviour, data usage, and why auto-cashout is essential on touchscreens.",
+    keywords: ["aviator mobile", "aviator app", "play aviator on phone", "aviator on android", "aviator on iphone"],
+  },
 ];
 
 export function getGuideBySlug(slug: string): GuideSummary | undefined {

@@ -98,6 +98,12 @@ export function GET() {
         summary:
           "Aviator itself is not banned by any country. Spribe holds B2B supplier licenses from the MGA and UKGC. What varies is whether the casino offering it holds a license valid for your jurisdiction. The UK, Netherlands, and Belgium have regulated markets where locally licensed casinos can offer Aviator. The US has no state-licensed casino stocking it (Spribe has not pursued US state licenses). Germany's GlüNeuRStV treaty (€1 per spin cap, 5-second minimum spin) makes crash games impractical at German-licensed sites. Australia's Interactive Gambling Act 2001 bans online casinos for operators but does not criminalize players. Curacao licenses dominate crypto casinos, offering lighter oversight than UKGC/MGA but faster payouts and anonymous play.",
       },
+      {
+        title: "Aviator on Mobile: How to Play on Your Phone (No App Required)",
+        url: "https://www.aviatorcrashgame.com/guides/aviator-mobile-guide",
+        summary:
+          "There is no standalone Aviator app. Spribe built it as an HTML5 browser game playable on any phone. The three legitimate ways to play are browser, PWA (add to home screen), and native casino apps. Auto-cashout is essential on mobile because manual cashout on touchscreens loses to reaction time. If your connection drops mid-round, auto-cashout still triggers server-side; manual cashout during a drop is unreliable. A 30-minute session uses 20-50 MB of data. APK downloads claiming to be Aviator are scams or malware.",
+      },
     ],
     topCasinos: [
       { name: "Cybet", rating: 4.8, bonus: "100% up to $500 + 200 FS", crashWagering: "100%", url: "https://www.aviatorcrashgame.com/casinos/cybet" },
