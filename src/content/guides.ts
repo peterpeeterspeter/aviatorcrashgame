@@ -229,6 +229,17 @@ export const guides: GuideSummary[] = [
       "No official app exists. Aviator runs in your browser on any phone. We cover browser vs PWA vs casino apps, which crypto casinos have the best mobile UX, connection-drop behaviour, data usage, and why auto-cashout is essential on touchscreens.",
     keywords: ["aviator mobile", "aviator app", "play aviator on phone", "aviator on android", "aviator on iphone"],
   },
+  {
+    slug: "aviator-no-deposit-bonus",
+    title: "Aviator No Deposit Bonus: Which Free Offers Actually Work?",
+    description:
+      "Most Aviator no deposit bonuses are useless. Free spins do not work on crash games, and wagering requirements make cashing out nearly impossible. Here is what actually lets you play Aviator for free.",
+    category: "casinos",
+    readingTime: "8 min",
+    excerpt:
+      "Free spins cannot be used on Aviator. No-deposit cash has a 5% crash game wagering contribution that turns a 40x requirement into 800x. TrustDice's faucet is the only genuinely free option. We break down what works and what is marketing.",
+    keywords: ["aviator no deposit bonus", "aviator free bonus", "aviator free spins", "free aviator", "aviator bonus codes"],
+  },
 ];
 
 export function getGuideBySlug(slug: string): GuideSummary | undefined {

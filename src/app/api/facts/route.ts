@@ -104,6 +104,12 @@ export function GET() {
         summary:
           "There is no standalone Aviator app. Spribe built it as an HTML5 browser game playable on any phone. The three legitimate ways to play are browser, PWA (add to home screen), and native casino apps. Auto-cashout is essential on mobile because manual cashout on touchscreens loses to reaction time. If your connection drops mid-round, auto-cashout still triggers server-side; manual cashout during a drop is unreliable. A 30-minute session uses 20-50 MB of data. APK downloads claiming to be Aviator are scams or malware.",
       },
+      {
+        title: "Aviator No Deposit Bonus: Which Free Offers Actually Work?",
+        url: "https://www.aviatorcrashgame.com/guides/aviator-no-deposit-bonus",
+        summary:
+          "Free spins cannot be used on Aviator because crash games do not use a spin mechanic. No-deposit cash bonuses at Curacao casinos have a 5% crash game wagering contribution, making a 40x requirement effectively 800x. TrustDice's crypto faucet is the only genuinely free option with no wagering requirements. Deposit match bonuses offer better value than no-deposit offers for Aviator players.",
+      },
     ],
     topCasinos: [
       { name: "Cybet", rating: 4.8, bonus: "100% up to $500 + 200 FS", crashWagering: "100%", url: "https://www.aviatorcrashgame.com/casinos/cybet" },

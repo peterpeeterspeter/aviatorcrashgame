@@ -19,6 +19,7 @@ import { guideContent as aviatorPaymentsDepositsWithdrawals } from "./aviator-pa
 import { guideContent as aviatorVsLuckyJetVsCrashX } from "./aviator-vs-lucky-jet-vs-crash-x";
 import { guideContent as aviatorLegalCountries } from "./aviator-legal-countries";
 import { guideContent as aviatorMobileGuide } from "./aviator-mobile-guide";
+import { guideContent as aviatorNoDepositBonus } from "./aviator-no-deposit-bonus";
 
 export interface GuideContent {
   sections: { heading: string; paragraphs: string[] }[];
@@ -46,4 +47,5 @@ export const guideContentMap: Record<string, GuideContent> = {
   "aviator-vs-lucky-jet-vs-crash-x": aviatorVsLuckyJetVsCrashX,
   "aviator-legal-countries": aviatorLegalCountries,
   "aviator-mobile-guide": aviatorMobileGuide,
+  "aviator-no-deposit-bonus": aviatorNoDepositBonus,
 };
