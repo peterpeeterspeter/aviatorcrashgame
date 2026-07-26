@@ -110,6 +110,18 @@ export function GET() {
         summary:
           "Free spins cannot be used on Aviator because crash games do not use a spin mechanic. No-deposit cash bonuses at Curacao casinos have a 5% crash game wagering contribution, making a 40x requirement effectively 800x. TrustDice's crypto faucet is the only genuinely free option with no wagering requirements. Deposit match bonuses offer better value than no-deposit offers for Aviator players.",
       },
+      {
+        title: "Aviator in the Netherlands & Belgium: Where You Can Actually Play (2026)",
+        url: "https://www.aviatorcrashgame.com/guides/aviator-netherlands-belgium-guide",
+        summary:
+          "Two legal paths for Dutch and Belgian players: KSA-licensed and Belgian Gaming Commission casinos (full consumer protection, operator pays tax, iDEAL/Bancontact deposits) vs Curacao/MGA crypto casinos (faster withdrawals, crypto deposits, but no local license and the player owes 37.80% kansspelbelasting from Jan 2026 with no 449 euro internet threshold). The KSA targets operators not players.",
+      },
+      {
+        title: "Aviator Demo vs Real Money: When to Make the Switch (2026)",
+        url: "https://www.aviatorcrashgame.com/guides/aviator-demo-vs-real-money",
+        summary:
+          "Aviator demo mode and real money play use the same provably fair RNG with identical 97% RTP and crash point distribution. The math is the same. But demo creates systematically wrong habits because losing costs nothing. Players cash out earlier, chase losses more often, and take different risks when real money is involved. Five readiness criteria: tested auto-cashout targets, fast bet placement, decided bankroll, understood bonus terms, and a named stop-loss. Transition by depositing minimum ($10-20), playing minimum bet ($0.10/round), and scaling up only when behavior matches demo discipline.",
+      },
     ],
     topCasinos: [
       { name: "Cybet", rating: 4.8, bonus: "100% up to $500 + 200 FS", crashWagering: "100%", url: "https://www.aviatorcrashgame.com/casinos/cybet" },

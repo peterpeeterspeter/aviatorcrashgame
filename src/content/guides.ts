@@ -240,6 +240,28 @@ export const guides: GuideSummary[] = [
       "Free spins cannot be used on Aviator. No-deposit cash has a 5% crash game wagering contribution that turns a 40x requirement into 800x. TrustDice's faucet is the only genuinely free option. We break down what works and what is marketing.",
     keywords: ["aviator no deposit bonus", "aviator free bonus", "aviator free spins", "free aviator", "aviator bonus codes"],
   },
+  {
+    slug: "aviator-netherlands-belgium-guide",
+    title: "Aviator in the Netherlands & Belgium: Where You Can Actually Play (2026)",
+    description:
+      "The only Dutch Aviator guide covering both KSA-licensed casinos and the crypto casino path. Honest legal status, the 37.80% kansspelbelasting, iDEAL vs crypto payments, and where each option fits.",
+    category: "casinos",
+    readingTime: "11 min",
+    excerpt:
+      "Every Dutch Aviator guide covers only the licensed casinos. This one covers both paths, including the gambling tax nobody mentions, the Belgian Gaming Commission rules, and which crypto casinos actually work for NL and BE players.",
+    keywords: ["aviator netherlands", "aviator belgium", "aviator nederland", "aviator legaal", "kansspelbelasting aviator", "aviator iDEAL"],
+  },
+  {
+    slug: "aviator-demo-vs-real-money",
+    title: "Aviator Demo vs Real Money: When to Make the Switch (2026)",
+    description:
+      "Aviator demo and real money use the same RNG, but your behavior changes the moment money is real. Here is how to know when you are ready, and how to transition without losing your discipline.",
+    category: "strategy",
+    readingTime: "9 min",
+    excerpt:
+      "Demo mode is mathematically identical to real money Aviator. The same provably fair RNG, same 97% RTP, same crash distribution. But demo teaches you bad habits because losing costs nothing. Here is when to switch and how to bridge the gap.",
+    keywords: ["aviator demo", "aviator real money", "aviator free play", "aviator demo mode", "aviator practice"],
+  },
 ];
 
 export function getGuideBySlug(slug: string): GuideSummary | undefined {

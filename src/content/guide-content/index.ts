@@ -20,6 +20,8 @@ import { guideContent as aviatorVsLuckyJetVsCrashX } from "./aviator-vs-lucky-je
 import { guideContent as aviatorLegalCountries } from "./aviator-legal-countries";
 import { guideContent as aviatorMobileGuide } from "./aviator-mobile-guide";
 import { guideContent as aviatorNoDepositBonus } from "./aviator-no-deposit-bonus";
+import { guideContent as aviatorNetherlandsBelgiumGuide } from "./aviator-netherlands-belgium-guide";
+import { guideContent as aviatorDemoVsRealMoney } from "./aviator-demo-vs-real-money";
 
 export interface GuideContent {
   sections: { heading: string; paragraphs: string[] }[];
@@ -48,4 +50,6 @@ export const guideContentMap: Record<string, GuideContent> = {
   "aviator-legal-countries": aviatorLegalCountries,
   "aviator-mobile-guide": aviatorMobileGuide,
   "aviator-no-deposit-bonus": aviatorNoDepositBonus,
+  "aviator-netherlands-belgium-guide": aviatorNetherlandsBelgiumGuide,
+  "aviator-demo-vs-real-money": aviatorDemoVsRealMoney,
 };
