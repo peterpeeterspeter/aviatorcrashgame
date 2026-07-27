@@ -262,6 +262,17 @@ export const guides: GuideSummary[] = [
       "Demo mode is mathematically identical to real money Aviator. The same provably fair RNG, same 97% RTP, same crash distribution. But demo teaches you bad habits because losing costs nothing. Here is when to switch and how to bridge the gap.",
     keywords: ["aviator demo", "aviator real money", "aviator free play", "aviator demo mode", "aviator practice"],
   },
+  {
+    slug: "aviator-betting-systems-tested",
+    title: "Aviator Betting Systems Tested: Why Martingale and Fibonacci Can't Win",
+    description:
+      "Every Aviator betting system fails the 3% house edge. We tested Martingale, Fibonacci, D'Alembert, Labouchere, and 1-3-2-6 with the real math, the bet-limit ceiling that breaks them, and what actually works instead.",
+    category: "strategy",
+    readingTime: "11 min",
+    excerpt:
+      "Martingale, Fibonacci, D'Alembert, and the rest cannot beat Aviator's 3% house edge. Here is the math that proves it, the casino bet limit that physically breaks Martingale after seven rounds, and the flat-betting approach that actually controls losses.",
+    keywords: ["aviator martingale", "aviator betting system", "aviator fibonacci strategy", "aviator dalembert", "aviator betting strategy"],
+  },
 ];
 
 export function getGuideBySlug(slug: string): GuideSummary | undefined {

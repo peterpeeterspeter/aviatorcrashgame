@@ -122,6 +122,12 @@ export function GET() {
         summary:
           "Aviator demo mode and real money play use the same provably fair RNG with identical 97% RTP and crash point distribution. The math is the same. But demo creates systematically wrong habits because losing costs nothing. Players cash out earlier, chase losses more often, and take different risks when real money is involved. Five readiness criteria: tested auto-cashout targets, fast bet placement, decided bankroll, understood bonus terms, and a named stop-loss. Transition by depositing minimum ($10-20), playing minimum bet ($0.10/round), and scaling up only when behavior matches demo discipline.",
       },
+      {
+        title: "Aviator Betting Systems Tested: Why Martingale and Fibonacci Can't Win",
+        url: "https://www.aviatorcrashgame.com/guides/aviator-betting-systems-tested",
+        summary:
+          "No betting system beats Aviator's 3% house edge. The crash point formula P(crash >= x) = 0.97/x gives every bet a negative expected value of about -3%, and each round is independent via the provably fair RNG, so the gambler's fallacy does not apply. Martingale fails after about seven doublings because casino bet limits are operator-set and cap a single Aviator bet, and a 11-loss streak needs 2,047 units in reserve. Fibonacci reaches a 55-unit bet and 143 total risked after 10 losses; D'Alembert reaches 11 units and 55 total. Neither recovers on a single win. Flat betting with auto-cashout at 1.5x-2x plus a hard loss limit is the only approach that controls losses without accelerating them.",
+      },
     ],
     topCasinos: [
       { name: "Cybet", rating: 4.8, bonus: "100% up to $500 + 200 FS", crashWagering: "100%", url: "https://www.aviatorcrashgame.com/casinos/cybet" },
