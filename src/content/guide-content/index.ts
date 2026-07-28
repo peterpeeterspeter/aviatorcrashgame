@@ -23,6 +23,7 @@ import { guideContent as aviatorNoDepositBonus } from "./aviator-no-deposit-bonu
 import { guideContent as aviatorNetherlandsBelgiumGuide } from "./aviator-netherlands-belgium-guide";
 import { guideContent as aviatorDemoVsRealMoney } from "./aviator-demo-vs-real-money";
 import { guideContent as aviatorBettingSystemsTested } from "./aviator-betting-systems-tested";
+import { guideContent as aviatorVsSlots } from "./aviator-vs-slots";
 
 export interface GuideContent {
   sections: { heading: string; paragraphs: string[] }[];
@@ -54,4 +55,5 @@ export const guideContentMap: Record<string, GuideContent> = {
   "aviator-netherlands-belgium-guide": aviatorNetherlandsBelgiumGuide,
   "aviator-demo-vs-real-money": aviatorDemoVsRealMoney,
   "aviator-betting-systems-tested": aviatorBettingSystemsTested,
+  "aviator-vs-slots": aviatorVsSlots,
 };

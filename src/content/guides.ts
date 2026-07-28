@@ -273,6 +273,17 @@ export const guides: GuideSummary[] = [
       "Martingale, Fibonacci, D'Alembert, and the rest cannot beat Aviator's 3% house edge. Here is the math that proves it, the casino bet limit that physically breaks Martingale after seven rounds, and the flat-betting approach that actually controls losses.",
     keywords: ["aviator martingale", "aviator betting system", "aviator fibonacci strategy", "aviator dalembert", "aviator betting strategy"],
   },
+  {
+    slug: "aviator-vs-slots",
+    title: "Aviator vs Slots: Which Game Gives You Better Value? (2026)",
+    description:
+      "Aviator's 97% RTP beats the average slot's 96%, but turnover speed and bonus contribution flip the math. Here is a data-driven comparison of RTP, volatility, speed, bonuses, and transparency.",
+    category: "strategy",
+    readingTime: "10 min",
+    excerpt:
+      "Neither Aviator nor slots can make you money long-term. But Aviator has better RTP, player-controlled volatility, and provably fair transparency, while slots win on variety and bonus value. Here is the honest comparison.",
+    keywords: ["aviator vs slots", "aviator rtp vs slots", "crash game vs slot machine", "aviator better than slots", "aviator odds comparison"],
+  },
 ];
 
 export function getGuideBySlug(slug: string): GuideSummary | undefined {
