@@ -284,6 +284,17 @@ export const guides: GuideSummary[] = [
       "Neither Aviator nor slots can make you money long-term. But Aviator has better RTP, player-controlled volatility, and provably fair transparency, while slots win on variety and bonus value. Here is the honest comparison.",
     keywords: ["aviator vs slots", "aviator rtp vs slots", "crash game vs slot machine", "aviator better than slots", "aviator odds comparison"],
   },
+  {
+    slug: "aviator-high-rollers-vip",
+    title: "Aviator for High Rollers: VIP, Max Bet Limits & Cashback (2026)",
+    description:
+      "Aviator caps bets at $100 per round. Here is what high-stakes play actually means: max win caps, VIP cashback that works with crash games, withdrawal limits for big winners, and which casinos reward high-volume play.",
+    category: "casinos",
+    readingTime: "12 min",
+    excerpt:
+      "Aviator is not a high-roller game in the way you think. The game caps bets at $100. Real high-stakes play is about volume, cashback tiers, max win caps, and withdrawal speed. Here is the honest breakdown.",
+    keywords: ["aviator high roller", "aviator max bet", "aviator vip program", "aviator cashback", "aviator high stakes"],
+  },
 ];
 
 export function getGuideBySlug(slug: string): GuideSummary | undefined {

@@ -24,6 +24,7 @@ import { guideContent as aviatorNetherlandsBelgiumGuide } from "./aviator-nether
 import { guideContent as aviatorDemoVsRealMoney } from "./aviator-demo-vs-real-money";
 import { guideContent as aviatorBettingSystemsTested } from "./aviator-betting-systems-tested";
 import { guideContent as aviatorVsSlots } from "./aviator-vs-slots";
+import { guideContent as aviatorHighRollersVip } from "./aviator-high-rollers-vip";
 
 export interface GuideContent {
   sections: { heading: string; paragraphs: string[] }[];
@@ -56,4 +57,5 @@ export const guideContentMap: Record<string, GuideContent> = {
   "aviator-demo-vs-real-money": aviatorDemoVsRealMoney,
   "aviator-betting-systems-tested": aviatorBettingSystemsTested,
   "aviator-vs-slots": aviatorVsSlots,
+  "aviator-high-rollers-vip": aviatorHighRollersVip,
 };

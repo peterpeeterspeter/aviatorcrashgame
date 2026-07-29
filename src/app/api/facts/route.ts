@@ -134,6 +134,12 @@ export function GET() {
         summary:
           "Aviator's 97% RTP beats the average slot's 96%, a 25% lower house edge. But turnover speed matters more than headline RTP: Aviator at 200-300 rounds/hour vs slots at 400-900 spins/hour means slots drain faster despite the edge gap. Crash games contribute only 5% toward bonus wagering (vs 100% for slots), making casino bonuses worthless for Aviator players. Aviator offers player-controlled volatility (cashout point selection) and provably fair verification; slots offer fixed volatility, thousands of titles, and audited RNG. Neither game can be beaten long-term.",
       },
+      {
+        title: "Aviator for High Rollers: VIP, Max Bet Limits & Cashback (2026)",
+        url: "https://www.aviatorcrashgame.com/guides/aviator-high-rollers-vip",
+        summary:
+          "Aviator caps individual bets at roughly $100 (about $200 per round with dual bet). Real high-stakes play is about volume, not single-bet size. The binding constraint is the max win cap (typically 100x-200x multiplier backstop), not the max bet. Loss-based cashback (like Betfury's 25% program) genuinely helps high-volume players because it calculates on total wagering across all games. Bonus-wagering cashback is a trap for Aviator players at the 5% crash-game contribution rate. Curacao casinos enforce monthly withdrawal limits ($5K-$10K typical); VIP players can sometimes negotiate higher limits. KYC is triggered on large withdrawals even at 'no-KYC' casinos.",
+      },
     ],
     topCasinos: [
       { name: "Cybet", rating: 4.8, bonus: "100% up to $500 + 200 FS", crashWagering: "100%", url: "https://www.aviatorcrashgame.com/casinos/cybet" },
