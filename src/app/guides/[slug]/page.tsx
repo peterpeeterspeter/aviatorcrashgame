@@ -40,6 +40,7 @@ export async function generateMetadata({
     title: guide.title,
     description: guide.description,
     path: `/guides/${guide.slug}`,
+    image: guide.heroImage,
   });
 }
 
@@ -89,6 +90,8 @@ export default async function GuideDetailPage({
     title: guide.title,
     description: guide.description,
     slug: guide.slug,
+    datePublished: guide.datePublished,
+    image: guide.heroImage,
   });
 
   const breadcrumb = breadcrumbSchema([
@@ -176,13 +179,18 @@ export default async function GuideDetailPage({
                   {section.heading}
                 </h2>
                 <div className="mt-4 space-y-4">
-                  {section.paragraphs.map((para, j) => (
-                    <p
-                      key={j}
-                      className="text-lg leading-relaxed text-muted-foreground"
-                      dangerouslySetInnerHTML={{ __html: para }}
-                    />
-                  ))}
+                  {section.paragraphs.map((para, j) => {
+                    // Static editorial blocks may include figures and tables,
+                    // which must not be nested inside a paragraph element.
+                    const Tag = /^\s*<(?:figure|div|table)\b/.test(para) ? "div" : "p";
+                    return (
+                      <Tag
+                        key={j}
+                        className="text-lg leading-relaxed text-muted-foreground [&_table]:w-full [&_table]:border-collapse [&_td]:border [&_td]:border-border [&_td]:p-3 [&_th]:border [&_th]:border-border [&_th]:p-3 [&_th]:text-left [&_figcaption]:mt-2 [&_figcaption]:text-sm [&_a]:underline"
+                        dangerouslySetInnerHTML={{ __html: para }}
+                      />
+                    );
+                  })}
                 </div>
               </div>
             ))}

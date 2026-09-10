@@ -6,6 +6,8 @@ export interface GuideSummary {
   readingTime: string;
   excerpt: string;
   keywords: string[];
+  datePublished?: string;
+  heroImage?: string;
 }
 
 export const guides: GuideSummary[] = [
@@ -286,14 +288,16 @@ export const guides: GuideSummary[] = [
   },
   {
     slug: "aviator-high-rollers-vip",
-    title: "Aviator for High Rollers: VIP, Max Bet Limits & Cashback (2026)",
+    title: "Aviator high rollers: VIP limits, cashback and bonus rules (2026)",
     description:
-      "Aviator caps bets at $100 per round. Here is what high-stakes play actually means: max win caps, VIP cashback that works with crash games, withdrawal limits for big winners, and which casinos reward high-volume play.",
+      "Compare published Aviator VIP terms, bet limits, cashback formulas and bonus restrictions. Learn what remains unverified before risking money on a casino offer.",
     category: "casinos",
-    readingTime: "12 min",
+    readingTime: "16 min",
     excerpt:
-      "Aviator is not a high-roller game in the way you think. The game caps bets at $100. Real high-stakes play is about volume, cashback tiers, max win caps, and withdrawal speed. Here is the honest breakdown.",
+      "Game limits, bonus maximum bets and cashier limits are separate rules. We compare publicly available terms, distinguish cashback from wagering rewards, and explain what a VIP badge does not guarantee.",
     keywords: ["aviator high roller", "aviator max bet", "aviator vip program", "aviator cashback", "aviator high stakes"],
+    datePublished: "2026-09-10",
+    heroImage: "/images/guides/aviator-high-rollers-vip/hero.jpg",
   },
 ];
 

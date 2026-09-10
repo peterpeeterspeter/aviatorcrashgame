@@ -14,10 +14,12 @@ export function constructMetadata({
   title,
   description,
   path = "",
+  image,
 }: {
   title: string;
   description: string;
   path?: string;
+  image?: string;
 }): Metadata {
   const url = `${SITE_URL}${path}`;
   return {
@@ -32,9 +34,11 @@ export function constructMetadata({
       url,
       siteName: siteConfig.name,
       type: "website",
+      ...(image ? { images: [`${SITE_URL}${image}`] } : {}),
     },
     twitter: {
       card: "summary_large_image",
+      ...(image ? { images: [`${SITE_URL}${image}`] } : {}),
       title,
       description,
     },
@@ -46,11 +50,13 @@ export function articleSchema({
   description,
   slug,
   datePublished = "2026-07-07",
+  image,
 }: {
   title: string;
   description: string;
   slug: string;
   datePublished?: string;
+  image?: string;
 }) {
   return {
     "@context": "https://schema.org",
@@ -59,6 +65,7 @@ export function articleSchema({
     description,
     datePublished,
     dateModified: datePublished,
+    ...(image ? { image: `${SITE_URL}${image}` } : {}),
     author: {
       "@type": "Organization",
       name: "Aviator Crash Game",
