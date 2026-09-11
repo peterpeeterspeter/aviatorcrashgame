@@ -299,6 +299,19 @@ export const guides: GuideSummary[] = [
     datePublished: "2026-09-10",
     heroImage: "/images/guides/aviator-high-rollers-vip/hero.jpg",
   },
+  {
+    slug: "aviator-tournaments",
+    title: "Aviator tournaments and leaderboards: rules, scoring and prizes",
+    description:
+      "Understand Aviator tournaments, leaderboard scoring and prize restrictions. Compare published rules, spot eligibility gaps and avoid treating bonuses as cash.",
+    category: "casinos",
+    readingTime: "12 min",
+    excerpt:
+      "An ordinary leaderboard is not a prize competition. Learn how to check entry rules, qualifying balances, scoring and redemption. Public documents reviewed; no live partner Aviator tournament verified.",
+    keywords: ["aviator tournaments", "aviator leaderboard", "aviator tournament rules", "aviator tournament prizes"],
+    datePublished: "2026-09-11",
+    heroImage: "/images/guides/aviator-tournaments/hero.jpg",
+  },
 ];
 
 export function getGuideBySlug(slug: string): GuideSummary | undefined {

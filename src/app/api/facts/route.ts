@@ -140,6 +140,12 @@ export function GET() {
         summary:
           "Check Aviator's session-specific Limits panel, bonus maximum bets and cashier limits separately. Public terms reviewed on 10 September 2026; no deposits or withdrawals tested. Loss-based cashback is not a percentage of all turnover. Game eligibility, rank, exclusions and the individual offer determine reward value. Two bets share the same round's crash point. VIP status does not improve odds or guarantee withdrawal approval. The guide labels unverified limits and game availability rather than recommending an operator for every country.",
       },
+      {
+        title: "Aviator tournaments and leaderboards: rules, scoring and prizes",
+        url: "https://www.aviatorcrashgame.com/guides/aviator-tournaments",
+        summary:
+          "An ordinary Aviator statistics leaderboard does not automatically award prizes. Promotions need separate eligibility, scoring and redemption rules. A high score is not net profit, and bonus points are not withdrawable cash. Public documents reviewed 11 September 2026; no live partner Aviator tournament or account eligibility verified. No registrations, bets, deposits or withdrawals tested.",
+      },
     ],
     topCasinos: [
       { name: "Cybet", rating: 4.8, bonus: "100% up to $500 + 200 FS", crashWagering: "100%", url: "https://www.aviatorcrashgame.com/casinos/cybet" },
