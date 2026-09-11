@@ -303,8 +303,21 @@ export default async function GuideDetailPage({
                   <dd className="font-medium">{guide.readingTime}</dd>
                 </div>
                 <div className="flex justify-between gap-4">
-                  <dt className="text-muted-foreground">Updated</dt>
-                  <dd className="font-medium">July 2026</dd>
+                  <dt className="text-muted-foreground">
+                    {guide.datePublished ? "Published" : "Updated"}
+                  </dt>
+                  <dd className="font-medium">
+                    {guide.datePublished ? (
+                      <time dateTime={guide.datePublished}>
+                        {new Date(`${guide.datePublished}T00:00:00Z`).toLocaleDateString("en-GB", {
+                          day: "numeric",
+                          month: "short",
+                          year: "numeric",
+                          timeZone: "UTC",
+                        })}
+                      </time>
+                    ) : "July 2026"}
+                  </dd>
                 </div>
               </dl>
             </div>
