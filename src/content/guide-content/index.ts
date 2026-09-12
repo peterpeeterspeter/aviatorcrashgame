@@ -26,6 +26,7 @@ import { guideContent as aviatorBettingSystemsTested } from "./aviator-betting-s
 import { guideContent as aviatorVsSlots } from "./aviator-vs-slots";
 import { guideContent as aviatorHighRollersVip } from "./aviator-high-rollers-vip";
 import { guideContent as aviatorTournaments } from "./aviator-tournaments";
+import { guideContent as aviatorIndia } from "./aviator-india";
 
 export interface GuideContent {
   sections: { heading: string; paragraphs: string[] }[];
@@ -60,4 +61,5 @@ export const guideContentMap: Record<string, GuideContent> = {
   "aviator-vs-slots": aviatorVsSlots,
   "aviator-high-rollers-vip": aviatorHighRollersVip,
   "aviator-tournaments": aviatorTournaments,
+  "aviator-india": aviatorIndia,
 };

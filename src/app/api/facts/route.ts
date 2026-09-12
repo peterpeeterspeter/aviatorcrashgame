@@ -21,6 +21,16 @@ export function GET() {
     },
     topGuides: [
       {
+        title: "Aviator game in India: 2026 law, demos and payment risks explained",
+        url: "https://www.aviatorcrashgame.com/guides/aviator-india",
+        summary: "India's Promotion and Regulation of Online Gaming Act, 2025 commenced on 1 May 2026 under S.O. 1994(E). Real-money Aviator fits the online money-game definition. Sections 5, 6 and 7 address offering, advertising and payment facilitation. No casino recommendations; no-stakes demos need separate assessment.",
+        reviewed: "2026-09-12",
+        sources: [
+          "https://www.indiacode.nic.in/indiacode/bitstream/123456789/22148/1/a2025-32.pdf",
+          "https://www.meity.gov.in/static/uploads/2026/04/089ca9904b13f019b41a391584ab10ea.pdf",
+        ],
+      },
+      {
         title: "How to Play Aviator: Complete Beginner Guide",
         url: "https://www.aviatorcrashgame.com/how-to-play",
         summary:

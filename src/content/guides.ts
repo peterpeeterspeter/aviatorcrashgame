@@ -12,6 +12,17 @@ export interface GuideSummary {
 
 export const guides: GuideSummary[] = [
   {
+    slug: "aviator-india",
+    title: "Aviator game in India: 2026 law, demos and payment risks explained",
+    description: "Real-money Aviator falls under India's online money-gaming ban. Read the May 2026 commencement, demo boundaries, payment risks and primary source documents.",
+    excerpt: "India's online money-gaming law took effect on 1 May 2026. A source-based guide to the ban, no-stakes demo boundaries and payment risks, without casino offers.",
+    category: "safety",
+    readingTime: "16 min",
+    keywords: ["aviator in india", "aviator game india", "online gaming law", "aviator demo"],
+    datePublished: "2026-09-12",
+    heroImage: "/images/guides/aviator-india/hero.jpg",
+  },
+  {
     slug: "how-to-play-aviator",
     title: "How to Play Aviator: Complete Beginner Guide",
     description:

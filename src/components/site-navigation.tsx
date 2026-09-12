@@ -4,6 +4,8 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { List, X } from "@phosphor-icons/react";
+import { usePathname } from "next/navigation";
+import { isNonPromotionalGuide, safetyGuideLinks } from "@/lib/editorial-policy";
 
 const navLinks = [
   { href: "/how-to-play", label: "How to Play" },
@@ -14,6 +16,8 @@ const navLinks = [
 
 export function Navigation() {
   const [open, setOpen] = useState(false);
+  const nonPromotional = isNonPromotionalGuide(usePathname());
+  const visibleLinks = nonPromotional ? safetyGuideLinks : navLinks;
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-lg">
@@ -32,7 +36,7 @@ export function Navigation() {
 
         {/* Desktop nav */}
         <div className="hidden items-center gap-6 md:flex">
-          {navLinks.map((link) => (
+          {visibleLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
@@ -41,12 +45,12 @@ export function Navigation() {
               {link.label}
             </Link>
           ))}
-          <Link
+          {!nonPromotional && <Link
             href="/casinos"
             className="rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.02] active:scale-[0.98]"
           >
             Browse Casinos
-          </Link>
+          </Link>}
         </div>
 
         {/* Mobile toggle */}
@@ -63,7 +67,7 @@ export function Navigation() {
       {open && (
         <div className="border-t border-border bg-background md:hidden">
           <div className="flex flex-col gap-1 px-4 py-4">
-            {navLinks.map((link) => (
+            {visibleLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}

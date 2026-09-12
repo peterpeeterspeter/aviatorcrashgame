@@ -2,7 +2,14 @@
 
 > The complete beginner resource for Aviator crash games. Honest strategy guides, verified casino reviews, and factual explanations of how the game works. No fake hacks, no predictor apps, no scams.
 
-## What is Aviator?
+## India: current legal position (reviewed 12 September 2026)
+
+India's Promotion and Regulation of Online Gaming Act, 2025 commenced on 1 May 2026 under Gazette notification S.O. 1994(E). Real-money Aviator fits the online money-game definition; sections 5, 6 and 7 address offering, advertising and payment facilitation. Offshore access does not establish Indian authorisation. Casino recommendations elsewhere in this file are not recommendations for Indian residents. A no-stakes demo requires separate assessment; this site does not certify one as authorised.
+
+Primary commencement source: https://www.meity.gov.in/static/uploads/2026/04/089ca9904b13f019b41a391584ab10ea.pdf
+Full source-based guide: https://www.aviatorcrashgame.com/guides/aviator-india
+
+## Game overview
 
 Aviator is a crash game developed by Spribe. A multiplier starts at 1.00x and rises. Players bet before each round, then cash out before the multiplier crashes. If they cash out in time, they win their bet multiplied by the cashout value. If the multiplier crashes first, they lose their bet.
 

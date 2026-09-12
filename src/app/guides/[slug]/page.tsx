@@ -13,6 +13,7 @@ import {
   faqSchema,
 } from "@/lib/seo";
 import { guideContentMap, type GuideContent } from "@/content/guide-content";
+import { isNonPromotionalGuide, safetyGuideLinks } from "@/lib/editorial-policy";
 
 type Params = { slug: string };
 
@@ -72,10 +73,12 @@ export default async function GuideDetailPage({
 
   // Load guide content from static import map
   const content: GuideContent = guideContentMap[slug] || { sections: [], faqs: [] };
+  const nonPromotional = isNonPromotionalGuide(`/guides/${slug}`);
 
   const related = guides
     .filter(
-      (g) => g.category === guide.category && g.slug !== guide.slug,
+      (g) => g.category === guide.category && g.slug !== guide.slug &&
+        (!nonPromotional || safetyGuideLinks.some((link) => link.href === `/guides/${g.slug}`)),
     )
     .slice(0, 4);
 
@@ -161,7 +164,7 @@ export default async function GuideDetailPage({
       <section className="border-b border-border py-16 lg:py-20">
         <div className="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 lg:grid-cols-[1fr_320px]">
           {/* Article */}
-          <article className="flex flex-col gap-10">
+          <article className="flex min-w-0 flex-col gap-10">
             {/* TL;DR */}
             <div className="rounded-2xl border border-primary/30 bg-primary/5 p-6">
               <p className="text-xs font-semibold uppercase tracking-wide text-primary">
@@ -220,7 +223,7 @@ export default async function GuideDetailPage({
             )}
 
             {/* Next steps CTA */}
-            <div className="rounded-2xl border border-border bg-card p-6">
+            {!nonPromotional && <div className="rounded-2xl border border-border bg-card p-6">
               <h2 className="text-xl font-bold">Keep Reading</h2>
               <p className="mt-2 text-sm text-muted-foreground">
                 Continue with the next {categoryLabel[guide.category]} guide
@@ -240,7 +243,7 @@ export default async function GuideDetailPage({
                   All Guides
                 </Link>
               </div>
-            </div>
+            </div>}
           </article>
 
           {/* Sidebar */}
@@ -328,6 +331,11 @@ export default async function GuideDetailPage({
                 Keep Exploring
               </p>
               <div className="mt-4 flex flex-col gap-2 text-sm">
+                {nonPromotional ? safetyGuideLinks.map((link) => (
+                  <Link key={link.href} href={link.href} className="font-medium text-primary hover:underline">
+                    {link.label}
+                  </Link>
+                )) : <>
                 <Link
                   href="/how-to-play"
                   className="font-medium text-primary hover:underline"
@@ -352,6 +360,7 @@ export default async function GuideDetailPage({
                 >
                   Responsible Gambling
                 </Link>
+                </>}
               </div>
             </div>
           </aside>

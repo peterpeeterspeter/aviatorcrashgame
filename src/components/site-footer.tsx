@@ -1,6 +1,8 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
+import { isNonPromotionalGuide, safetyGuideLinks } from "@/lib/editorial-policy";
 
 const footerLinks = {
   Guides: [
@@ -30,6 +32,10 @@ const footerLinks = {
 };
 
 export function Footer() {
+  const nonPromotional = isNonPromotionalGuide(usePathname());
+  const visibleGroups = nonPromotional
+    ? { "Consumer information": safetyGuideLinks, About: footerLinks.About }
+    : footerLinks;
   return (
     <footer className="border-t border-border bg-card">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6">
@@ -47,13 +53,14 @@ export function Footer() {
               Aviator Crash Game
             </Link>
             <p className="mt-4 text-sm text-muted-foreground max-w-xs">
-              Honest guides and casino reviews for Aviator crash game players.
-              Updated July 2026.
+              {nonPromotional
+                ? "Source-based information about India's online gaming law and consumer risks."
+                : "Honest guides and casino reviews for Aviator crash game players. Updated July 2026."}
             </p>
           </div>
 
           {/* Link columns */}
-          {Object.entries(footerLinks).map(([category, links]) => (
+          {Object.entries(visibleGroups).map(([category, links]) => (
             <div key={category}>
               <h3 className="text-sm font-semibold text-foreground">{category}</h3>
               <ul className="mt-3 space-y-2">
@@ -104,9 +111,9 @@ export function Footer() {
               </Link>
             </div>
             <p className="text-xs text-muted-foreground max-w-md">
-              Gambling can be addictive. Please play responsibly. This site
-              contains affiliate links and we may earn commission from referred
-              players.
+              {nonPromotional
+                ? "Gambling can be addictive. This page contains no casino offers or affiliate links. Other pages may earn referral commissions. This is not individual legal advice."
+                : "Gambling can be addictive. Please play responsibly. This site contains affiliate links and we may earn commission from referred players."}
             </p>
           </div>
 
