@@ -21,6 +21,17 @@ export function GET() {
     },
     topGuides: [
       {
+        title: "Aviator autoplay: Auto Bet setup, cashout and stopping checks",
+        url: "https://www.aviatorcrashgame.com/guides/aviator-autoplay",
+        summary: "The reviewed Aviator rules distinguish Auto Bet, which repeats entries, from Auto Cashout, which exits at a chosen coefficient. Universal stop-loss menus were not verified. Great Britain's RTS 8 prohibits autoplay for online gaming. This is a public-document review, not a logged-in game test; no casino autoplay availability is certified.",
+        reviewed: "2026-09-13",
+        sources: [
+          "https://www.spribe.co/games/aviator",
+          "https://yesplay.bet/assets/documents/spribe-Aviator.pdf",
+          "https://www.gamblingcommission.gov.uk/print/remote-gambling-and-software-technical-standards",
+        ],
+      },
+      {
         title: "Aviator game in India: 2026 law, demos and payment risks explained",
         url: "https://www.aviatorcrashgame.com/guides/aviator-india",
         summary: "India's Promotion and Regulation of Online Gaming Act, 2025 commenced on 1 May 2026 under S.O. 1994(E). Real-money Aviator fits the online money-game definition. Sections 5, 6 and 7 address offering, advertising and payment facilitation. No casino recommendations; no-stakes demos need separate assessment.",

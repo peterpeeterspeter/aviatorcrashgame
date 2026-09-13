@@ -12,6 +12,17 @@ export interface GuideSummary {
 
 export const guides: GuideSummary[] = [
   {
+    slug: "aviator-autoplay",
+    title: "Aviator autoplay: Auto Bet setup, cashout and stopping checks",
+    description: "Aviator Auto Bet repeats entries; Auto Cashout exits at a target. Check the documented controls, stopping states, UK restrictions and risks before enabling either.",
+    excerpt: "Auto Bet does not automatically enable Auto Cashout. A source-based walkthrough of the Auto tab, two-panel checks, stopping states and why autoplay may be unavailable in your country.",
+    category: "basics",
+    readingTime: "14 min",
+    keywords: ["aviator autoplay", "aviator auto bet", "auto cashout", "autoplay controls"],
+    datePublished: "2026-09-13",
+    heroImage: "/images/guides/aviator-autoplay/hero.jpg",
+  },
+  {
     slug: "aviator-india",
     title: "Aviator game in India: 2026 law, demos and payment risks explained",
     description: "Real-money Aviator falls under India's online money-gaming ban. Read the May 2026 commencement, demo boundaries, payment risks and primary source documents.",
