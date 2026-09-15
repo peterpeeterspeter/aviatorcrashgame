@@ -21,6 +21,16 @@ export function GET() {
     },
     topGuides: [
       {
+        title: "Aviator Not Working: Safe Checks for Loading and Cashout Issues",
+        url: "https://www.aviatorcrashgame.com/guides/aviator-not-working",
+        summary: "A frozen display does not establish accepted wagers or cashouts. Preserve evidence and resolve account-record questions before browser resets. Public-document review, not gameplay testing; no current outage or universal refund rule established. Operator complaint examples and Great Britain regulatory guidance have separate scopes.",
+        reviewed: "2026-09-15",
+        sources: [
+          "https://support.google.com/chrome/answer/142063",
+          "https://www.gamblingcommission.gov.uk/standards/remote-gambling-and-software-technical-standards/rts-10-interrupted-gambling",
+        ],
+      },
+      {
         title: "Aviator autoplay: Auto Bet setup, cashout and stopping checks",
         url: "https://www.aviatorcrashgame.com/guides/aviator-autoplay",
         summary: "The reviewed Aviator rules distinguish Auto Bet, which repeats entries, from Auto Cashout, which exits at a chosen coefficient. Universal stop-loss menus were not verified. Great Britain's RTS 8 prohibits autoplay for online gaming. This is a public-document review, not a logged-in game test; no casino autoplay availability is certified.",

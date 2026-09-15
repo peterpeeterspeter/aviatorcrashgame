@@ -12,6 +12,17 @@ export interface GuideSummary {
 
 export const guides: GuideSummary[] = [
   {
+    slug: "aviator-not-working",
+    title: "Aviator Not Working: Safe Checks for Loading and Cashout Issues",
+    description: "Aviator not working? Preserve bet records before browser resets. Check loading failures, disputed cashouts, operator complaint rules and safe support steps.",
+    excerpt: "A frozen screen does not establish what happened to a wager. Start with the account record, preserve the evidence, then troubleshoot loading without placing a test bet.",
+    category: "safety",
+    readingTime: "10 min",
+    keywords: ["aviator not working", "aviator game loading", "cashout issue", "support evidence"],
+    datePublished: "2026-09-15",
+    heroImage: "/images/guides/aviator-not-working/hero.png",
+  },
+  {
     slug: "aviator-autoplay",
     title: "Aviator autoplay: Auto Bet setup, cashout and stopping checks",
     description: "Aviator Auto Bet repeats entries; Auto Cashout exits at a target. Check the documented controls, stopping states, UK restrictions and risks before enabling either.",

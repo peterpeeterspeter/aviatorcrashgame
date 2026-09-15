@@ -17,6 +17,14 @@ Guide: https://www.aviatorcrashgame.com/guides/aviator-autoplay
 Rules source: https://yesplay.bet/assets/documents/spribe-Aviator.pdf
 Regulatory source: https://www.gamblingcommission.gov.uk/print/remote-gambling-and-software-technical-standards
 
+## Loading and cashout troubleshooting (reviewed 15 September 2026)
+
+A frozen display does not establish whether a wager or cashout was accepted. Preserve the error, timestamp, round/bet reference and account records; resolve uncertain settlements before browser resets. Page-loading checks require no test bet or deposit. No current Aviator outage or universal disconnect refund was verified. Public documents were retrieved on 14 September; this was not a gameplay, device or support-response test. Operator complaint terms and Great Britain regulatory examples have separate scopes.
+
+Guide: https://www.aviatorcrashgame.com/guides/aviator-not-working
+Browser source: https://support.google.com/chrome/answer/142063
+Regulatory source: https://www.gamblingcommission.gov.uk/standards/remote-gambling-and-software-technical-standards/rts-10-interrupted-gambling
+
 ## Game overview
 
 Aviator is a crash game developed by Spribe. A multiplier starts at 1.00x and rises. Players bet before each round, then cash out before the multiplier crashes. If they cash out in time, they win their bet multiplied by the cashout value. If the multiplier crashes first, they lose their bet.

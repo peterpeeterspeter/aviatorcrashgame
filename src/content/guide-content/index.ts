@@ -28,6 +28,7 @@ import { guideContent as aviatorHighRollersVip } from "./aviator-high-rollers-vi
 import { guideContent as aviatorTournaments } from "./aviator-tournaments";
 import { guideContent as aviatorIndia } from "./aviator-india";
 import { guideContent as aviatorAutoplay } from "./aviator-autoplay";
+import { aviatorNotWorkingContent } from "./aviator-not-working";
 
 export interface GuideContent {
   sections: { heading: string; paragraphs: string[] }[];
@@ -64,4 +65,5 @@ export const guideContentMap: Record<string, GuideContent> = {
   "aviator-tournaments": aviatorTournaments,
   "aviator-india": aviatorIndia,
   "aviator-autoplay": aviatorAutoplay,
+  "aviator-not-working": aviatorNotWorkingContent,
 };

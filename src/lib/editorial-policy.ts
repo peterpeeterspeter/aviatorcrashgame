@@ -1,7 +1,8 @@
-// The India legal explainer must not become a casino-acquisition funnel.
-// This is a route-level editorial choice, not IP geolocation or legal certification.
+// Legal and troubleshooting explainers suppress surrounding casino-acquisition components.
+// This governs page chrome, not sourced operator examples within editorial content.
+// It is not IP geolocation or legal certification.
 export function isNonPromotionalGuide(pathname: string | null): boolean {
-  return pathname?.replace(/\/+$/, "") === "/guides/aviator-india";
+  return ["/guides/aviator-india", "/guides/aviator-not-working"].includes(pathname?.replace(/\/+$/, "") ?? "");
 }
 
 export const safetyGuideLinks = [

@@ -32,7 +32,9 @@ const footerLinks = {
 };
 
 export function Footer() {
-  const nonPromotional = isNonPromotionalGuide(usePathname());
+  const pathname = usePathname();
+  const nonPromotional = isNonPromotionalGuide(pathname);
+  const indiaLegal = pathname?.replace(/\/+$/, "") === "/guides/aviator-india";
   const visibleGroups = nonPromotional
     ? { "Consumer information": safetyGuideLinks, About: footerLinks.About }
     : footerLinks;
@@ -53,9 +55,11 @@ export function Footer() {
               Aviator Crash Game
             </Link>
             <p className="mt-4 text-sm text-muted-foreground max-w-xs">
-              {nonPromotional
+              {indiaLegal
                 ? "Source-based information about India's online gaming law and consumer risks."
-                : "Honest guides and casino reviews for Aviator crash game players. Updated July 2026."}
+                : nonPromotional
+                  ? "Source-based troubleshooting and consumer information for Aviator game issues."
+                  : "Honest guides and casino reviews for Aviator crash game players. Updated July 2026."}
             </p>
           </div>
 
@@ -111,7 +115,7 @@ export function Footer() {
               </Link>
             </div>
             <p className="text-xs text-muted-foreground max-w-md">
-              {nonPromotional
+              {indiaLegal
                 ? "Gambling can be addictive. This page contains no casino offers or affiliate links. Other pages may earn referral commissions. This is not individual legal advice."
                 : "Gambling can be addictive. Please play responsibly. This site contains affiliate links and we may earn commission from referred players."}
             </p>
