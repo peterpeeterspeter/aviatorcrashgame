@@ -21,6 +21,17 @@ export function GET() {
     },
     topGuides: [
       {
+        title: "Aviator Rain: free bets, claim rules and promotion safety checks",
+        url: "https://www.aviatorcrashgame.com/guides/aviator-rain",
+        summary: "SPRIBE describes free bets appearing in Aviator chat, a Claim control and Game Menu > Free Bets status checks. No universal eligibility, expiry or withdrawal rule was verified. Platform chat Rain is not proof of game-specific availability. Public-document review, not a claim, deposit or withdrawal test; no partner Aviator Rain offering certified. Do not extend gambling to pursue a drop.",
+        reviewed: "2026-09-16",
+        sources: [
+          "https://spribe.co/games/aviator",
+          "https://yesplay.bet/assets/documents/spribe-Aviator.pdf",
+          "https://www.gamblingcommission.gov.uk/public-and-players/guide/page/free-offers-and-bonuses",
+        ],
+      },
+      {
         title: "Aviator Not Working: Safe Checks for Loading and Cashout Issues",
         url: "https://www.aviatorcrashgame.com/guides/aviator-not-working",
         summary: "A frozen display does not establish accepted wagers or cashouts. Preserve evidence and resolve account-record questions before browser resets. Public-document review, not gameplay testing; no current outage or universal refund rule established. Operator complaint examples and Great Britain regulatory guidance have separate scopes.",

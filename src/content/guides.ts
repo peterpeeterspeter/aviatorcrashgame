@@ -12,6 +12,17 @@ export interface GuideSummary {
 
 export const guides: GuideSummary[] = [
   {
+    slug: "aviator-rain",
+    title: "Aviator Rain: free bets, claim rules and promotion safety checks",
+    description: "Aviator Rain drops free bets into chat. Learn where to check claims, eligibility, expiry and winnings, and why platform chat Rain is a separate question.",
+    category: "safety",
+    readingTime: "11 min",
+    excerpt: "A free bet appearing in chat is not the same as cash arriving in your wallet. This guide explains the documented Rain controls and the promotion terms you still need to check.",
+    keywords: ["aviator rain", "aviator free bets", "claim rules", "promotion terms"],
+    datePublished: "2026-09-16",
+    heroImage: "/images/guides/aviator-rain/hero.png",
+  },
+  {
     slug: "aviator-not-working",
     title: "Aviator Not Working: Safe Checks for Loading and Cashout Issues",
     description: "Aviator not working? Preserve bet records before browser resets. Check loading failures, disputed cashouts, operator complaint rules and safe support steps.",

@@ -25,6 +25,14 @@ Guide: https://www.aviatorcrashgame.com/guides/aviator-not-working
 Browser source: https://support.google.com/chrome/answer/142063
 Regulatory source: https://www.gamblingcommission.gov.uk/standards/remote-gambling-and-software-technical-standards/rts-10-interrupted-gambling
 
+## Rain free bets (reviewed 16 September 2026)
+
+SPRIBE describes Aviator Rain as free bets appearing in chat, with a Claim control; the reviewed undated rules direct players to Game Menu > Free Bets to check status. These documents do not establish universal eligibility, expiry or promotional-stake withdrawal rules. Generic casino platform chat Rain does not prove game-specific Aviator Rain availability. No partner availability or hands-on claim/withdrawal test is certified. Do not gamble longer or increase spending to pursue a drop.
+
+Guide: https://www.aviatorcrashgame.com/guides/aviator-rain
+Developer source: https://spribe.co/games/aviator
+Rules source: https://yesplay.bet/assets/documents/spribe-Aviator.pdf
+
 ## Game overview
 
 Aviator is a crash game developed by Spribe. A multiplier starts at 1.00x and rises. Players bet before each round, then cash out before the multiplier crashes. If they cash out in time, they win their bet multiplied by the cashout value. If the multiplier crashes first, they lose their bet.

@@ -1,8 +1,8 @@
-// Legal and troubleshooting explainers suppress surrounding casino-acquisition components.
+// Legal, troubleshooting and promotion-safety explainers suppress casino-acquisition components.
 // This governs page chrome, not sourced operator examples within editorial content.
 // It is not IP geolocation or legal certification.
 export function isNonPromotionalGuide(pathname: string | null): boolean {
-  return ["/guides/aviator-india", "/guides/aviator-not-working"].includes(pathname?.replace(/\/+$/, "") ?? "");
+  return ["/guides/aviator-india", "/guides/aviator-not-working", "/guides/aviator-rain"].includes(pathname?.replace(/\/+$/, "") ?? "");
 }
 
 export const safetyGuideLinks = [

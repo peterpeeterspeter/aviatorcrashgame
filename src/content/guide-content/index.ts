@@ -29,6 +29,7 @@ import { guideContent as aviatorTournaments } from "./aviator-tournaments";
 import { guideContent as aviatorIndia } from "./aviator-india";
 import { guideContent as aviatorAutoplay } from "./aviator-autoplay";
 import { aviatorNotWorkingContent } from "./aviator-not-working";
+import { guideContent as aviatorRain } from "./aviator-rain";
 
 export interface GuideContent {
   sections: { heading: string; paragraphs: string[] }[];
@@ -66,4 +67,5 @@ export const guideContentMap: Record<string, GuideContent> = {
   "aviator-india": aviatorIndia,
   "aviator-autoplay": aviatorAutoplay,
   "aviator-not-working": aviatorNotWorkingContent,
+  "aviator-rain": aviatorRain,
 };
