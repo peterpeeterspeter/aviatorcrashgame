@@ -30,6 +30,7 @@ import { guideContent as aviatorIndia } from "./aviator-india";
 import { guideContent as aviatorAutoplay } from "./aviator-autoplay";
 import { aviatorNotWorkingContent } from "./aviator-not-working";
 import { guideContent as aviatorRain } from "./aviator-rain";
+import { guideContent as aviatorKycVerification } from "./aviator-kyc-verification";
 
 export interface GuideContent {
   sections: { heading: string; paragraphs: string[] }[];
@@ -68,4 +69,5 @@ export const guideContentMap: Record<string, GuideContent> = {
   "aviator-autoplay": aviatorAutoplay,
   "aviator-not-working": aviatorNotWorkingContent,
   "aviator-rain": aviatorRain,
+  "aviator-kyc-verification": aviatorKycVerification,
 };

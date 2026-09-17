@@ -12,6 +12,17 @@ export interface GuideSummary {
 
 export const guides: GuideSummary[] = [
   {
+    slug: "aviator-kyc-verification",
+    title: "Aviator KYC Verification: Documents, Rejections and Withdrawal Checks",
+    description: "Aviator KYC checks belong to your casino account. Compare ID, address and payment documents, handle rejection and separate verification from payout delays.",
+    category: "safety",
+    readingTime: "10 min",
+    excerpt: "Find out which account check is holding up a withdrawal and how to submit the right documents safely. A public-policy review of identity, address and payment evidence.",
+    keywords: ["aviator kyc verification", "identity documents", "withdrawal checks", "secure upload"],
+    datePublished: "2026-09-17",
+    heroImage: "/images/guides/aviator-kyc-verification/hero.png",
+  },
+  {
     slug: "aviator-rain",
     title: "Aviator Rain: free bets, claim rules and promotion safety checks",
     description: "Aviator Rain drops free bets into chat. Learn where to check claims, eligibility, expiry and winnings, and why platform chat Rain is a separate question.",

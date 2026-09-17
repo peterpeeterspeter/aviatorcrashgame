@@ -33,6 +33,14 @@ Guide: https://www.aviatorcrashgame.com/guides/aviator-rain
 Developer source: https://spribe.co/games/aviator
 Rules source: https://yesplay.bet/assets/documents/spribe-Aviator.pdf
 
+## KYC verification (reviewed 17 September 2026)
+
+KYC concerns an operator account, not a separate Aviator identity certificate or a game-round fairness check. Identity, residential address, payment ownership and source of funds are distinct questions. No universal document checklist or withdrawal deadline was established. The two general platform policies reviewed both restrict Belgium, the Netherlands and the United Kingdom; neither partner's current Aviator availability or licensing was certified. Great Britain's Gambling Commission rules are separate jurisdiction-specific guidance. This was a public-document review, not account creation, ID submission or a withdrawal test. Confirm unexpected document requests through independently obtained official contact details.
+
+Guide: https://www.aviatorcrashgame.com/guides/aviator-kyc-verification
+Regulatory source: https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/17-1-1-customer-identity-verification
+Security source: https://www.ncsc.gov.uk/collection/phishing-scams/spot-scams
+
 ## Game overview
 
 Aviator is a crash game developed by Spribe. A multiplier starts at 1.00x and rises. Players bet before each round, then cash out before the multiplier crashes. If they cash out in time, they win their bet multiplied by the cashout value. If the multiplier crashes first, they lose their bet.

@@ -21,6 +21,17 @@ export function GET() {
     },
     topGuides: [
       {
+        title: "Aviator KYC verification: documents, rejections and withdrawal checks",
+        url: "https://www.aviatorcrashgame.com/guides/aviator-kyc-verification",
+        summary: "KYC concerns the operator account, not a separate Aviator certificate or round-fairness check. Identity, address, payment ownership and source-of-funds checks have different purposes. No universal checklist or payout deadline was established. Two general operator-policy examples both restrict Belgium, the Netherlands and the UK; no partner Aviator availability or licensing certified. Great Britain Commission guidance has a separate scope. Public-document review, not account, ID-upload or withdrawal testing.",
+        reviewed: "2026-09-17",
+        sources: [
+          "https://www.gamblingcommission.gov.uk/licensees-and-businesses/lccp/condition/17-1-1-customer-identity-verification",
+          "https://www.gamblingcommission.gov.uk/public-and-players/guide/age-and-id-verification",
+          "https://www.ncsc.gov.uk/collection/phishing-scams/spot-scams",
+        ],
+      },
+      {
         title: "Aviator Rain: free bets, claim rules and promotion safety checks",
         url: "https://www.aviatorcrashgame.com/guides/aviator-rain",
         summary: "SPRIBE describes free bets appearing in Aviator chat, a Claim control and Game Menu > Free Bets status checks. No universal eligibility, expiry or withdrawal rule was verified. Platform chat Rain is not proof of game-specific availability. Public-document review, not a claim, deposit or withdrawal test; no partner Aviator Rain offering certified. Do not extend gambling to pursue a drop.",
