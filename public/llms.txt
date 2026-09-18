@@ -1,5 +1,13 @@
 # Aviator Crash Game
 
+## Blocked accounts (reviewed 18 September 2026)
+
+A login failure, operator suspension, withdrawal hold, bank-account freeze and self-exclusion need different responses. Contact verified operator support; preserve evidence and ask for separate account-access and balance decisions. Do not use replacement accounts, VPN workarounds, unlock fees or new deposits. Keep self-exclusion in place. Two public operator-policy examples restrict Belgium, the Netherlands and the UK; game availability and licensing were not independently verified. Great Britain complaint and ADR guidance is jurisdiction-specific, not a universal unlock or payout deadline. This is a public-document review, not account or withdrawal testing.
+
+Guide: https://www.aviatorcrashgame.com/guides/aviator-account-blocked
+Complaint guidance: https://www.gamblingcommission.gov.uk/public-and-players/guide/page/how-to-complain
+Security guidance: https://www.ncsc.gov.uk/section/respond-recover/hacked-accounts
+
 > The complete beginner resource for Aviator crash games. Honest strategy guides, verified casino reviews, and factual explanations of how the game works. No fake hacks, no predictor apps, no scams.
 
 ## India: current legal position (reviewed 12 September 2026)

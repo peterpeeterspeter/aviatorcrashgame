@@ -12,6 +12,17 @@ export interface GuideSummary {
 
 export const guides: GuideSummary[] = [
   {
+    slug: "aviator-account-blocked",
+    title: "Aviator Account Blocked: Safe Checks, Appeals and Balance Help",
+    description: "Aviator account blocked? Identify the restriction, contact verified support and separate access from balance disputes. No VPNs, new accounts or unlock fees.",
+    category: "safety",
+    readingTime: "11 min",
+    excerpt: "A login failure, payment hold and self-exclusion need different responses. Use documented policies to ask the right questions and protect your remaining funds.",
+    keywords: ["aviator account blocked", "account suspension", "balance dispute", "safe recovery"],
+    datePublished: "2026-09-18",
+    heroImage: "/images/guides/aviator-account-blocked/hero.png",
+  },
+  {
     slug: "aviator-kyc-verification",
     title: "Aviator KYC Verification: Documents, Rejections and Withdrawal Checks",
     description: "Aviator KYC checks belong to your casino account. Compare ID, address and payment documents, handle rejection and separate verification from payout delays.",

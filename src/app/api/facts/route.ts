@@ -21,6 +21,17 @@ export function GET() {
     },
     topGuides: [
       {
+        title: "Aviator Account Blocked: Safe Checks, Appeals and Balance Help",
+        url: "https://www.aviatorcrashgame.com/guides/aviator-account-blocked",
+        summary: "Distinguish login failures, operator suspension, withdrawal holds, bank freezes and self-exclusion. Use official support; preserve evidence and request separate access and balance decisions. No replacement accounts, VPN workarounds, unlock fees or new deposits. Two public-policy examples restrict Belgium, the Netherlands and the UK; game availability and licensing were not independently verified. GB complaint guidance is not a universal deadline. Public-document review, not account or withdrawal testing.",
+        reviewed: "2026-09-18",
+        sources: [
+          "https://www.gamblingcommission.gov.uk/public-and-players/guide/page/how-to-complain",
+          "https://www.ncsc.gov.uk/section/respond-recover/hacked-accounts",
+          "https://www.ncsc.gov.uk/section/respond-recover/phishing",
+        ],
+      },
+      {
         title: "Aviator KYC verification: documents, rejections and withdrawal checks",
         url: "https://www.aviatorcrashgame.com/guides/aviator-kyc-verification",
         summary: "KYC concerns the operator account, not a separate Aviator certificate or round-fairness check. Identity, address, payment ownership and source-of-funds checks have different purposes. No universal checklist or payout deadline was established. Two general operator-policy examples both restrict Belgium, the Netherlands and the UK; no partner Aviator availability or licensing certified. Great Britain Commission guidance has a separate scope. Public-document review, not account, ID-upload or withdrawal testing.",

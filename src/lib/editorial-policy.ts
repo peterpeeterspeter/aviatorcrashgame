@@ -2,7 +2,7 @@
 // This governs page chrome, not sourced operator examples within editorial content.
 // It is not IP geolocation or legal certification.
 export function isNonPromotionalGuide(pathname: string | null): boolean {
-  return ["/guides/aviator-india", "/guides/aviator-not-working", "/guides/aviator-rain", "/guides/aviator-kyc-verification"].includes(pathname?.replace(/\/+$/, "") ?? "");
+  return ["/guides/aviator-india", "/guides/aviator-not-working", "/guides/aviator-rain", "/guides/aviator-kyc-verification", "/guides/aviator-account-blocked"].includes(pathname?.replace(/\/+$/, "") ?? "");
 }
 
 export const safetyGuideLinks = [

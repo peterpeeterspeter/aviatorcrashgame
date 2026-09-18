@@ -31,6 +31,7 @@ import { guideContent as aviatorAutoplay } from "./aviator-autoplay";
 import { aviatorNotWorkingContent } from "./aviator-not-working";
 import { guideContent as aviatorRain } from "./aviator-rain";
 import { guideContent as aviatorKycVerification } from "./aviator-kyc-verification";
+import { guideContent as aviatorAccountBlocked } from "./aviator-account-blocked";
 
 export interface GuideContent {
   sections: { heading: string; paragraphs: string[] }[];
@@ -38,6 +39,7 @@ export interface GuideContent {
 }
 
 export const guideContentMap: Record<string, GuideContent> = {
+  "aviator-account-blocked": aviatorAccountBlocked,
   "how-to-play-aviator": howToPlayAviator,
   "aviator-strategy-tips": aviatorStrategyTips,
   "aviator-predictor-apps-truth": aviatorPredictorAppsTruth,
