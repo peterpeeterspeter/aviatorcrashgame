@@ -12,6 +12,17 @@ export interface GuideSummary {
 
 export const guides: GuideSummary[] = [
   {
+    slug: "aviator-vs-plinko",
+    title: "Aviator vs Plinko: Casino Game Differences, RTP and Controls",
+    description: "Compare Aviator with SPRIBE and BetFury Originals Plinko: advertised RTP, controls, payout limits and practical differences before choosing a game or casino.",
+    category: "basics",
+    readingTime: "11 min",
+    excerpt: "Choose between a live cashout decision and a configurable peg-board drop. Compare named versions, not a generic Plinko RTP.",
+    keywords: ["aviator vs plinko", "plinko vs aviator", "SPRIBE Plinko", "BetFury Originals Plinko", "Aviator RTP", "Plinko game comparison"],
+    datePublished: "2026-09-23",
+    heroImage: "/images/guides/aviator-vs-plinko/aviator-vs-plinko-hero.png",
+  },
+  {
     slug: "aviator-account-blocked",
     title: "Aviator Account Blocked: Safe Checks, Appeals and Balance Help",
     description: "Aviator account blocked? Identify the restriction, contact verified support and separate access from balance disputes. No VPNs, new accounts or unlock fees.",

@@ -21,6 +21,11 @@ export function GET() {
     },
     topGuides: [
       {
+        title: "Aviator vs Plinko: Casino Game Differences, RTP and Controls",
+        url: "https://www.aviatorcrashgame.com/guides/aviator-vs-plinko",
+        summary: "Public-source comparison reviewed 22 September 2026: SPRIBE advertises 97% RTP for both Aviator and its Plinko; BetFury Originals Plinko is a separate operator-advertised 99.02% game. Compares cashout controls, configuration, payout caps and hypothetical equal-turnover versus equal-time costs. Catalog presence is not personal or local eligibility; no account, gameplay or payment testing was performed.",
+      },
+      {
         title: "Aviator Account Blocked: Safe Checks, Appeals and Balance Help",
         url: "https://www.aviatorcrashgame.com/guides/aviator-account-blocked",
         summary: "Distinguish login failures, operator suspension, withdrawal holds, bank freezes and self-exclusion. Use official support; preserve evidence and request separate access and balance decisions. No replacement accounts, VPN workarounds, unlock fees or new deposits. Two public-policy examples restrict Belgium, the Netherlands and the UK; game availability and licensing were not independently verified. GB complaint guidance is not a universal deadline. Public-document review, not account or withdrawal testing.",

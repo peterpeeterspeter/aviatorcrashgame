@@ -1,5 +1,11 @@
 # Aviator Crash Game
 
+## Aviator vs Plinko (reviewed 22 September 2026)
+
+SPRIBE advertises 97% RTP for both Aviator and SPRIBE Plinko. Aviator centers on a cashout decision before the crash; SPRIBE Plinko uses configurable disc drops through pegs. BetFury Originals Plinko is a separate game, advertised by the operator at 99.02% RTP. The comparison distinguishes theoretical return, total wagering, session pace and payout caps. Public catalog listings do not certify game launch, local licensing or personal eligibility. This public-document review did not involve accounts, gameplay, deposits or withdrawals.
+
+Guide: https://www.aviatorcrashgame.com/guides/aviator-vs-plinko
+
 ## Blocked accounts (reviewed 18 September 2026)
 
 A login failure, operator suspension, withdrawal hold, bank-account freeze and self-exclusion need different responses. Contact verified operator support; preserve evidence and ask for separate account-access and balance decisions. Do not use replacement accounts, VPN workarounds, unlock fees or new deposits. Keep self-exclusion in place. Two public operator-policy examples restrict Belgium, the Netherlands and the UK; game availability and licensing were not independently verified. Great Britain complaint and ADR guidance is jurisdiction-specific, not a universal unlock or payout deadline. This is a public-document review, not account or withdrawal testing.
