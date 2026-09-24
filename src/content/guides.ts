@@ -7,7 +7,9 @@ export interface GuideSummary {
   excerpt: string;
   keywords: string[];
   datePublished?: string;
+  dateModified?: string;
   heroImage?: string;
+
 }
 
 export const guides: GuideSummary[] = [
@@ -266,14 +268,19 @@ export const guides: GuideSummary[] = [
   },
   {
     slug: "aviator-payments-deposits-withdrawals",
-    title: "Aviator Payments: How to Deposit and Withdraw at Every Casino (2026)",
+    title: "Aviator Minimum Deposit: Payment Methods and Withdrawal Checks",
     description:
-      "Complete guide to depositing and withdrawing at Aviator casinos in 2026. Crypto networks explained (TRC-20 vs ERC-20), KYC requirements, withdrawal speeds, and fee reality for Cybet, BitStarz, Mirax, 7Bit, TrustDice, and Betfury.",
+      "There is no universal Aviator minimum deposit. Compare 7Bit and BetFury's documented limits, network choices, fees and withdrawal rules before funding.",
     category: "casinos",
-    readingTime: "11 min",
+    readingTime: "12 min",
     excerpt:
-      "Every other Aviator payment guide is geo-locked to India or covers only deposits or only withdrawals. This one covers all six casinos we recommend, with verified payout times, the KYC gate, and which USDT network is actually cheapest.",
-    keywords: ["aviator deposit", "aviator withdrawal", "aviator payment methods", "aviator crypto deposit", "aviator casino withdrawal"],
+      "The casino cashier sets the deposit minimum, not Aviator. Compare published currency limits with the withdrawal route, fees and turnover requirements before deciding whether a payment method fits your budget.",
+    keywords: ["aviator minimum deposit", "aviator payment methods", "aviator deposit and withdrawal", "aviator withdrawal fees", "7Bit minimum deposit", "BetFury payment networks"],
+    // First added in d14e630 (19 July 2026), not the shared 7 July schema fallback.
+    datePublished: "2026-07-19",
+    dateModified: "2026-09-24",
+    heroImage: "/images/guides/aviator-high-rollers-vip/withdrawal-checklist.jpg",
+
   },
   {
     slug: "aviator-vs-lucky-jet-vs-crash-x",

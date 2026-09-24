@@ -150,10 +150,19 @@ export function GET() {
           "Auto-cashout removes timing errors but does not change the 3% house edge. Hit rate at 1.5x is 64.7%, at 2x is 48.5%, at 10x is 9.7%. Every target has the same -3% expected value. The override pattern (cancelling auto-cashout mid-round to chase higher multipliers) is how most auto-cashout strategies fail.",
       },
       {
-        title: "Aviator Payments: How to Deposit and Withdraw at Every Casino (2026)",
+        title: "Aviator Minimum Deposit: Payment Methods and Withdrawal Checks",
         url: "https://www.aviatorcrashgame.com/guides/aviator-payments-deposits-withdrawals",
         summary:
-          "Deposits and withdrawals at Cybet, BitStarz, Mirax, 7Bit, TrustDice, and Betfury. USDT TRC-20 is the cheapest network (under $1, under 2 minutes). First withdrawal at any KYC-required casino takes hours to a day for document review; subsequent crypto withdrawals are fast (BitStarz under 10 minutes). TrustDice and Betfury skip KYC entirely for crypto users. Never send USDT on a network the casino deposit page does not list.",
+          "There is no universal Aviator minimum deposit; cashier, stake, bonus and withdrawal thresholds differ. 7Bit's general terms publish 0.13 mBTC (0.00013 BTC), method-dependent, and a 0.26 mBTC withdrawal minimum; shared BTC configuration conflicts with the terms. Its BNB guide specifies 0.01 BNB on BEP-20. BetFury's numeric minimum was not reliably established. Published ordinary gaming turnover is 3x at 7Bit and 1x for BetFury crypto deposits, with BFG-deposit and Rank 5 or higher exceptions. BetFury's same-wallet/network withdrawal terms conflict with a cross-network payment article. Fees require fresh quotes. Public-document review only: accounts, gameplay, deposits, withdrawals and KYC were not tested; eligibility, licensing and payout speed are not certified. Partner links are not recommendations for readers in the Netherlands, Belgium, UK, US or India.",
+        reviewed: "2026-09-24",
+        sources: [
+          "https://7bitcasino.com/terms-and-conditions",
+          "https://7bitcasino.com/payments",
+          "https://7bitcasino.com/bnb-casino",
+          "https://docs.betfury.com/betfury/terms-of-services/terms-and-conditions",
+          "https://docs.betfury.com/betfury/account/deposit-and-withdrawal.md",
+          "https://betfury.com/news/deposit-withdrawal-betfury",
+        ],
       },
       {
         title: "Aviator vs Lucky Jet vs Crash X: The Extended Crash Game Comparison",

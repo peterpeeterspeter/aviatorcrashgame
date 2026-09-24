@@ -42,6 +42,8 @@ export async function generateMetadata({
     description: guide.description,
     path: `/guides/${guide.slug}`,
     image: guide.heroImage,
+    datePublished: guide.datePublished,
+    dateModified: guide.dateModified,
   });
 }
 
@@ -94,6 +96,7 @@ export default async function GuideDetailPage({
     description: guide.description,
     slug: guide.slug,
     datePublished: guide.datePublished,
+    dateModified: guide.dateModified,
     image: guide.heroImage,
   });
 
@@ -322,6 +325,21 @@ export default async function GuideDetailPage({
                     ) : "July 2026"}
                   </dd>
                 </div>
+                {guide.dateModified && (
+                  <div className="flex justify-between gap-4">
+                    <dt className="text-muted-foreground">Updated</dt>
+                    <dd className="font-medium">
+                      <time dateTime={guide.dateModified}>
+                        {new Date(`${guide.dateModified}T00:00:00Z`).toLocaleDateString("en-GB", {
+                          day: "numeric",
+                          month: "short",
+                          year: "numeric",
+                          timeZone: "UTC",
+                        })}
+                      </time>
+                    </dd>
+                  </div>
+                )}
               </dl>
             </div>
 

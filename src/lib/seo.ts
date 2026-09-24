@@ -15,11 +15,15 @@ export function constructMetadata({
   description,
   path = "",
   image,
+  datePublished,
+  dateModified,
 }: {
   title: string;
   description: string;
   path?: string;
   image?: string;
+  datePublished?: string;
+  dateModified?: string;
 }): Metadata {
   const url = `${SITE_URL}${path}`;
   return {
@@ -33,7 +37,13 @@ export function constructMetadata({
       description,
       url,
       siteName: siteConfig.name,
-      type: "website",
+      ...(dateModified
+        ? {
+            type: "article" as const,
+            modifiedTime: dateModified,
+            ...(datePublished ? { publishedTime: datePublished } : {}),
+          }
+        : { type: "website" as const }),
       ...(image ? { images: [`${SITE_URL}${image}`] } : {}),
     },
     twitter: {
@@ -50,12 +60,14 @@ export function articleSchema({
   description,
   slug,
   datePublished = "2026-07-07",
+  dateModified,
   image,
 }: {
   title: string;
   description: string;
   slug: string;
   datePublished?: string;
+  dateModified?: string;
   image?: string;
 }) {
   return {
@@ -64,7 +76,7 @@ export function articleSchema({
     headline: title,
     description,
     datePublished,
-    dateModified: datePublished,
+    dateModified: dateModified ?? datePublished,
     ...(image ? { image: `${SITE_URL}${image}` } : {}),
     author: {
       "@type": "Organization",
