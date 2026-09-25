@@ -14,6 +14,18 @@ export interface GuideSummary {
 
 export const guides: GuideSummary[] = [
   {
+    slug: "aviator-vs-mines",
+    title: "Aviator vs Mines: game differences, RTP and which fits you",
+    description: "Compare Aviator with SPRIBE Mines and BetFury Originals Mines: cashout, tile choices, advertised RTP and worked odds examples, with clear provider differences.",
+    category: "basics",
+    readingTime: "10 min",
+    excerpt: "Aviator asks when to leave a rising multiplier. Mines asks whether to reveal another tile. Compare the named versions before comparing their returns.",
+    keywords: ["aviator vs mines", "mines vs aviator", "SPRIBE Mines", "Mines game RTP", "Aviator cashout"],
+    datePublished: "2026-09-25",
+    dateModified: "2026-09-25",
+    heroImage: "/images/guides/aviator-vs-mines/hero.png",
+  },
+  {
     slug: "aviator-vs-plinko",
     title: "Aviator vs Plinko: Casino Game Differences, RTP and Controls",
     description: "Compare Aviator with SPRIBE and BetFury Originals Plinko: advertised RTP, controls, payout limits and practical differences before choosing a game or casino.",

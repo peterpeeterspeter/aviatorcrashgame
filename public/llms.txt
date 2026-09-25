@@ -1,5 +1,11 @@
 # Aviator Crash Game
 
+## Aviator vs Mines (reviewed 25 September 2026)
+
+SPRIBE advertises 97% RTP for both Aviator and its Mines game. Aviator uses a moving multiplier and shared-round cashout; Mines offers successive reveal-and-stop decisions. BetFury Originals Mines is a separate title, advertised at 99.02% RTP with a 25-cell board and 1–24 bombs. The comparison keeps editions separate and illustrates conditional versus cumulative safe-pick probabilities under an explicitly hypothetical uniform-board model. These are public specifications, not observed returns. Operator documentation conflicts and market restrictions remain unresolved; catalog access does not establish eligibility or licensing. No account, gameplay, deposit or withdrawal testing was performed.
+
+Guide: https://www.aviatorcrashgame.com/guides/aviator-vs-mines
+
 ## Aviator vs Plinko (reviewed 22 September 2026)
 
 SPRIBE advertises 97% RTP for both Aviator and SPRIBE Plinko. Aviator centers on a cashout decision before the crash; SPRIBE Plinko uses configurable disc drops through pegs. BetFury Originals Plinko is a separate game, advertised by the operator at 99.02% RTP. The comparison distinguishes theoretical return, total wagering, session pace and payout caps. Public catalog listings do not certify game launch, local licensing or personal eligibility. This public-document review did not involve accounts, gameplay, deposits or withdrawals.
@@ -106,6 +112,7 @@ Aviator has a 3% house edge. Over thousands of rounds, you will lose approximate
 
 ## Pages
 
+- [Aviator vs Mines: game differences, RTP and which fits you](https://www.aviatorcrashgame.com/guides/aviator-vs-mines)
 - [How to Play Aviator](https://www.aviatorcrashgame.com/how-to-play)
 - [Free Demo (no real money)](https://www.aviatorcrashgame.com/how-to-play/demo)
 - [Aviator Strategy and Tips](https://www.aviatorcrashgame.com/strategy)

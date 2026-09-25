@@ -21,6 +21,12 @@ export function GET() {
     },
     topGuides: [
       {
+        title: "Aviator vs Mines: game differences, RTP and which fits you",
+        url: "https://www.aviatorcrashgame.com/guides/aviator-vs-mines",
+        summary: "SPRIBE advertises 97% RTP for Aviator and SPRIBE Mines; BetFury Originals Mines is a distinct game advertised at 99.02%. Compares shared-round cashout with tile reveal decisions, edition-specific controls and conditional versus cumulative probabilities using a labeled hypothetical board. Public-document review, not gameplay testing; no personal eligibility or local licensing certified.",
+        reviewed: "2026-09-25",
+      },
+      {
         title: "Aviator vs Plinko: Casino Game Differences, RTP and Controls",
         url: "https://www.aviatorcrashgame.com/guides/aviator-vs-plinko",
         summary: "Public-source comparison reviewed 22 September 2026: SPRIBE advertises 97% RTP for both Aviator and its Plinko; BetFury Originals Plinko is a separate operator-advertised 99.02% game. Compares cashout controls, configuration, payout caps and hypothetical equal-turnover versus equal-time costs. Catalog presence is not personal or local eligibility; no account, gameplay or payment testing was performed.",
