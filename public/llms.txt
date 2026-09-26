@@ -90,17 +90,17 @@ Predictor apps, signal groups, and bots that claim to predict crashes are scams.
 4. Treat Aviator as entertainment, not income
 5. The house edge (3%) means you will lose over time
 
-## Top casinos for Aviator (tested July 2026)
+## Operator policy examples (documents reviewed September 2026)
 
-1. **Cybet** - Best overall, 100% crash game wagering contribution, instant crypto payouts
-2. **BitStarz** - Most trusted since 2014, fast payouts (crash games 5% wagering)
-3. **Mirax** - Best design, large welcome package (crash games 5% wagering)
-4. **TrustDice** - Provably fair, no KYC, TXT token cashback
-5. **7Bit** - Classic crypto casino since 2014
+1. **7Bit** — A public SPRIBE Aviator listing carries a Bonus Wagering tag. A named contribution rate and specific-offer permission remain unverified.
+2. **BetFury** — A public SPRIBE Aviator listing was reviewed; selected-game bonus eligibility is separate. Its Originals coefficient must not be applied to SPRIBE games.
+3. **BitStarz** — General bonus-policy comparison only; Aviator availability was not verified.
 
-## Important: Bonus wagering trap
+These are public-document findings, not gameplay, deposit or withdrawal tests, local licensing certification, or recommendations for readers in the Netherlands, Belgium, UK, US or India.
 
-At most Curacao casinos (BitStarz, Mirax, 7Bit), crash games like Aviator contribute only 5% toward bonus wagering requirements. A 40x bonus becomes 800x effective wagering when playing Aviator. Only Cybet offers 100% contribution.
+## Aviator bonus wagering requirements
+
+Bonus permission, contribution percentage and calculation base require the exact operator offer. A general instant-win category or a game listing does not verify SPRIBE Aviator's rate. Prohibited play, zero-credit play and an unknown rate are distinct. Under a hypothetical 40x bonus-only rule with 5% contribution, a $100 bonus requires $4,000 credited wagering and $80,000 eligible stakes; this is not a verified partner offer or a loss forecast. Current evidence and conflicts: https://www.aviatorcrashgame.com/guides/aviator-bonus-wagering (reviewed 26 September 2026).
 
 ## Responsible gambling
 
@@ -129,7 +129,7 @@ Aviator has a 3% house edge. Over thousands of rounds, you will lose approximate
 - [Aviator Glossary](https://www.aviatorcrashgame.com/guides/aviator-glossary)
 - [Aviator Dual Bet Strategy](https://www.aviatorcrashgame.com/guides/aviator-dual-bet-strategy)
 - [Aviator vs JetX vs Spaceman](https://www.aviatorcrashgame.com/guides/aviator-vs-jetx-vs-spaceman)
-- [Aviator Bonus Wagering: Do Casino Bonuses Work?](https://www.aviatorcrashgame.com/guides/aviator-bonus-wagering)
+- [Aviator casino bonuses: wagering requirements and game rules](https://www.aviatorcrashgame.com/guides/aviator-bonus-wagering) — Public-document comparison of 7Bit, BetFury and BitStarz, checked 26 September 2026. Separates named game permission, weighting, calculation base, balance rules and deposit turnover; no universal contribution rate verified.
 - [Best Aviator Casinos 2026: Honest Rankings](https://www.aviatorcrashgame.com/guides/best-aviator-casinos)
 - [Aviator Auto-Cashout: Hit Rates, Target Selection, and Why It Beats Manual](https://www.aviatorcrashgame.com/guides/aviator-auto-cashout-guide)
 - [Aviator Minimum Deposit: Payment Methods and Withdrawal Checks](https://www.aviatorcrashgame.com/guides/aviator-payments-deposits-withdrawals) — Public documents reviewed 24 September 2026. No universal deposit minimum: cashier, stake, bonus and withdrawal thresholds differ. Compares 7Bit and BetFury's documented limits, fees, networks and turnover conditions; conflicting BTC figures and BetFury's numeric minimum need confirmation. Account, gameplay, deposit, withdrawal and KYC processes were not tested. Availability and eligibility are separate checks.

@@ -138,16 +138,22 @@ export function GET() {
           "Aviator's dual bet feature lets you place two independent bets per round. Splitting bets does not change your expected value (-3% always), but it changes your variance profile.",
       },
       {
-        title: "Aviator Bonus Wagering: Do Casino Bonuses Work for Crash Games?",
+        title: "Aviator casino bonuses: wagering requirements and game rules",
         url: "https://www.aviatorcrashgame.com/guides/aviator-bonus-wagering",
         summary:
-          "Most casino bonuses are mathematically unprofitable for Aviator players due to 5% game contribution. A 40x bonus becomes 800x effective wagering. Only Cybet offers 100% contribution. Token cashback at TrustDice and Betfury is a better alternative.",
+          "Public-document comparison of 7Bit, BetFury and BitStarz. Named SPRIBE Aviator contribution rates and exact offer calculation bases remain unverified. 7Bit's game listing has a Bonus Wagering tag but its generic 5% rule is not a named rate; BetFury's Originals coefficient must not be assigned to SPRIBE. BitStarz is a policy example, not verified game availability. Distinguishes prohibited, zero-credit and unknown play, balance rules, caps and deposit turnover. Labeled hypothetical calculations are not verified offers or loss forecasts. No account, gameplay, deposit, withdrawal or KYC testing; local eligibility not certified.",
+        reviewed: "2026-09-26",
+        sources: [
+          "https://7bitcasino.com/bonus-terms",
+          "https://docs.betfury.com/betfury/bonus-system/welcome-pack-terms-and-conditions",
+          "https://www.bitstarz.com/bonus-terms-and-conditions",
+        ],
       },
       {
         title: "Best Aviator Casinos 2026: Honest Rankings for Crash Game Players",
         url: "https://www.aviatorcrashgame.com/guides/best-aviator-casinos",
         summary:
-          "Six casinos ranked by crash game wagering contribution, real payout speed, and licensing. Only Cybet gives crash games 100% contribution. At BitStarz, Mirax, and 7Bit (5% contribution), clearing a bonus on Aviator costs more than the bonus is worth, so skip it.",
+          "Historical casino comparison awaiting a current operator-level refresh. For current bonus policy evidence and unresolved game weighting, consult the bonus-wagering guide reviewed 26 September 2026; historical rates and testing claims are not current verification.",
       },
       {
         title: "Aviator Auto-Cashout: Hit Rates, Target Selection, and Why It Beats Manual",
@@ -192,7 +198,7 @@ export function GET() {
         title: "Aviator No Deposit Bonus: Which Free Offers Actually Work?",
         url: "https://www.aviatorcrashgame.com/guides/aviator-no-deposit-bonus",
         summary:
-          "Free spins cannot be used on Aviator because crash games do not use a spin mechanic. No-deposit cash bonuses at Curacao casinos have a 5% crash game wagering contribution, making a 40x requirement effectively 800x. TrustDice's crypto faucet is the only genuinely free option with no wagering requirements. Deposit match bonuses offer better value than no-deposit offers for Aviator players.",
+          "Historical no-deposit guide awaiting current offer verification. A slot free-spin allocation does not establish Aviator eligibility. Check the exact reward's game permission, contribution, caps and withdrawal rules; no universal no-deposit rate or faucet eligibility is certified here.",
       },
       {
         title: "Aviator in the Netherlands & Belgium: Where You Can Actually Play (2026)",
@@ -216,7 +222,7 @@ export function GET() {
         title: "Aviator vs Slots: Which Game Gives You Better Value? (2026)",
         url: "https://www.aviatorcrashgame.com/guides/aviator-vs-slots",
         summary:
-          "Aviator's 97% RTP beats the average slot's 96%, a 25% lower house edge. But turnover speed matters more than headline RTP: Aviator at 200-300 rounds/hour vs slots at 400-900 spins/hour means slots drain faster despite the edge gap. Crash games contribute only 5% toward bonus wagering (vs 100% for slots), making casino bonuses worthless for Aviator players. Aviator offers player-controlled volatility (cashout point selection) and provably fair verification; slots offer fixed volatility, thousands of titles, and audited RNG. Neither game can be beaten long-term.",
+          "Historical Aviator-versus-slots comparison. RTP, turnover speed and game controls are separate comparisons. Bonus eligibility and contribution depend on the exact game and operator offer; the current bonus-wagering guide does not verify a blanket 5% Aviator rate. Historical timings and averages require separate current verification.",
       },
       {
         title: "Aviator high rollers: VIP limits, cashback and bonus rules (2026)",
@@ -232,10 +238,10 @@ export function GET() {
       },
     ],
     topCasinos: [
-      { name: "Cybet", rating: 4.8, bonus: "100% up to $500 + 200 FS", crashWagering: "100%", url: "https://www.aviatorcrashgame.com/casinos/cybet" },
-      { name: "BitStarz", rating: 4.7, bonus: "100% up to 5 BTC + 180 FS", crashWagering: "5%", url: "https://www.aviatorcrashgame.com/casinos/bitstarz" },
-      { name: "Mirax", rating: 4.6, bonus: "325% up to $1,500 + 150 FS", crashWagering: "5%", url: "https://www.aviatorcrashgame.com/casinos/mirax" },
-      { name: "TrustDice", rating: 4.4, bonus: "100% up to 3 BTC + 25 FS no deposit", crashWagering: "100% via TXT", url: "https://www.aviatorcrashgame.com/casinos/trustdice" },
+      { name: "Cybet", rating: 4.8, bonus: null, crashWagering: null, bonusVerification: "No current offer or named Aviator contribution certified", url: "https://www.aviatorcrashgame.com/casinos/cybet" },
+      { name: "BitStarz", rating: 4.7, bonus: null, crashWagering: null, bonusVerification: "General bonus policy reviewed 2026-09-26; game availability and named rate unverified", url: "https://www.aviatorcrashgame.com/casinos/bitstarz" },
+      { name: "Mirax", rating: 4.6, bonus: null, crashWagering: null, bonusVerification: "No current offer or named Aviator contribution certified", url: "https://www.aviatorcrashgame.com/casinos/mirax" },
+      { name: "TrustDice", rating: 4.4, bonus: null, crashWagering: null, bonusVerification: "Token rewards do not establish named Aviator bonus contribution", url: "https://www.aviatorcrashgame.com/casinos/trustdice" },
     ],
     responsibleGambling: {
       message: "Aviator has a 3% house edge. You will lose over time. Never gamble with money you cannot afford to lose.",

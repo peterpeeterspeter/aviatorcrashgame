@@ -1,119 +1,119 @@
-export const guideContent = {
-  sections: [
+import type { GuideContent } from "./index";
+
+export const guideContent: GuideContent = {
+  "sections": [
     {
-      heading: `The one number that decides whether your bonus is worth taking`,
-      paragraphs: [
-        `Most Aviator players grab the welcome bonus without thinking. The casino advertises 100% match, 200 free spins, up to 5 BTC. Sounds great. Then you start playing, and weeks later your withdrawal request gets rejected because you have not "completed the wagering requirements."`,
-        `There is one number buried in the bonus terms that determines whether that bonus helps you or traps you. It is called the game contribution rate, and for crash games like Aviator, it is usually between 0% and 5% at most casinos. We have verified this at every casino we recommend, and the results are worse than most players expect.`,
-        `If you take away nothing else from this guide: always check the game contribution table before accepting a bonus. The bonus amount and the free spins do not matter nearly as much as that single percentage. A $100 bonus with a 5% contribution rate can require $80,000 in Aviator bets before you can withdraw. That is not a typo.`,
-        `This guide breaks down the math at each casino we have tested, explains when a bonus is actually worth accepting, and shows you a token cashback alternative that works better for regular Aviator players. If you are new to the game, our <a href="/guides/how-to-play-aviator">how to play Aviator</a> guide covers the basics first.`,
-      ],
+      "heading": "Can you play Aviator with a casino bonus?",
+      "paragraphs": [
+        "Only when the online casino permits the SPRIBE Aviator game under your specific bonus. A game in the lobby, a welcome offer and a working deposit method do not establish that permission. Even eligible bets may count only partly towards wagering. None of the three policy examples below provides a verified, named Aviator contribution percentage.",
+        "Check whether bonus play is allowed before comparing the advertised multiplier. A prohibited game and a game contributing 0% are different: the first may breach the promotion's rules; the second earns no wagering credit, but that percentage alone does not establish a ban. An unknown rate means the evidence is missing, not that the rate is zero.",
+        "18+ or your local legal gambling age, whichever is higher. These examples are not recommendations for readers in the Netherlands, Belgium, UK, US or India. Use an operator only where local law and its account, game and offer rules permit it. We may earn commission through the operator links below. Gambling can lose your money; set a spending limit independently of any bonus.",
+        "<figure><img src=\"/images/guides/aviator-bonus-wagering/hero.png\" alt=\"Editorial still life of a calculator, paper terms and counting pieces beside a flight-curve motif\" width=\"1536\" height=\"1024\" style=\"width:100%;height:auto\"><figcaption>Editorial illustration of bonus comparisons; charts are not actual offer data or an operator screenshot.</figcaption></figure>"
+      ]
     },
     {
-      heading: `How wagering requirements actually work`,
-      paragraphs: [
-        `A wagering requirement (sometimes called a rollover or playthrough) is the total amount you must bet before bonus money converts to withdrawable cash. If a casino offers a 40x wagering requirement on a $100 bonus, you need to place $4,000 worth of bets before you can withdraw the bonus or anything won from it.`,
-        `The requirement applies to the bonus amount, not your deposit, at most casinos. Some apply it to deposit plus bonus combined, which doubles the number. Always check which formula the casino uses. The difference between 40x on the bonus only and 40x on deposit plus bonus is enormous.`,
-        `Here is the part most players miss. The $4,000 figure sounds achievable. Bet $1 per round for 4,000 rounds and you are done, right? That is true only if every dollar you bet counts fully toward the requirement. And for Aviator, at most casinos, it does not.`,
-      ],
+      "heading": "Aviator casino bonuses: compare published terms and conditions",
+      "paragraphs": [
+        "This is a comparison of public documents retrieved on 26 September 2026, not a ranking of tested offers. No local licence or account eligibility was established for any operator. The linked terms identify the policy scope; your selected offer still needs checking.",
+        "<div role=\"region\" aria-label=\"Operator bonus policy comparison\" tabindex=\"0\" style=\"overflow-x:auto;max-width:100%\"><div style=\"font-size:0.875rem\">Swipe or scroll sideways to read all columns.</div><table style=\"min-width:1000px\"><caption>Public rules and unresolved Aviator conditions</caption><thead><tr><th scope=\"col\">Operator and policy</th><th scope=\"col\">Aviator evidence and contribution</th><th scope=\"col\">Wagering and base</th><th scope=\"col\">Limits and missing checks</th></tr></thead><tbody><tr><th scope=\"row\">7Bit: welcome and general bonus terms</th><td>Public SPRIBE Aviator listing carries a Bonus Wagering tag. General other-games rate: 5%. Named Aviator rate and specific-offer permission unverified.</td><td>Welcome terms: 35x unless specified otherwise. Explicit bonus-only versus deposit-plus-bonus equation unverified.</td><td>14 days; welcome maximum 13 μBTC per spin, not a verified Aviator limit. <a href=\"https://7bitcasino.com/bonus-terms\" target=\"_blank\" rel=\"noopener noreferrer\">Terms checked 26 September 2026</a>, displaying 1 January 2025.</td></tr><tr><th scope=\"row\">BetFury: welcome FAQ and rules</th><td>Public SPRIBE Aviator listing. Selected games only; no named Aviator rate. Originals coefficient 0.2 must not be assigned to SPRIBE.</td><td>FAQ: 40x for eligible slots/live. Actual card amount and base unresolved; balance clauses conflict.</td><td>FAQ: 14 days from credit. Counted bets $0.10–$10; active bonus maximum $10. <a href=\"https://docs.betfury.com/betfury/bonus-system/welcome-pack-terms-and-conditions\" target=\"_blank\" rel=\"noopener noreferrer\">Rules checked 26 September 2026</a>.</td></tr><tr><th scope=\"row\">BitStarz: general bonus terms</th><td>Policy example only; Aviator availability unverified. Instant-win and other listed categories typically contribute 5%; exclusions change.</td><td>General 40x unless specified otherwise. Explicit deposit-bonus calculation base unverified.</td><td>Welcome: 7 days. Active bonus maximum includes 5 USD or 0.00006 BTC. <a href=\"https://www.bitstarz.com/bonus-terms-and-conditions\" target=\"_blank\" rel=\"noopener noreferrer\">Terms checked 26 September 2026</a>.</td></tr></tbody></table></div>",
+        "No explicit SPRIBE or Aviator exclusion was located in the reviewed bonus policies. That absence is not approval: selected-game lists, dynamic restrictions and individual bonus details can still determine whether you may play. BitStarz belongs here as a policy comparison, not as a verified Aviator casino."
+      ]
     },
     {
-      heading: `Game contribution: why 5% ruins most bonuses for Aviator players`,
-      paragraphs: [
-        `Casinos assign each game type a contribution rate. Slots typically contribute 100%. Table games contribute 10% to 25%. And crash games, instant-win games, and provably fair games usually contribute 5% or less. Some casinos exclude crash games entirely, setting the rate to 0%.`,
-        `What 5% means in practice: for every $1 you bet on Aviator, only $0.05 counts toward your wagering requirement. To clear that $4,000 requirement from the earlier example, you need $80,000 in Aviator bets. At $1 per round, that is 80,000 rounds of Aviator. At one round every 15 seconds, playing non-stop, that is over 333 hours of continuous play.`,
-        `Now factor in the house edge. Aviator has a 3% house edge (97% RTP), which we explain in detail in our <a href="/guides/aviator-rtp-house-edge">RTP and house edge guide</a>. Over $80,000 in wagers, your expected loss is $2,400. The bonus was $100. You are expected to lose $2,400 to unlock $100.`,
-        `This is why we tell players that most casino bonuses are not designed for crash game players. The contribution rate is the mechanism that makes the bonus mathematically unprofitable. It is not hidden, exactly, but it is buried in a terms page that most people never read.`,
-        `We verified the contribution rates at every casino in our reviews by checking their published bonus terms pages. Here is what we found.`,
-      ],
+      "heading": "How to calculate Aviator bonus wagering requirements",
+      "paragraphs": [
+        "The calculation base is the amount the rule applies to. It might be the bonus amount alone, or the deposit plus bonus. A 40x wagering requirement turns that base into a required amount of credited wagering. The contribution rate determines how much of each eligible stake earns that credit.",
+        "Required credited wagering = calculation base × wagering multiplier. Required eligible stakes = credited wagering ÷ contribution rate as a decimal. The second equation assumes a positive, constant contribution and that every stake qualifies. It cannot make an excluded game eligible.",
+        "<div role=\"region\" aria-label=\"Hypothetical bonus contribution calculations\" tabindex=\"0\" style=\"overflow-x:auto;max-width:100%\"><div style=\"font-size:0.875rem\">Swipe or scroll sideways to read all columns.</div><table style=\"min-width:680px\"><caption>Hypothetical $100 bonus, 40x bonus-only wagering</caption><thead><tr><th scope=\"col\">Contribution</th><th scope=\"col\">Credited target</th><th scope=\"col\">Eligible stakes required</th></tr></thead><tbody><tr><th scope=\"row\">100%</th><td>$4,000</td><td>$4,000</td></tr><tr><th scope=\"row\">20%</th><td>$4,000</td><td>$20,000</td></tr><tr><th scope=\"row\">5%</th><td>$4,000</td><td>$80,000</td></tr></tbody></table></div>",
+        "If the hypothetical rule instead applies 40x to a $100 deposit plus a $100 bonus, the base is $200. The credited target becomes $8,000 and the eligible stakes at 5% become $160,000. These examples are not offers from the operators above; their exact calculation bases were not verified.",
+        "For hypothetical permitted $10 bets on Aviator at 5% contribution, the wagering counter gains $0.50 per bet. The stake, any round payout and that credited progress are different amounts. Do not use the cashout payout as the stake in this equation. Check how the offer treats voided or refunded bets before relying on the counter.",
+        "Stake volume is neither a deposit requirement nor a forecast of losses. Money can cycle through bets, but the balance can also run out before completion. A 0% contribution supplies no progress through that game. Do not turn these totals into a claim that you can finish before a deadline."
+      ]
     },
     {
-      heading: `Casino by casino: what the wagering math actually looks like`,
-      paragraphs: [
-        `We tested and verified the bonus terms at six casinos where Aviator is available. The differences are dramatic. One casino gives crash games full contribution. The rest do not.`,
-      ],
+      "heading": "7Bit: a useful catalog signal, but no named rate",
+      "paragraphs": [
+        "<a href=\"https://7bit.partners/p4i4w1udu\" target=\"_blank\" rel=\"sponsored nofollow noopener noreferrer\">7Bit Casino</a> has a <a href=\"https://7bitcasino.com/games/spribe/aviator\" target=\"_blank\" rel=\"noopener noreferrer\">public SPRIBE Aviator page</a> carrying the Bonus Wagering label. That is a promising public signal because its policy says contributing games appear in that category. It still does not name Aviator's percentage or confirm eligibility for your chosen offer.",
+        "The general terms give video slots 100%, other games 5% and live casino 0%. Applying the other-games rule to Aviator is only a conditional interpretation. The separate prohibition on using bonus money or free spins for progressive jackpot slots shows why zero contribution and prohibited play must remain separate.",
+        "The welcome section states 35x wagering unless otherwise specified and expiry after 14 days. It does not give an unambiguous calculation equation or the deadline's starting timestamp. It sets a maximum of 13 μBTC per spin while wagering welcome bonuses. The generic 65 μBTC maximum expressly excludes the Welcome Package; neither figure is a verified Aviator stake allowance.",
+        "The terms for the first deposit specify a 100% match up to 1.5 BTC plus 100 free spins, with a 0.26 mBTC minimum deposit to qualify for any welcome stage. That is a bonus-qualification threshold, not a verified general cashier minimum. The named slot spins are a separate reward; neither their inclusion nor the deposit amount proves Aviator eligibility.",
+        "Accepting a deposit bonus locks the deposit with it, and real money is used first. Cancellation forfeits the bonus and linked winnings. That balance treatment matters if you want access to your deposit before finishing: do not treat cancellation as a cost-free reset.",
+        "The bonus terms display 1 January 2025 despite the fresh retrieval. Meanwhile, the <a href=\"https://7bitcasino.com/bonuses\" target=\"_blank\" rel=\"noopener noreferrer\">public promotions page</a> says most bonuses require 40–45x and advertises an aggregate welcome cap that differs from the four caps in the terms. The generic wording does not replace the specific 35x clause. We have not used the disputed total to rank the offer. Ask for the current offer equation and named game weighting before opting in."
+      ]
     },
     {
-      heading: `Cybet: the exception to the 5% rule`,
-      paragraphs: [
-        `Cybet is the only casino in our tested list where crash games contribute 100% toward wagering. The welcome bonus is 100% up to $500 plus 200 free spins with a 40x wagering requirement. Deposit $100, get $100 bonus, and you need $4,000 in Aviator bets to clear it. At 100% contribution, that is genuinely $4,000, not $80,000.`,
-        `Over $4,000 in Aviator wagers at the 3% house edge, your expected loss is about $120. The bonus gives you $100 in extra funds. The math is roughly break-even, maybe slightly negative, which is about as good as casino bonuses get. This is why Cybet ranks first in our casino reviews for Aviator players. You can claim the bonus through our <a href="/go/cybet">Cybet welcome offer</a>.`,
-        `The 200 free spins are worth noting separately. At most casinos, free spin winnings carry their own wagering requirement, typically 35x to 40x the winnings amount. Check the current terms when you sign up, because casinos adjust these promotions regularly.`,
-      ],
+      "heading": "BetFury: selected games and unresolved balance wording",
+      "paragraphs": [
+        "<a href=\"https://betfury.bet/df1865703\" target=\"_blank\" rel=\"sponsored nofollow noopener noreferrer\">BetFury</a> lists <a href=\"https://betfury.com/casino/games/aviator-by-spribe\" target=\"_blank\" rel=\"noopener noreferrer\">Aviator by SPRIBE</a>, but its welcome rules restrict bonus use to selected games. A public catalog entry is not evidence that the title appears in your active bonus's eligible list.",
+        "The <a href=\"https://betfury.com/promo/welcome-pack-bonus\" target=\"_blank\" rel=\"noopener noreferrer\">welcome FAQ</a> states 40x for slots and live games and a 0.2 contribution coefficient for BetFury Originals. Aviator is not a BetFury Original. The rules also say the bonus balance is unavailable for live games while discussing a live-game coefficient elsewhere. These statements do not establish permission for every live game, much less Aviator; check the specific eligible list.",
+        "The minimum counted bet is $0.10 and the maximum is $10. The rules also prohibit bets above $10 in any game with an active deposit bonus, free spins or other bonus. The welcome FAQ gives 14 days from credit for wagering; individual amounts and conditions belong on the bonus card. The preserved public offer cards contained blank amounts and invalid percentage placeholders, so no personalized offer or complete base equation was verified.",
+        "The balance wording remains contradictory. One clause says each eligible stake and its winnings split proportionally between main and bonus balances, with both balances moving towards wagering together. Another says withdrawal wagering must be completed using only the main balance. We cannot reconcile those instructions from the public text. Request written clarification for the selected bonus rather than assuming either interpretation wins.",
+        "The maximum deposit-bonus payout to the main balance is 1.2x the initially credited bonus. That is a transfer cap, not a 1.2x wagering requirement. With a hypothetical $100 deposit bonus, the cap would be $120; the rules say excess bonus balance is deducted on claiming. Cancellation forfeits the bonus balance and its winnings. Restrictions on multi-round games that cannot support proportional splitting add another check, but the clause does not name Aviator."
+      ]
     },
     {
-      heading: `BitStarz, Mirax, and 7Bit: the 5% trap`,
-      paragraphs: [
-        `These three casinos share a parent platform and the same bonus structure for crash games. All three are reputable, licensed under Curacao eGaming, and offer Aviator in their instant games sections. All three also set crash game contribution at 5%.`,
-        `BitStarz offers 100% up to 5 BTC plus 180 free spins. A large bonus. But with 5% contribution and 40x wagering, clearing it on Aviator alone requires 800x the bonus amount in total bets. If you claim a $500 bonus, you need $400,000 in Aviator wagers. The expected loss on that volume is around $12,000. The bonus is $500.`,
-        `Mirax and 7Bit have the same 5% contribution rate. Mirax offers a larger headline bonus (325% up to $1,500 across four deposits), but the contribution math is identical. 7Bit offers 100% up to 1.5 BTC with the same restriction.`,
-        `Does this mean you should avoid these casinos? Not necessarily. They are excellent for playing Aviator with your own deposited funds. The fast payouts at BitStarz (often under 10 minutes for crypto) and the game quality at Mirax are genuine strengths we have verified. The issue is specifically with the welcome bonus when used for crash games. Our recommendation: decline the bonus, deposit directly, and play with real money. You can explore all three through our <a href="/casinos">casino reviews</a>.`,
-      ],
+      "heading": "BitStarz: typical 5% is not a game-specific promise",
+      "paragraphs": [
+        "<a href=\"https://bzstarz1.com/b196c322b\" target=\"_blank\" rel=\"sponsored nofollow noopener noreferrer\">BitStarz</a> provides a useful example of a dynamic contribution policy. Its terms say table games, live games, instant-win games, lotteries and bingo typically contribute 5%. We did not verify a current Aviator listing, named contribution or account-specific permission there.",
+        "The same policy says bonus funds cannot be used on certain games, and games with progressive jackpots or accumulating mechanics are excluded from contributing. Additional restrictions can change. The operator says an unavailable-with-bonus message appears when entering an affected game. That described safeguard is not something we tested, and the word typically leaves room for exceptions.",
+        "General wagering is 40x unless specified otherwise. Welcome bonuses last seven days; other bonuses expire 24 hours after issue unless stated otherwise. Expiry or cancellation forfeits bonus funds and winnings accumulated while using them. The general clause does not supply an explicit deposit-bonus base equation.",
+        "While a bonus is active, the maximum includes 5 EUR, USD, CAD, AUD, NZD or USDT, or 0.00006 BTC, until playthrough is complete. Other currencies have their own listed limits. The restriction also covers double-ups and purchasable bonus features. Read the limit for your actual balance currency, then confirm game eligibility separately; a permitted stake size does not establish a permitted game."
+      ]
     },
     {
-      heading: `TrustDice and BetFury: token cashback instead of bonuses`,
-      paragraphs: [
-        `TrustDice and BetFury take a different approach. Both run their own token systems that provide cashback on every bet, including Aviator rounds, regardless of whether you have an active bonus.`,
-        `TrustDice awards TXT tokens on every wager. Stake those tokens and you receive a share of the platform's daily profit pool. The casino also offers a no-deposit bonus of 25 free spins on signup, which lets you test the platform before committing funds. The welcome match is 100% up to 3 BTC, but as with other Curacao casinos, check the contribution rate for crash games in the current terms.`,
-        `BetFury operates similarly with its BFG token. Every Aviator bet earns BFG at a rate of roughly 0.03% of the wager amount. Staking BFG gives daily dividends from the casino's revenue. Over time, this reduces the effective house edge. For regular Aviator players who bet daily, the token cashback can return more value than a one-time welcome bonus that takes weeks to clear. You can check both through our <a href="/casinos">casino reviews</a>.`,
-        `The advantage of token cashback over bonuses is simplicity. No wagering requirements, no contribution rates, no time limits. You earn on every bet, and the rewards are withdrawable once you meet the minimum staking threshold. It is not as exciting as a large match bonus, but the math is more favorable for someone who plays Aviator regularly.`,
-      ],
+      "heading": "Check bonus offers and game restrictions before activation",
+      "paragraphs": [
+        "Keep the offer card and applicable terms together. A general policy, a welcome bonus and a reload bonus can impose different conditions. A promo code identifies an offer; it does not answer its game-eligibility questions. If support supplies a missing answer, ask which clause or game list applies and retain the response; a chat assurance is not a substitute for consistent terms.",
+        "<div><ol style=\"list-style-type:decimal;padding-left:1.5rem\"><li>Confirm SPRIBE Aviator is permitted for that bonus, currency and account. Ask for its contribution percentage, not merely whether the casino has crash games.</li><li>Get the base equation, remaining credited wagering and treatment of main versus bonus funds. A displayed 40x alone is insufficient.</li><li>Check maximum and minimum counted bets, the exact expiry timestamp and what happens on cancellation, withdrawal or bonus claim.</li><li>Read the winnings or transfer cap. Completing wagering does not necessarily release every amount shown in the bonus balance.</li></ol></div>",
+        "A practical question for support is: &quot;For this exact bonus, does SPRIBE Aviator accept bonus-funded bets, what percentage of my stake counts, and does the target apply to the bonus alone or deposit plus bonus?&quot; Include the offer name and currency. A reply that only says Aviator is available leaves the wagering question unanswered. If the answer conflicts with the published terms, request a corrected or offer-specific rule before accepting.",
+        "Free spins also need their own game check. For example, 7Bit's first welcome spin set names Elvis Frog in Vegas by BGaming, not Aviator. Do not assume slot spins convert into Aviator stakes. Our <a href=\"/guides/aviator-rain\">Aviator Rain and free-bet guide</a> addresses a different promotion format; its rules cannot be borrowed for a deposit bonus."
+      ]
     },
     {
-      heading: `Should you accept the bonus? A practical decision framework`,
-      paragraphs: [
-        `Here is how to decide, based on what we have verified across these casinos.`,
-        `Accept the bonus if the casino gives crash games 100% contribution. As of our last verification, Cybet is the only casino in our list that does this. If you are playing there, the bonus roughly breaks even and gives you extra playing time. It is worth taking.`,
-        `Decline the bonus if the contribution rate is 5% or lower and you plan to play mostly Aviator. At 5%, you are mathematically guaranteed to lose far more clearing the requirement than the bonus is worth. Deposit your own money, play without restrictions, and withdraw whenever you want.`,
-        `Use token cashback instead of bonuses if the casino offers it. TrustDice and BetFury both have token systems that reward every Aviator bet without wagering requirements. For daily players, this is a better long-term deal than any welcome bonus.`,
-        `If you are unsure, start without the bonus. You can always claim a reload bonus or promotion later when the terms are more favorable. And if you do accept a bonus and realize the wagering is unreasonable, some casinos allow you to forfeit the bonus and withdraw your deposited funds (though you lose any bonus-derived winnings). Check the forfeit policy in the terms.`,
-      ],
+      "heading": "Deposit rules for fiat or crypto: separate from bonus wagering",
+      "paragraphs": [
+        "Declining a bonus does not necessarily remove ordinary deposit turnover from your casino account. <a href=\"https://7bitcasino.com/terms-and-conditions\" target=\"_blank\" rel=\"noopener noreferrer\">7Bit clause 9.14</a> requires bets totalling three times the deposit before withdrawal of connected winnings becomes available. This is an anti-money-laundering condition, separate from its welcome wagering rule.",
+        "<a href=\"https://docs.betfury.com/betfury/terms-of-services/terms-and-conditions\" target=\"_blank\" rel=\"noopener noreferrer\">BetFury's terms</a> specify 100% gaming turnover for crypto deposits, with exceptions for BFG deposits and Rank 5 or higher, and 2x deposit turnover for fiat casino activity. Sports and Futures have different rules. Do not add these numbers to a bonus multiplier or assume the same bets satisfy both obligations without confirmation.",
+        "BitStarz's qualifying-deposit rule for certain delayed free-spin rewards is different again. It requires the deposit to be wagered once; for the specified welcome spin reward, that must happen within 24 hours of depositing. This is a reward-qualification condition, not evidence of a general cash-withdrawal turnover rule. Keep it separate from the bonus's 40x clause.",
+        "Use the <a href=\"/guides/aviator-payments-deposits-withdrawals\">payment and withdrawal guide</a> to separate cashier questions from bonus questions. Identity and payment checks are another issue: our <a href=\"/guides/aviator-kyc-verification\">KYC verification guide</a> explains the document side. A completed wagering counter does not prove that a withdrawal has been approved."
+      ]
     },
     {
-      heading: `Five bonus traps that prevent withdrawal`,
-      paragraphs: [
-        `Beyond the contribution rate, casinos embed several other conditions in bonus terms that can block withdrawals. We have encountered all of these during testing.`,
-        `First, maximum bet limits while playing with bonus funds. Most casinos cap your bet at $5 or less per round while a bonus is active. Bet above that and they void the bonus entirely. For Aviator players who like to vary bet sizes, this is a real constraint.`,
-        `Second, time limits. Welcome bonuses typically expire after 7 to 30 days. If you do not complete the wagering in that window, the bonus and any winnings from it disappear. With an 800x effective requirement, clearing it in 7 days is close to impossible for most players.`,
-        `Third, maximum win caps. Some bonuses limit the total amount you can withdraw from bonus winnings. A casino might offer a huge bonus but cap withdrawals at 10x the bonus amount. Read this before depositing, not after.`,
-        `Fourth, game restrictions. Some bonuses exclude specific games entirely. If Aviator is excluded, bets on it contribute 0% and do not help clear the requirement at all. This is different from the 5% contribution rate, which at least gives partial credit.`,
-        `Fifth, country restrictions. Bonus terms vary by jurisdiction. A bonus available to players in one country may have different wagering requirements or be unavailable in another. Always check the terms for your specific location.`,
-      ],
+      "heading": "The game multiplier cannot solve the bonus rules",
+      "paragraphs": [
+        "<a href=\"https://spribe.co/games/aviator\" target=\"_blank\" rel=\"noopener noreferrer\">SPRIBE describes the Aviator crash game</a> as a rising multiplier game where the player must cash out before the flight ends. That cashout multiplier determines a round's payout; it is separate from the bonus wagering multiplier. The <a href=\"/guides/how-to-play-aviator\">gameplay guide</a> explains the controls.",
+        "The developer's public page data specifies 97% RTP. It is not a promise about your session or the money left after a bonus. Eligibility, balance depletion, caps and cancellation rules prevent a simple RTP calculation from proving bonus value. Read the <a href=\"/guides/aviator-rtp-house-edge\">RTP and house-edge explanation</a> for the game statistic, not an offer valuation. Faster play does not guarantee completion before expiry."
+      ]
     },
     {
-      heading: `What to do instead of chasing bonuses`,
-      paragraphs: [
-        `If most bonuses do not work for Aviator, what should you do with your money? The approach we recommend is straightforward. Pick a casino with fast payouts and fair terms, deposit an amount you can afford to lose, and play without a bonus. You will have full control over when to withdraw, no maximum bet restrictions, and no time pressure.`,
-        `Pair this with solid bankroll management. Our <a href="/guides/aviator-bankroll-management">bankroll management guide</a> covers session limits, bet sizing, and stop-loss strategy. If you are making common mistakes (and most new players are), our <a href="/guides/aviator-common-mistakes">guide to the seven most common mistakes</a> is worth reading before you deposit.`,
-        `For players who want some upside beyond their own deposits, token cashback at TrustDice or BetFury is the better play. You get rewarded for playing the game you were going to play anyway, without wagering requirements hanging over your head.`,
-        `Aviator is a game with a 3% house edge. No bonus changes that math. The best you can do is choose casinos where the terms are transparent, the payouts are fast, and you are not locked into impossible wagering requirements. We cover <a href="/guides/aviator-strategy-tips">strategies that actually work</a> in a separate guide, and none of them involve bonus hunting.`,
-      ],
-    },
+      "heading": "Which policy should you check next?",
+      "paragraphs": [
+        "If the public Bonus Wagering tag matches the offer you are considering, <a href=\"https://7bit.partners/p4i4w1udu\" target=\"_blank\" rel=\"sponsored nofollow noopener noreferrer\">review 7Bit's current offer</a> and obtain the named Aviator rate and calculation base. The tag warrants a question, not an unconditional recommendation.",
+        "If you are considering a split-balance bonus, <a href=\"https://betfury.bet/df1865703\" target=\"_blank\" rel=\"sponsored nofollow noopener noreferrer\">check BetFury's bonus card and eligible games</a> only after resolving the contradictory main-balance wording. For a comparison with dynamic category weighting, <a href=\"https://bzstarz1.com/b196c322b\" target=\"_blank\" rel=\"sponsored nofollow noopener noreferrer\">review BitStarz's current bonus conditions</a>; first establish whether SPRIBE Aviator is available and allowed. All three paths are for legally eligible readers only.",
+        "This review used public operator terms, promotion pages, catalog data and SPRIBE's public page data retrieved on 26 September 2026. We did not create accounts or perform gameplay, deposit, KYC or withdrawal testing. If the terms still leave the game rate or base unclear, do not activate the bonus to find out."
+      ]
+    }
   ],
-  faqs: [
+  "faqs": [
     {
-      question: `What is a wagering requirement for Aviator bonuses?`,
-      answer: `A wagering requirement is the total amount you must bet before bonus money becomes withdrawable. A 40x requirement on a $100 bonus means you need $4,000 in total bets. However, most casinos give crash games only a 5% contribution rate, meaning you actually need $80,000 in Aviator bets to clear that same $100 bonus. Always check the game contribution table before accepting any bonus.`,
+      "question": "Does Aviator always contribute 5% to wagering?",
+      "answer": "No. 7Bit publishes a general other-games rate; BitStarz says certain categories typically contribute 5%. Neither is a verified named Aviator rate for your offer. BetFury's Originals coefficient cannot be assigned to a SPRIBE game."
     },
     {
-      question: `Which casino has the best bonus for Aviator players?`,
-      answer: `Cybet is the only casino in our tested list where crash games contribute 100% toward wagering. Their welcome bonus is 100% up to $500 plus 200 free spins with 40x wagering. At 100% contribution, the bonus roughly breaks even mathematically. Every other casino we tested gives crash games a 5% contribution rate, making their bonuses mathematically unprofitable for Aviator-only players.`,
+      "question": "Is a 0% game the same as an excluded game?",
+      "answer": "No. Zero contribution means its bets earn no progress. A prohibition concerns whether you may place those bets under the bonus rules at all. Check both conditions; neither a zero nor a missing percentage answers the permission question."
     },
     {
-      question: `Can I clear a casino bonus playing only Aviator?`,
-      answer: `Technically yes, but at most casinos it is mathematically a bad deal. With a 5% contribution rate and 40x wagering, you need 800x the bonus amount in total Aviator bets. Over that volume, the 3% house edge means your expected losses far exceed the bonus value. You are better off clearing the bonus on slots (which usually contribute 100%) or declining it entirely.`,
+      "question": "Can I withdraw bonus funds immediately?",
+      "answer": "Do not assume so. The reviewed policies attach wagering and other conditions to bonus release. BetFury also caps transfers from the deposit-bonus balance. Withdrawal approval may involve separate payment turnover, account checks and the selected offer's rules."
     },
     {
-      question: `Are no-deposit bonuses better for Aviator players?`,
-      answer: `No-deposit bonuses avoid the risk of your own money but typically come with even higher wagering requirements and lower maximum win caps. TrustDice offers 25 free spins on signup with no deposit required, which is useful for testing the platform. But do not expect to withdraw significant winnings from no-deposit offers, as the terms are usually restrictive.`,
+      "question": "What happens if wagering expires?",
+      "answer": "The selected terms control. BitStarz explicitly forfeits bonus funds and winnings accumulated while using them on expiry or cancellation. BetFury says the bonus balance resets after expiry. Check the exact timestamp rather than treating a stated number of days as extra playing time."
     },
     {
-      question: `What does 5% game contribution mean?`,
-      answer: `A 5% contribution rate means that for every $1 you bet on Aviator, only $0.05 counts toward your wagering requirement. To clear a $4,000 requirement at 5% contribution, you need $80,000 in total Aviator bets. This is the main reason most casino bonuses are not worth taking for crash game players.`,
-    },
-    {
-      question: `Should I decline a casino bonus to play Aviator?`,
-      answer: `In most cases, yes. If the casino gives crash games a 5% or lower contribution rate, the expected loss from clearing the wagering requirement is far greater than the bonus value. Declining the bonus means no wagering restrictions, no maximum bet limits, and no time pressure. You can withdraw your own money whenever you want.`,
-    },
-  ],
+      "question": "Do welcome, reload and free-spin bonuses share the same rules?",
+      "answer": "Not necessarily. Separate offers can change the game list, limits, wagering and expiry. Slot free spins are not automatically Aviator bets. Read the terms attached to the specific reward, even if you previously used a different promotion at the same casino."
+    }
+  ]
 };

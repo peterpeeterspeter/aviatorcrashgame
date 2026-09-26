@@ -247,14 +247,16 @@ export const guides: GuideSummary[] = [
   },
   {
     slug: "aviator-bonus-wagering",
-    title: "Aviator Bonus Wagering: Do Casino Bonuses Work for Crash Games?",
+    title: "Aviator casino bonuses: wagering requirements and game rules",
     description:
-      "Most casino bonuses are mathematically unprofitable for Aviator players because of the 5% game contribution rate. We break down the math at each casino and show when a bonus is actually worth taking.",
+      "Aviator bonus wagering depends on game eligibility, contribution and the calculation base. Compare three operators' published rules and worked examples.",
     category: "casinos",
-    readingTime: "10 min",
+    readingTime: "13 min",
+    dateModified: "2026-09-26",
+    heroImage: "/images/guides/aviator-bonus-wagering/hero.png",
     excerpt:
-      "A 40x wagering requirement with a 5% crash game contribution means you need 800x the bonus amount in Aviator bets. At most casinos, the expected loss from clearing a bonus far exceeds the bonus itself. Here is the casino-by-casino math.",
-    keywords: ["aviator bonus", "aviator wagering", "crash game bonus", "aviator casino bonus"],
+      "A casino listing Aviator does not prove its bonus works on the game. Compare the published rules at 7Bit, BetFury and BitStarz, then check the exact offer before accepting it.",
+    keywords: ["aviator bonus wagering requirements", "aviator casino bonuses", "bonus contribution", "deposit bonus", "Aviator bonus eligibility"],
   },
   {
     slug: "best-aviator-casinos",
