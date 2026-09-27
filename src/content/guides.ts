@@ -320,13 +320,16 @@ export const guides: GuideSummary[] = [
   },
   {
     slug: "aviator-mobile-guide",
-    title: "Aviator on Mobile: How to Play on Your Phone (No App Required)",
+    title: "Aviator mobile guide: browser, home-screen web app or operator app?",
     description:
-      "There is no standalone Aviator app. The game runs in your phone's browser. Here is how to get the best mobile experience at crypto casinos, why auto-cashout matters more on touchscreens, and what happens when your connection drops.",
+      "Compare Aviator mobile browser access, home-screen web apps and operator apps. Follow iPhone and Android steps, check eligibility and choose a verified route.",
     category: "basics",
-    readingTime: "8 min",
+    readingTime: "11 min",
+    datePublished: "2026-07-07",
+    dateModified: "2026-09-27",
+    heroImage: "/images/guides/aviator-mobile-guide/hero.png",
     excerpt:
-      "No official app exists. Aviator runs in your browser on any phone. We cover browser vs PWA vs casino apps, which crypto casinos have the best mobile UX, connection-drop behaviour, data usage, and why auto-cashout is essential on touchscreens.",
+      "Start in a browser to check the game and account conditions. Add a home-screen icon if it suits you; choose an operator app only after checking its source and availability.",
     keywords: ["aviator mobile", "aviator app", "play aviator on phone", "aviator on android", "aviator on iphone"],
   },
   {

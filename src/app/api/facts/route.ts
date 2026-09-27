@@ -189,10 +189,11 @@ export function GET() {
           "Aviator itself is not banned by any country. Spribe holds B2B supplier licenses from the MGA and UKGC. What varies is whether the casino offering it holds a license valid for your jurisdiction. The UK, Netherlands, and Belgium have regulated markets where locally licensed casinos can offer Aviator. The US has no state-licensed casino stocking it (Spribe has not pursued US state licenses). Germany's GlüNeuRStV treaty (€1 per spin cap, 5-second minimum spin) makes crash games impractical at German-licensed sites. Australia's Interactive Gambling Act 2001 bans online casinos for operators but does not criminalize players. Curacao licenses dominate crypto casinos, offering lighter oversight than UKGC/MGA but faster payouts and anonymous play.",
       },
       {
-        title: "Aviator on Mobile: How to Play on Your Phone (No App Required)",
+        title: "Aviator mobile guide: browser, home-screen web app or operator app?",
         url: "https://www.aviatorcrashgame.com/guides/aviator-mobile-guide",
+        reviewed: "2026-09-27",
         summary:
-          "There is no standalone Aviator app. Spribe built it as an HTML5 browser game playable on any phone. The three legitimate ways to play are browser, PWA (add to home screen), and native casino apps. Auto-cashout is essential on mobile because manual cashout on touchscreens loses to reaction time. If your connection drops mid-round, auto-cashout still triggers server-side; manual cashout during a drop is unreliable. A 30-minute session uses 20-50 MB of data. APK downloads claiming to be Aviator are scams or malware.",
+          "Public-document comparison of browser tabs, home-screen web apps and operator apps. SPRIBE lists mobile device coverage; Apple and Google document browser-installed web apps. BetFury has a public Aviator by Spribe listing and Chrome/Safari installation instructions, subject to country, local-law and account eligibility checks. Catalog access is not a tested game launch. No app-store inventory, device performance, payment timing or bonus entitlement was verified. BetFury restricts many countries, including NL, BE, UK and US; no jurisdiction is certified eligible here.",
       },
       {
         title: "Aviator No Deposit Bonus: Which Free Offers Actually Work?",
