@@ -260,14 +260,17 @@ export const guides: GuideSummary[] = [
   },
   {
     slug: "best-aviator-casinos",
-    title: "Best Aviator Casinos 2026: Honest Rankings for Crash Game Players",
+    title: "Best Aviator Casinos 2026: Verified Listings, Bonuses and Terms",
     description:
-      "The six best casinos for Aviator in 2026, ranked by what actually matters for crash game players: bonus contribution rate, real payout speed, and licensing. Not just the biggest headline bonus.",
+      "Compare Aviator casinos using verified SPRIBE listings, bonus terms and payment rules. See where BetFury and 7Bit fit, plus the limits and unknowns that matter.",
     category: "casinos",
-    readingTime: "11 min",
+    readingTime: "15 min",
     excerpt:
-      "We tested deposits, withdrawals, and bonus clearing at six casinos using our own funds. Only one gives crash games full contribution toward wagering. Here are the honest rankings and the bonus math most lists hide.",
+      "BetFury and 7Bit both publicly list SPRIBE Aviator. Compare their documented payment and welcome-bonus conditions, with a conditional shortlist instead of invented testing scores.",
     keywords: ["best aviator casinos", "aviator casinos 2026", "aviator casino sites", "where to play aviator"],
+    datePublished: "2026-07-07",
+    dateModified: "2026-09-28",
+    heroImage: "/images/guides/best-aviator-casinos/hero.png",
   },
   {
     slug: "aviator-auto-cashout-guide",

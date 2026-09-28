@@ -150,10 +150,18 @@ export function GET() {
         ],
       },
       {
-        title: "Best Aviator Casinos 2026: Honest Rankings for Crash Game Players",
+        title: "Best Aviator Casinos 2026: Verified Listings, Bonuses and Terms",
         url: "https://www.aviatorcrashgame.com/guides/best-aviator-casinos",
         summary:
-          "Historical casino comparison awaiting a current operator-level refresh. For current bonus policy evidence and unresolved game weighting, consult the bonus-wagering guide reviewed 26 September 2026; historical rates and testing claims are not current verification.",
+          "Public-document comparison of BetFury and 7Bit, both with public SPRIBE Aviator listings. BetFury's ordinary crypto gaming turnover is 1x with BFG-deposit and Rank 5+ exceptions, versus 7Bit's 3x; bonus wagering is separate. 7Bit's BTC welcome figures have a package-total discrepancy. Named Aviator contribution and specific-offer permission remain unverified. BetFury is a conditional first comparison for crypto-funded play, not a fastest-payout or licensing recommendation. The 7Bit affiliate destination returned regional unavailability. No accounts, gameplay, deposits, KYC, withdrawals or conversion attribution were tested; no jurisdiction is certified eligible. Not recommendations for readers in NL, BE, UK, US or India.",
+        reviewed: "2026-09-28",
+        sources: [
+          "https://7bitcasino.com/bonus-terms",
+          "https://7bitcasino.com/terms-and-conditions",
+          "https://docs.betfury.com/betfury/terms-of-services/terms-and-conditions",
+          "https://docs.betfury.com/betfury/bonus-system/welcome-pack-terms-and-conditions",
+          "https://spribe.co/games/aviator",
+        ],
       },
       {
         title: "Aviator Auto-Cashout: Hit Rates, Target Selection, and Why It Beats Manual",
