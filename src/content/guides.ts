@@ -381,14 +381,15 @@ export const guides: GuideSummary[] = [
   },
   {
     slug: "aviator-vs-slots",
-    title: "Aviator vs Slots: Which Game Gives You Better Value? (2026)",
-    description:
-      "Aviator's 97% RTP beats the average slot's 96%, but turnover speed and bonus contribution flip the math. Here is a data-driven comparison of RTP, volatility, speed, bonuses, and transparency.",
+    title: "Aviator vs slots: RTP, features and which format fits",
+    description: "Compare SPRIBE Aviator with Starburst and Gates of Olympus on RTP, cashout decisions, reel features and bonus rules. Choose by format, not payout promises.",
     category: "strategy",
-    readingTime: "10 min",
-    excerpt:
-      "Neither Aviator nor slots can make you money long-term. But Aviator has better RTP, player-controlled volatility, and provably fair transparency, while slots win on variety and bonus value. Here is the honest comparison.",
-    keywords: ["aviator vs slots", "aviator rtp vs slots", "crash game vs slot machine", "aviator better than slots", "aviator odds comparison"],
+    readingTime: "11 min",
+    excerpt: "Aviator leads these named games on advertised RTP. Starburst and Gates of Olympus offer different reel features. Compare the mechanics first, then check the operator and bonus conditions.",
+    keywords: ["aviator vs slots", "aviator RTP", "Starburst", "Gates of Olympus", "crash game vs slots"],
+    datePublished: "2026-07-07",
+    dateModified: "2026-09-30",
+    heroImage: "/images/guides/aviator-vs-slots/hero.jpg",
   },
   {
     slug: "aviator-high-rollers-vip",

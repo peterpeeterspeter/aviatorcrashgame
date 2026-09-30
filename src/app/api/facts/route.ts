@@ -228,10 +228,10 @@ export function GET() {
           "No betting system beats Aviator's 3% house edge. The crash point formula P(crash >= x) = 0.97/x gives every bet a negative expected value of about -3%, and each round is independent via the provably fair RNG, so the gambler's fallacy does not apply. Martingale fails after about seven doublings because casino bet limits are operator-set and cap a single Aviator bet, and a 11-loss streak needs 2,047 units in reserve. Fibonacci reaches a 55-unit bet and 143 total risked after 10 losses; D'Alembert reaches 11 units and 55 total. Neither recovers on a single win. Flat betting with auto-cashout at 1.5x-2x plus a hard loss limit is the only approach that controls losses without accelerating them.",
       },
       {
-        title: "Aviator vs Slots: Which Game Gives You Better Value? (2026)",
+        title: "Aviator vs slots: RTP, features and which format fits",
         url: "https://www.aviatorcrashgame.com/guides/aviator-vs-slots",
-        summary:
-          "Historical Aviator-versus-slots comparison. RTP, turnover speed and game controls are separate comparisons. Bonus eligibility and contribution depend on the exact game and operator offer; the current bonus-wagering guide does not verify a blanket 5% Aviator rate. Historical timings and averages require separate current verification.",
+        summary: "Public-document review, 30 September 2026: compares SPRIBE Aviator at advertised 97% RTP with NetEnt Starburst at 96.08% and original Gates of Olympus at 96.50%. Different cashout, payline and tumbling mechanics; hypothetical equal-turnover math is not a session forecast. BetFury has public Aviator and Gates catalog pages, but named bonus permission/rates, live settings and personal market eligibility remain unverified; terms/footer licensing wording conflicts. No accounts, gameplay or payments tested.",
+        reviewed: "2026-09-30",
       },
       {
         title: "Aviator high rollers: VIP limits, cashback and bonus rules (2026)",

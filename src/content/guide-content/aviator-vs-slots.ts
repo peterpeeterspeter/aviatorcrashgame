@@ -1,99 +1,115 @@
 export const guideContent = {
-  sections: [
+  "sections": [
     {
-      heading: `Neither game can make you money`,
-      paragraphs: [
-        `Let's start with the honest answer nobody puts at the top: both Aviator and online slots are negative-expectation games. They are designed to take a small percentage of every dollar wagered. Over enough rounds, that percentage compounds and your balance trends toward zero. There is no strategy, system, or game choice that reverses this. If you came here looking for which game you can beat, the answer is neither.`,
-        `So why compare them at all? Because the way each game takes your money is different enough that your choice matters for your bankroll, your session length, and how much fun you have before the math catches up. Aviator has a better RTP, player-controlled volatility, and provably fair transparency. Slots have variety, bonus features, and the occasional life-changing jackpot. The right pick depends on what you want from the session, not on which one is "winnable."`,
-        `This guide compares them on the five things that actually affect your money: RTP, volatility, speed of play, bonus value, and transparency. Every number comes from published game data or our own testing. If you want the short version, Aviator gives you better raw odds and more control. Slots give you more entertainment per dollar if you value variety and features over edge optimization.`,
-      ],
+      "heading": "Choose the decision you want to make",
+      "paragraphs": [
+        "Choose Aviator if the appeal is deciding when to cash out from a rising curve. Choose Starburst if you prefer a payline slot with expanding Wilds and Respins. Choose the original Gates of Olympus if you want tumbling reels and a free-spins feature. Those are different reasons to play, not different routes to reliable income.",
+        "Aviator has the highest developer-advertised RTP of these three named games. That makes it the stronger comparison on theoretical return at equal turnover, but it does not tell you which session will last longer or which game will leave you ahead.",
+        "<figure><img src=\"/images/guides/aviator-vs-slots/hero.jpg\" width=\"1200\" height=\"685\" alt=\"Conceptual editorial illustration comparing Aviator and slots\" style=\"width:100%;height:auto\"><figcaption>Conceptual illustration, not a game screenshot or test result. The multipliers and reel outcome are illustrative, not predictions; a crash can occur before cashout.</figcaption></figure>",
+        "Affiliate disclosure: we may earn commission through the two partner links below. They are only for independently eligible adults who meet local law and the operator's age, location and account requirements. Set a spending limit you can afford to lose before considering any casino game."
+      ]
     },
     {
-      heading: `RTP: the gap is small but real`,
-      paragraphs: [
-        `Aviator's RTP is 97%, set by <a href="https://spribe.co/games/aviator" target="_blank" rel="noopener noreferrer">Spribe, the game's developer</a>. The average online slot sits around 96%, though the range is wide: premium titles from major studios like NetEnt and Pragmatic Play often hit 96.5% to 97.5%, while older or lower-tier slots can dip to 92% or worse. We cover Aviator's RTP in detail in our <a href="/guides/aviator-rtp-house-edge">RTP and house edge guide</a>, but the headline comparison is straightforward.`,
-        `A one-percentage-point gap sounds trivial. It is not. The house edge is what you keep subtracting from 100% RTP. Aviator's edge is 3%. The average slot's edge is 4%. That one-point RTP difference is actually a 25% reduction in the house edge, from 4% down to 3%. Over thousands of rounds, 25% less money flowing to the house is not a rounding error.`,
-        `The catch is that RTP only matters in proportion to how much you wager. And here is where the comparison gets interesting, because Aviator and slots push you to wager at very different rates. The edge is applied to turnover, not to your deposit. Two games can have different house edges but produce similar losses per hour if the faster game has a lower edge. We'll get to that.`,
-      ],
+      "heading": "Aviator vs slots: compare the exact titles",
+      "paragraphs": [
+        "Here, the Aviator game means the crash title developed by SPRIBE. The slot examples are NetEnt Starburst and Pragmatic Play's original Gates of Olympus, not its 1000 or other editions. These examples do not establish an average for all online slots. Scroll sideways whenever the table is wider than the article column.",
+        "<div style=\"overflow-x:auto\" tabindex=\"0\" role=\"region\" aria-label=\"Named game comparison\"><table style=\"min-width:640px\"><caption>Developer documentation reviewed 30 September 2026; live operator settings unverified.</caption><thead><tr><th scope=\"col\">Comparison</th><th scope=\"col\">SPRIBE Aviator</th><th scope=\"col\">NetEnt Starburst</th><th scope=\"col\">Original Gates of Olympus</th></tr></thead><tbody><tr><th scope=\"row\">Core format</th><td>Increasing curve; cash out before the crash</td><td>5 reels, 3 rows; up to 10 play lines</td><td>Six tumbling reels; symbols pay anywhere</td></tr><tr><th scope=\"row\">Documented features</th><td>Chat, live bets and statistics</td><td>Expanding Wild fills a reel and triggers a Respin</td><td>4+ scatters trigger 15 free spins</td></tr><tr><th scope=\"row\">Advertised RTP</th><td>97%</td><td>96.08%</td><td>96.50%</td></tr><tr><th scope=\"row\">Best fit by preference</th><td>An in-round exit decision</td><td>Paylines and Wild-triggered Respins</td><td>Tumbling symbols and a free-spins feature</td></tr></tbody></table></div>",
+        "Sources: <a href=\"https://spribe.co/games/aviator\" target=\"_blank\" rel=\"noopener noreferrer\">SPRIBE Aviator</a>, <a href=\"https://netent.com/games/starburst\" target=\"_blank\" rel=\"noopener noreferrer\">NetEnt Starburst</a> and <a href=\"https://www.pragmaticplay.com/en/games/gates-of-olympus/\" target=\"_blank\" rel=\"noopener noreferrer\">Pragmatic Play Gates of Olympus</a>. The Aviator figure comes from public developer page data tied to its specific route, not a logged-in casino screen. NetEnt's current page states 96.08%; use that figure rather than the often-repeated 96.09%."
+      ]
     },
     {
-      heading: `Volatility: the difference nobody explains`,
-      paragraphs: [
-        `This is the single biggest difference between the two games, and almost no comparison article covers it properly. RTP tells you the long-run average return. Volatility tells you how violently your individual sessions will deviate from that average. A 97% RTP game can still wipe out your entire deposit in five minutes if the volatility is high enough.`,
-        `Slots have fixed volatility. The game developer programs it in. A low-volatility slot pays small amounts frequently. A high-volatility slot like Book of Dead or Dead or Alive pays rarely but can deliver 5,000x or 10,000x your bet when it hits. You pick a slot with the volatility profile you want, but once you're spinning, you have zero control over it. The reels do what the math says.`,
-        `Aviator's volatility is under your control because you choose your cashout target. Cash out at 1.3x every round and you have a low-volatility experience: you win most rounds for small gains, but one early crash wipes a bet. Wait for 10x and you have high volatility: you lose most rounds, but the occasional hit can cover a long string of losses. The RTP stays 97% either way, as we explain in our <a href="/guides/aviator-multiplier-guide">multiplier odds guide</a>. The point is that you can dial the experience up or down without switching games.`,
-        `With slots, if you want lower volatility, you have to find a different slot. With Aviator, you just move your cashout point. That flexibility is a genuine advantage, not a marketing talking point. It means you can play one game across different moods and bankroll situations without learning a new ruleset each time.`,
-      ],
+      "heading": "Aviator gameplay or slot bonus features?",
+      "paragraphs": [
+        "When you play Aviator, you watch the multiplier rise while your bet remains unresolved. The developer describes a curve that can crash at any time; the player must cash out before the plane flies away. That exit decision is the format's attraction. If following a rising number feels like pressure rather than entertainment, a reel-based game may suit your preference better.",
+        "The developer also describes chat, live bets and statistics. These can make the round feel social, but other players' displayed bets are not evidence of a winning method. We did not observe a live room or verify which social controls a particular operator exposes.",
+        "A reel game like Starburst gives you a different event to follow: an Expanding Wild fills its reel, substitutes for paying symbols and triggers a Respin. Its payline structure is a useful contrast with Aviator's curve. Pick it because that mechanic appeals to you, not because a simpler-looking screen establishes smaller losses.",
+        "Gates of Olympus uses symbols that pay anywhere across six tumbling reels. Four or more scatters trigger 15 free spins. During the feature, winning multiplier symbols add to a total multiplier applied to the respective win. This is the more natural choice of these examples if the feature sequence interests you more than deciding when to exit a round.",
+        "Those free spins are an in-game feature, not proof that a casino welcome offer gives you free play. A promotion needs its own terms. If neither reels nor a rising curve appeals, our <a href=\"/guides/aviator-vs-plinko\">Aviator versus Plinko comparison</a> covers the alternative peg-board format."
+      ]
     },
     {
-      heading: `Speed: where turnover becomes the real cost`,
-      paragraphs: [
-        `Here is the part that trips people up. A 3% house edge sounds gentler than a 4% slot edge, but the edge is applied to every unit wagered, not to every unit deposited. And crash games are fast. A typical Aviator round runs 10 to 15 seconds from bet to crash. With auto-bet engaged, you can play 200 to 300 rounds in an hour. At 1 unit per round, that's 200 to 300 units of turnover.`,
-        `Slots can be faster or slower depending on the game. A standard spin takes 3 to 5 seconds. With turbo auto-spin enabled, some slots push 600 to 900 spins per hour. But here is the nuance: many slot players bet more per spin than Aviator players bet per round, because slot paylines encourage higher total stakes. A 20-line penny slot at 1 cent per line is 20 cents per spin, and at 600 spins per hour that's 120 units of turnover. Compare that to Aviator at 1 unit per round and 250 rounds per hour: 250 units of turnover with a lower edge.`,
-        `The takeaway is not "Aviator is cheaper" or "slots are cheaper." It is that turnover, not headline RTP, determines your actual hourly cost. A disciplined Aviator player betting 1 unit at 2x cashout will typically lose less per hour than a slot player on turbo auto-spin, because the turnover is lower and the edge is smaller. A reckless Aviator player using max auto-bet will drain just as fast as anyone. We cover how to manage this in our <a href="/guides/aviator-bankroll-management">bankroll management guide</a>, and the principles apply to both game types.`,
-      ],
+      "heading": "RTP: a small advantage on the same turnover",
+      "paragraphs": [
+        "Return to player describes a long-run average relative to stakes. It is not your chance of winning the next round or the percentage of a deposit you can expect back tonight. The <a href=\"https://www.gamblingcommission.gov.uk/public-and-players/guide/return-to-player-how-much-gaming-machines-payout/\" target=\"_blank\" rel=\"noopener noreferrer\">UK Gambling Commission explanation of RTP</a> makes the distinction between an average over many plays and a single session. That educational source does not establish UK permission for these games or this operator.",
+        "For a hypothetical comparison, hold total stakes at 100 units for each game and assume the documented RTP applies throughout. Theoretical loss equals turnover multiplied by one minus RTP expressed as a decimal. The complementary percentage is the house edge. Scroll sideways if the calculation table exceeds the article column.",
+        "<div style=\"overflow-x:auto\" tabindex=\"0\" role=\"region\" aria-label=\"Equal turnover RTP calculation\"><table style=\"min-width:640px\"><caption>Hypothetical 100 units of total stakes, not a deposit or measured session.</caption><thead><tr><th scope=\"col\">Game</th><th scope=\"col\">Advertised RTP</th><th scope=\"col\">Derived house edge</th><th scope=\"col\">Theoretical loss</th></tr></thead><tbody><tr><th scope=\"row\">Aviator</th><td>97%</td><td>3.00%</td><td>3.00 units</td></tr><tr><th scope=\"row\">Starburst</th><td>96.08%</td><td>3.92%</td><td>3.92 units</td></tr><tr><th scope=\"row\">Gates of Olympus</th><td>96.50%</td><td>3.50%</td><td>3.50 units</td></tr></tbody></table></div>",
+        "Aviator's advantage in this example is 0.92 units against Starburst and 0.50 units against Gates. These are calculated expectations, not promised savings. Actual results can differ substantially, including a loss of the entire amount you set aside.",
+        "Turnover adds every stake, including returned money bet again. A 100-unit deposit does not mean exactly 100 units of turnover. Before applying these figures to an online casino, check the exact title and RTP in its available game information; this review did not verify live operator configurations."
+      ]
     },
     {
-      heading: `Bonuses: the one place slots win decisively`,
-      paragraphs: [
-        `If there is a category where slots beat Aviator without qualification, it is bonus value. Casino welcome bonuses almost universally count slots at 100% toward wagering requirements. Crash games like Aviator typically contribute 5%. We did the full math in our <a href="/guides/aviator-bonus-wagering">bonus wagering guide</a>, but the short version: a 40x wagering requirement on a $100 bonus costs you $4,000 in slot turnover to clear, or $80,000 in Aviator turnover at the 5% rate.`,
-        `At Aviator's 3% house edge, $80,000 in wagering produces roughly $2,400 in expected losses to clear a $100 bonus. You lose $2,400 trying to unlock $100. That is not a bonus. It is a trap dressed up as generosity. At slots' 4% edge, $4,000 in wagering produces about $160 in expected losses to clear the same $100. Still negative, but the gap is $60, not $2,300.`,
-        `This is why we recommend skipping bonuses entirely if your primary game is Aviator. Deposit, play with your own money, and withdraw when you want. The bonus checkbox at signup is designed for slot players. If you want to understand why the 5% rate exists and how to read the game contribution table at any casino, our wagering guide walks through it with real numbers from <a href="/go/bitstarz">BitStarz</a>, <a href="/go/mirax">Mirax</a>, and <a href="/go/7bit">7Bit</a>.`,
-      ],
+      "heading": "Volatility and pace do not follow from RTP alone",
+      "paragraphs": [
+        "Volatility concerns how uneven results are; RTP concerns their long-run average. A cashout decision does not establish that you control the whole distribution of results. Nor does a slot's feature description, by itself, justify labeling it low-risk or predicting how frequently it pays. We have not ranked these games by measured volatility or exact win probabilities.",
+        "You can decide whether you want an exit decision without claiming you can predict a crash. You can prefer Respins or free spins without treating those features as better odds. That keeps the comparison useful even where a full probability model is unavailable.",
+        "A maximum win is another separate comparison. A game multiplier ceiling, a monetary payout cap and an account withdrawal limit answer different questions. We have not established comparable maximum-win figures for these exact live configurations, so none is used as a selling point here. Ask which limit applies to the exact game, stake and currency before treating an advertised multiplier as an obtainable cash amount.",
+        "Pace matters through the total amount staked, but this review contains no rounds-per-hour measurements. We cannot say which game will be cheaper per hour or keep your balance going longer. Set a time limit separately from a spending limit; neither requires playing until the balance runs out.",
+        "On a phone, check whether you can read the stake, currency and controls comfortably before you gamble with real money. Our <a href=\"/guides/aviator-mobile-guide\">mobile browser versus app guide</a> covers access formats. A download is not evidence of better odds, and we have not measured a speed advantage for either format."
+      ]
     },
     {
-      heading: `Provably fair versus audited RNG`,
-      paragraphs: [
-        `Aviator uses a provably fair system. Every round's crash point is determined by a combination of a server seed (hashed and published before the round), a client seed (visible to you), and a nonce (round counter). After the round, you can independently verify that the result was not tampered with. Spribe publishes the algorithm, and we walk through how to verify rounds yourself in our <a href="/guides/aviator-provably-fair">provably fair guide</a>. This is not a marketing claim. It is a cryptographic guarantee.`,
-        `Online slots use audited RNG systems. The random number generator is certified by testing labs like <a href="https://ecogra.org/" target="_blank" rel="noopener noreferrer">eCOGRA</a>, iTech Labs, or GLI. These labs verify that the RNG produces statistically random output and that the published RTP matches the actual payout distribution. The certification is real and trustworthy at licensed casinos. But you cannot verify an individual spin yourself the way you can with provably fair. You are trusting the lab and the casino, not your own math.`,
-        `Which matters more? For most players, both systems are functionally fair. Licensed casinos have too much to lose from rigging games. But if transparency is important to you, if you want to check every result yourself rather than take a lab's word for it, Aviator's provably fair system is a genuine differentiator. It is the one area where crash games are structurally more transparent than slots.`,
-      ],
+      "heading": "A catalog option for comparing both formats",
+      "paragraphs": [
+        "The operator's <a href=\"https://docs.betfury.com/betfury/terms-of-services/terms-and-conditions\" target=\"_blank\" rel=\"noopener noreferrer\">country and account terms, sections 3.1, 3.3 and 3.18</a> exclude resident accounts in the Netherlands, Belgium, United Kingdom and United States, among many other jurisdictions. They also restrict use where the activity is prohibited. Absence from that non-exhaustive list is not approval. No country is positively recommended here.",
+        "If you are over 18, meet the applicable legal gambling age and have independently established eligibility, <a href=\"https://betfury.bet/df1865703\" target=\"_blank\" rel=\"sponsored nofollow noopener noreferrer\">BetFury</a> is one catalog option to inspect. Its public <a href=\"https://betfury.com/casino/games/aviator-by-spribe\" target=\"_blank\" rel=\"noopener noreferrer\">Aviator by Spribe page</a> and <a href=\"https://betfury.com/casino/games/gates-of-olympus-by-pragmatic-play\" target=\"_blank\" rel=\"noopener noreferrer\">Gates of Olympus by Pragmatic Play page</a> identify both named games. That is a concrete reason to shortlist it for this comparison; Starburst availability there was not verified.",
+        "The affiliate destination returned substantive generic operator landing content during the public-document review. It was not a direct game launch or a personalized offer, and some dynamic widgets remained unresolved. The separate catalog pages support the game identities; the landing page alone does not.",
+        "There is a documentation drawback. The terms identify Universe B Games B.V. and a Curaçao licence, while the game-page footer uses N.V., a different address and Certificate of Operation wording pending completion of a licence application. We have not independently checked a regulator register or resolved that discrepancy. Treat this as a catalog shortlist, not an independently licensed or launch-tested recommendation."
+      ]
     },
     {
-      heading: `Side-by-side comparison`,
-      paragraphs: [
-        `Here is how the two game types stack up across the metrics that affect your money and your experience.`,
-        `<table style="width:100%;border-collapse:collapse;font-size:0.95rem;margin:1rem 0"><thead><tr style="background:hsl(var(--muted))"><th style="padding:8px;border:1px solid hsl(var(--border));text-align:left">Metric</th><th style="padding:8px;border:1px solid hsl(var(--border));text-align:left">Aviator</th><th style="padding:8px;border:1px solid hsl(var(--border));text-align:left">Online Slots</th></tr></thead><tbody><tr><td style="padding:8px;border:1px solid hsl(var(--border))">RTP</td><td style="padding:8px;border:1px solid hsl(var(--border))">97% (fixed)</td><td style="padding:8px;border:1px solid hsl(var(--border))">92-98% (varies by title)</td></tr><tr><td style="padding:8px;border:1px solid hsl(var(--border))">House edge</td><td style="padding:8px;border:1px solid hsl(var(--border))">3%</td><td style="padding:8px;border:1px solid hsl(var(--border))">2-8% (avg ~4%)</td></tr><tr><td style="padding:8px;border:1px solid hsl(var(--border))">Volatility control</td><td style="padding:8px;border:1px solid hsl(var(--border))">Player sets cashout point</td><td style="padding:8px;border:1px solid hsl(var(--border))">Fixed by game design</td></tr><tr><td style="padding:8px;border:1px solid hsl(var(--border))">Fairness type</td><td style="padding:8px;border:1px solid hsl(var(--border))">Provably fair (verifiable)</td><td style="padding:8px;border:1px solid hsl(var(--border))">Audited RNG (lab-certified)</td></tr><tr><td style="padding:8px;border:1px solid hsl(var(--border))">Rounds per hour</td><td style="padding:8px;border:1px solid hsl(var(--border))">200-300</td><td style="padding:8px;border:1px solid hsl(var(--border))">400-900 (turbo auto-spin)</td></tr><tr><td style="padding:8px;border:1px solid hsl(var(--border))">Bonus contribution</td><td style="padding:8px;border:1px solid hsl(var(--border))">5% at most casinos</td><td style="padding:8px;border:1px solid hsl(var(--border))">100% standard</td></tr><tr><td style="padding:8px;border:1px solid hsl(var(--border))">Max win per bet</td><td style="padding:8px;border:1px solid hsl(var(--border))">~$10,000 (casino cap)</td><td style="padding:8px;border:1px solid hsl(var(--border))">Up to 50,000x+ (progressives)</td></tr><tr><td style="padding:8px;border:1px solid hsl(var(--border))">Social features</td><td style="padding:8px;border:1px solid hsl(var(--border))">Live chat, see other bets</td><td style="padding:8px;border:1px solid hsl(var(--border))">Solo play</td></tr><tr><td style="padding:8px;border:1px solid hsl(var(--border))">Game variety</td><td style="padding:8px;border:1px solid hsl(var(--border))">One game, one format</td><td style="padding:8px;border:1px solid hsl(var(--border))">Thousands of titles</td></tr><tr><td style="padding:8px;border:1px solid hsl(var(--border))">Skill element</td><td style="padding:8px;border:1px solid hsl(var(--border))">Cashout timing (feels like skill)</td><td style="padding:8px;border:1px solid hsl(var(--border))">None (pure RNG)</td></tr></tbody></table>`,
-        `Read the table as a menu, not a scoreboard. Aviator wins on edge, transparency, and volatility control. Slots win on variety, bonus value, and ceiling payouts. Neither column makes the game "better" in a vacuum. It depends entirely on what you are optimizing for.`,
-      ],
+      "heading": "Bonus permission comes before contribution",
+      "paragraphs": [
+        "BetFury's <a href=\"https://docs.betfury.com/betfury/bonus-system/welcome-pack-terms-and-conditions\" target=\"_blank\" rel=\"noopener noreferrer\">Welcome Pack terms</a> restrict bonus-balance play to selected games in its Bonus Wagering category and exclude some slots and live games. Having a title in the ordinary catalog does not establish that it appears in this selected collection.",
+        "The same terms publish a generic 1.0 wager multiplier for Slots and Live Games, with a separate 0.2 coefficient for BetFury Originals. Neither supplies a verified named rate for Aviator or Gates of Olympus. Aviator is a SPRIBE game, not a BetFury Original. We did not verify either title's current bonus-list membership.",
+        "Permission answers whether you may use that bonus on the game. Contribution answers how much an eligible stake counts toward the target. The target itself depends on the bonus's calculation base and wagering multiple. An unknown contribution is not zero, and a listed category coefficient is not permission to play every game in that category.",
+        "Check the selected offer's expiry, minimum and maximum counted bets, currency scope and treatment of winnings before accepting. The public balance wording also needs clarification: one sentence requires main-balance wagering for withdrawal, while another says both main and bonus balances progress together. Do not choose the more favorable interpretation without a consistent offer-specific explanation.",
+        "This prevents a blanket verdict that slots always win on bonus value. Our <a href=\"/guides/aviator-bonus-wagering\">bonus-wagering guide</a> separates the calculation steps. If a particular promotion cannot confirm permission and contribution for your intended game, leave that promotion out of the game comparison rather than estimating its value."
+      ]
     },
     {
-      heading: `Which should you play?`,
-      paragraphs: [
-        `If your priority is the best raw odds and you want control over your risk level, Aviator is the better game. The 97% RTP is above the slot average, the provably fair system lets you verify every round, and you can shift between low and high volatility by moving your cashout point. You give up game variety and bonus value, but you get a tighter, more transparent gambling experience. You can try it at <a href="/go/cybet">Cybet</a> (MGA-licensed, strong player protections), <a href="/go/bitstarz">BitStarz</a> (fast crypto payouts, our testing clocked under 10 minutes), or <a href="/go/trustdice">TrustDice</a> (free faucet crypto, no deposit required to start).`,
-        `If your priority is entertainment, variety, and clearing bonuses, slots are the better game. The sheer number of titles means you can always find something new. Free spins, bonus rounds, and multipliers add layers of engagement that crash games do not have. And bonuses actually work for slots at the full 100% contribution rate, so a welcome offer has real value. The trade-off is a slightly worse average edge and no ability to verify individual results yourself.`,
-        `There is a third option: play both. Nothing says you have to commit to one game type. Many players use Aviator for focused sessions where they want tight bankroll control, and switch to slots when they want variety and feature-driven gameplay. The casinos in our <a href="/guides/best-aviator-casinos">best Aviator casinos</a> guide all carry hundreds of slots alongside crash games. <a href="/go/mirax">Mirax</a> and <a href="/go/betfury">Betfury</a> are particularly good for this dual approach because they combine large slot libraries with reliable Aviator lobbies.`,
-      ],
+      "heading": "Deposits and withdrawals are separate from game cashout",
+      "paragraphs": [
+        "Ending an Aviator round successfully does not send money to a bank account or wallet. BetFury's <a href=\"https://docs.betfury.com/betfury/terms-of-services/terms-and-conditions\" target=\"_blank\" rel=\"noopener noreferrer\">general terms, sections 17.1 and 17.4</a> impose separate deposit turnover under its anti-money-laundering rules: 100% gaming turnover for crypto deposits, with BFG-deposit and Rank-5-or-higher exceptions, and a minimum 2x turnover for fiat deposits. Sports and Futures rules differ.",
+        "These are deposit conditions, not the bonus contribution rates above. Declining a bonus does not remove them. Do not add the deposit and bonus multiples together or assume the same bets satisfy both without clarification. They are conditions to understand before funding, not a reason to wager money you intended to keep.",
+        "The terms also allow identity checks and restrictions while identity is established; withdrawal security reviews can extend to seven days or more if needed. That is no promised payout deadline. Use our <a href=\"/guides/aviator-payments-deposits-withdrawals\">deposit and withdrawal guide</a> for the payment checklist and <a href=\"/guides/aviator-kyc-verification\">KYC guide</a> for document questions. This comparison measured no payment speed."
+      ]
     },
     {
-      heading: `The responsible gambling reality`,
-      paragraphs: [
-        `Both Aviator and slots are designed to be entertaining and to take your money. The 3% or 4% edge is the price of admission. The comparison in this guide is about which game charges less or entertains you more for that price, not about which one you can profit from. You cannot profit from either one in the long run.`,
-        `If you find yourself chasing losses, increasing bet sizes to recover, or playing with money you cannot afford to lose, the game you choose does not matter. The behavior is the problem. <a href="https://www.begambleaware.org/" target="_blank" rel="noopener noreferrer">BeGambleAware</a> offers free, confidential support. Most casinos also let you set deposit limits, session time limits, and self-exclusion periods. Use them before you need them, not after.`,
-        `If you are new to crash games specifically, our <a href="/guides/how-to-play-aviator">how to play Aviator</a> guide walks through the mechanics from scratch, and our <a href="/guides/aviator-common-mistakes">common mistakes guide</a> covers the seven most common ways players drain their bankroll unnecessarily. Read both before depositing real money.`,
-      ],
+      "heading": "Which choice survives the checks?",
+      "paragraphs": [
+        "For the highest advertised RTP among these examples, Aviator leads. Choose its format only if the cashout decision itself appeals to you. For payline play with a Wild-triggered Respin, Starburst is the clearer fit. For tumbling reels and a triggered free-spins sequence, choose the original Gates of Olympus as the title to investigate.",
+        "For independently eligible adults interested in comparing Aviator and Gates in one catalog, <a href=\"https://betfury.bet/df1865703\" target=\"_blank\" rel=\"sponsored nofollow noopener noreferrer\">check current BetFury listings and terms</a>. Confirm access to the exact games, applicable RTP and acceptable account conditions before any deposit. If eligibility or the documentation discrepancy remains unresolved, stop at the comparison.",
+        "Where demo mode is lawfully available, use it to learn how to play and understand the controls, not to predict a paid session or verify withdrawals. Choosing neither game is reasonable. If play becomes about recovering losses, stop rather than switch formats; our <a href=\"/responsible-gambling\">responsible-gambling resources</a> provide a next step."
+      ]
     },
+    {
+      "heading": "How this comparison was researched",
+      "paragraphs": [
+        "This is a public-document review dated 30 September 2026. We used developer product pages, Aviator's route-linked public page data, the two named operator catalog pages and the linked account and bonus terms. The UKGC source explains RTP; it does not endorse the operator.",
+        "We did not create accounts, launch games, place bets, claim bonuses, deposit, submit identity documents or test payments. The numerical example is decimal arithmetic from advertised RTP and hypothetical equal turnover. We performed no independent fairness audit. The retained hero is a conceptual illustration, not a test record."
+      ]
+    }
   ],
-  faqs: [
+  "faqs": [
     {
-      question: `Is Aviator better than slots?`,
-      answer: `It depends on what you mean by better. Aviator has a higher RTP (97% vs 96% average), provably fair transparency, and player-controlled volatility. Slots have more variety, better bonus value (100% wagering contribution vs 5% for crash games), and higher payout ceilings. Neither game can be beaten long-term. The better game is the one that fits your playstyle and budget.`,
+      "question": "Is Aviator better than slots?",
+      "answer": "Aviator has the highest advertised RTP of the three named examples here, but that is not an all-slots ranking. Choose by the mechanic you prefer: a cashout decision, Starburst's paylines and Respins, or Gates of Olympus' tumbling reels and free spins. No session outcome is promised."
     },
     {
-      question: `Can you win more on Aviator or slots?`,
-      answer: `In a single session, either game can produce a big win. Slots can theoretically pay 50,000x or more on progressive jackpots, while Aviator's max win is capped at around $10,000 per bet depending on the casino. But neither game produces long-term profits. The RTP guarantees the house keeps a percentage of all wagers over time. Short-term wins are variance, not edge.`,
+      "question": "Does Starburst have 96.08% or 96.09% RTP?",
+      "answer": "The current NetEnt product page reviewed on 30 September 2026 states 96.08%. That is the developer figure used here. It does not verify every operator's live configuration; check the exact game information available to your eligible account."
     },
     {
-      question: `Why do casino bonuses not work for Aviator?`,
-      answer: `Most casinos count crash games like Aviator at 5% toward wagering requirements, compared to 100% for slots. This means a 40x bonus requirement becomes effectively 800x for Aviator players. Clearing it costs more in expected losses than the bonus is worth. We break down the exact math in our bonus wagering guide. The short advice: skip the bonus if you mainly play Aviator.`,
+      "question": "Does 97% RTP mean Aviator wins 97% of rounds?",
+      "answer": "No. RTP is a long-run return relative to stakes, not a round-win probability or a promised percentage of your deposit back. This review does not establish exact cashout-target probabilities or a method of predicting the next crash."
     },
     {
-      question: `Is Aviator harder to win than slots?`,
-      answer: `No. Aviator's 97% RTP is actually slightly better than the average slot's 96%. The difficulty is comparable. What feels different is the pace: Aviator rounds are fast and the cashout decision feels like a skill, which can lead to riskier play. Slots are passive, which can lead to mindless auto-spinning. Both behaviors lose money at the rate the house edge dictates.`,
+      "question": "Can I use the same bonus on Aviator and Gates of Olympus?",
+      "answer": "That was not established. BetFury lists both games publicly, but its bonus balance is restricted to selected games. Named contribution rates and current bonus-list membership remain unverified. Check permission, contribution and the selected offer's calculation base separately."
     },
     {
-      question: `Can I play both Aviator and slots at the same casino?`,
-      answer: `Yes. Every casino that carries Aviator also carries hundreds or thousands of slots. Cybet, BitStarz, Mirax, TrustDice, and Betfury all offer both game types. You do not need separate accounts. This lets you switch between crash games and slots depending on your mood without managing multiple wallets.`,
-    },
-  ],
+      "question": "Does the BetFury listing mean I can play?",
+      "answer": "No. A public listing establishes catalog identity, not local permission, account eligibility or a successful launch. Its restrictions explicitly include the Netherlands, Belgium, UK and US, among others. Omission of another country is not approval, and this review independently certifies no licence or market access."
+    }
+  ]
 };
