@@ -301,14 +301,15 @@ export const guides: GuideSummary[] = [
   },
   {
     slug: "aviator-vs-lucky-jet-vs-crash-x",
-    title: "Aviator vs Lucky Jet vs Crash X: The Extended Crash Game Comparison",
-    description:
-      "Aviator, Lucky Jet, and Crash X all run at 97% RTP, so the real difference is round speed and availability. Here is the hourly cost math that no other comparison shows, plus where to play each game.",
+    title: "Aviator vs Lucky Jet vs Crash X: RTP, controls and choice",
+    description: "Compare Aviator, Lucky Jet and Crash X: published 97% vs 96% RTP, controls, multiplier limits, fairness details and a conditional operator catalog check.",
     category: "strategy",
-    readingTime: "10 min",
-    excerpt:
-      "All three crash games share the same 97% RTP and 3% house edge, so the odds are a tie. What actually differs is round speed (Crash X runs ~3x more rounds per hour), availability (Lucky Jet is locked to the 1Win ecosystem), and the max-multiplier marketing most sites repeat without context.",
-    keywords: ["aviator vs lucky jet", "crash x crash game", "aviator vs crash x", "lucky jet vs aviator", "crash games compared"],
+    readingTime: "11 min",
+    excerpt: "Aviator leads on published RTP; Crash X documents its auto controls. See what is verified, what Lucky Jet still needs, and which operator terms to check.",
+    keywords: ["aviator vs lucky jet", "Aviator vs Lucky Jet vs Crash X", "crash game comparison", "SPRIBE Aviator", "Turbo Games Crash X"],
+    datePublished: "2026-07-07",
+    dateModified: "2026-10-01",
+    heroImage: "/images/guides/aviator-vs-lucky-jet-vs-crash-x/hero.png",
   },
   {
     slug: "aviator-legal-countries",

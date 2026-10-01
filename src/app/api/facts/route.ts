@@ -185,10 +185,10 @@ export function GET() {
         ],
       },
       {
-        title: "Aviator vs Lucky Jet vs Crash X: The Extended Crash Game Comparison",
+        title: "Aviator vs Lucky Jet vs Crash X: RTP, controls and choice",
         url: "https://www.aviatorcrashgame.com/guides/aviator-vs-lucky-jet-vs-crash-x",
-        summary:
-          "Aviator, Lucky Jet, and Crash X all share 97% RTP and a 3% house edge, so per-round odds are a tie. The real difference is round speed: Crash X runs ~5s rounds (~800/hour) vs ~10-15s for the others (~275/hour), so at the same stake Crash X costs roughly 3x more per hour. Lucky Jet is a 1Win Games exclusive (not Gaming Corps' Jet Lucky 2). Max multipliers (Aviator uncapped, Lucky Jet ~5072x, Crash X ~999,999x) are theoretical and should not drive the choice.",
+        summary: "Public-document comparison, 1 October 2026: SPRIBE advertises Aviator at 97% RTP; Turbo Games advertises Crash X at 96%. Lucky Jet specifications and exclusivity remain unverified. Compares documented controls, provider-specific fairness explanations and conflicting Crash X maximum-multiplier copy; no fixed-cadence or hourly-cost ranking. BetFury has a public SPRIBE Aviator catalog page, subject to country/account restrictions; bonus eligibility and independent licensing are not established. No accounts, gameplay or payments tested.",
+        reviewed: "2026-10-01",
       },
       {
         title: "Is Aviator Legal? Country-by-Country Availability (2026)",
