@@ -360,14 +360,16 @@ export const guides: GuideSummary[] = [
   },
   {
     slug: "aviator-demo-vs-real-money",
-    title: "Aviator Demo vs Real Money: When to Make the Switch (2026)",
+    title: "Aviator demo vs real money: differences, odds and choice",
     description:
-      "Aviator demo and real money use the same RNG, but your behavior changes the moment money is real. Here is how to know when you are ready, and how to transition without losing your discipline.",
+      "Compare Aviator demo and real-money play: virtual credits, odds, cashouts, account rules and bonus limits, with a verified public catalog option to inspect.",
     category: "strategy",
-    readingTime: "9 min",
+    readingTime: "11 min",
+    dateModified: "2026-10-02",
+    heroImage: "/images/guides/aviator-demo-vs-real-money/hero.jpg",
     excerpt:
-      "Demo mode is mathematically identical to real money Aviator. The same provably fair RNG, same 97% RTP, same crash distribution. But demo teaches you bad habits because losing costs nothing. Here is when to switch and how to bridge the gap.",
-    keywords: ["aviator demo", "aviator real money", "aviator free play", "aviator demo mode", "aviator practice"],
+      "Demo teaches the visible controls; real-money play adds account, payment and bonus rules. Compare the differences without mistaking practice wins for proof.",
+    keywords: ["aviator demo vs real money", "Aviator demo mode", "real money Aviator", "virtual credits", "SPRIBE Aviator"],
   },
   {
     slug: "aviator-betting-systems-tested",

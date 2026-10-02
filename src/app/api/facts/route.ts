@@ -216,10 +216,11 @@ export function GET() {
           "Two legal paths for Dutch and Belgian players: KSA-licensed and Belgian Gaming Commission casinos (full consumer protection, operator pays tax, iDEAL/Bancontact deposits) vs Curacao/MGA crypto casinos (faster withdrawals, crypto deposits, but no local license and the player owes 37.80% kansspelbelasting from Jan 2026 with no 449 euro internet threshold). The KSA targets operators not players.",
       },
       {
-        title: "Aviator Demo vs Real Money: When to Make the Switch (2026)",
+        title: "Aviator demo vs real money: differences, odds and choice",
         url: "https://www.aviatorcrashgame.com/guides/aviator-demo-vs-real-money",
         summary:
-          "Aviator demo mode and real money play use the same provably fair RNG with identical 97% RTP and crash point distribution. The math is the same. But demo creates systematically wrong habits because losing costs nothing. Players cash out earlier, chase losses more often, and take different risks when real money is involved. Five readiness criteria: tested auto-cashout targets, fast bet placement, decided bankroll, understood bonus terms, and a named stop-loss. Transition by depositing minimum ($10-20), playing minimum bet ($0.10/round), and scaling up only when behavior matches demo discipline.",
+          "Public-document review, 2 October 2026: compares virtual-credit demos with funded Aviator wagers. SPRIBE publishes 97% RTP, but universal demo parity is not established; UK free-play standards have jurisdiction and same-site scope. BetFury lists Aviator/Spribe with demo/real labels; account, payment and bonus policies remain separate and local eligibility is not verified. Not a recommendation for restricted markets. No games, accounts or transactions tested.",
+        reviewed: "2026-10-02",
       },
       {
         title: "Aviator Betting Systems Tested: Why Martingale and Fibonacci Can't Win",
