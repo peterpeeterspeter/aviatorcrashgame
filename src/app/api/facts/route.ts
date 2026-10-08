@@ -21,6 +21,13 @@ export function GET() {
     },
     topGuides: [
       {
+        title: "Aviator vs roulette: which casino game fits you?",
+        url: "https://www.aviatorcrashgame.com/guides/aviator-vs-roulette",
+        summary: "Compares an in-round cashout decision with pre-spin bet selection. SPRIBE publishes 97% Aviator RTP. Standard single-zero roulette at 35:1 net straight-up payout yields a conditional 97.30% RTP; this is not the verified configuration of BetFury's Roulette by Evolution listing. Covers wheel variants, La Partage, hit probabilities, gross/net returns and total turnover. BetFury is a conditional catalog option only: licensing wording and bonus-balance rules conflict, named-game bonus permission/contribution and country/account eligibility remain unknown. Public-document research, no accounts, gameplay or payments tested.",
+        reviewed: "2026-10-03",
+        sources: ["https://spribe.co/games/aviator", "https://games.evolution.com/live-casino/live-roulette/", "https://games.evolution.com/live-casino/live-roulette/arcade-roulette/"],
+      },
+      {
         title: "Aviator vs Mines: game differences, RTP and which fits you",
         url: "https://www.aviatorcrashgame.com/guides/aviator-vs-mines",
         summary: "SPRIBE advertises 97% RTP for Aviator and SPRIBE Mines; BetFury Originals Mines is a distinct game advertised at 99.02%. Compares shared-round cashout with tile reveal decisions, edition-specific controls and conditional versus cumulative probabilities using a labeled hypothetical board. Public-document review, not gameplay testing; no personal eligibility or local licensing certified.",

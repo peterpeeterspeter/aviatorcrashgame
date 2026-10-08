@@ -1,5 +1,11 @@
 # Aviator Crash Game
 
+## Aviator vs roulette (reviewed 3 October 2026)
+
+Aviator asks when to cash out during a rising multiplier; roulette asks what result to back before a spin. SPRIBE publishes 97% Aviator RTP. A conditional standard single-zero wheel paying 35:1 net on a straight-up win returns 36/37, about 97.30%. Double-zero and special variants differ; La Partage affects qualifying even-money bets only. These model calculations are not verified BetFury Roulette configuration. Its public catalog lists Aviator by SPRIBE and Roulette by Evolution, but named-game bonus permission/contribution, local/account eligibility and independent licensing remain unknown; policy/footer wording conflicts are disclosed. No exact Aviator multiplier-hit formula was verified. Public-document comparison, not account, gameplay, deposit or withdrawal testing.
+
+Guide: https://www.aviatorcrashgame.com/guides/aviator-vs-roulette
+
 ## Aviator vs Mines (reviewed 25 September 2026)
 
 SPRIBE advertises 97% RTP for both Aviator and its Mines game. Aviator uses a moving multiplier and shared-round cashout; Mines offers successive reveal-and-stop decisions. BetFury Originals Mines is a separate title, advertised at 99.02% RTP with a 25-cell board and 1–24 bombs. The comparison keeps editions separate and illustrates conditional versus cumulative safe-pick probabilities under an explicitly hypothetical uniform-board model. These are public specifications, not observed returns. Operator documentation conflicts and market restrictions remain unresolved; catalog access does not establish eligibility or licensing. No account, gameplay, deposit or withdrawal testing was performed.
@@ -84,7 +90,7 @@ Predictor apps, signal groups, and bots that claim to predict crashes are scams.
 
 ## Best strategy for beginners
 
-1. Use auto-cashout at 1.5x or 2.0x (approximately 50% win rate)
+1. If available, choose an auto-cashout target you understand; a 2.0x target does not by itself establish a 50% win rate
 2. Never bet more than 5% of your bankroll per round
 3. Set a session loss limit before playing
 4. Treat Aviator as entertainment, not income
@@ -112,6 +118,7 @@ Aviator has a 3% house edge. Over thousands of rounds, you will lose approximate
 
 ## Pages
 
+- [Aviator vs roulette: which casino game fits you?](https://www.aviatorcrashgame.com/guides/aviator-vs-roulette)
 - [Aviator vs Mines: game differences, RTP and which fits you](https://www.aviatorcrashgame.com/guides/aviator-vs-mines)
 - [How to Play Aviator](https://www.aviatorcrashgame.com/how-to-play)
 - [Free Demo (no real money)](https://www.aviatorcrashgame.com/how-to-play/demo)

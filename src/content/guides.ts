@@ -14,6 +14,18 @@ export interface GuideSummary {
 
 export const guides: GuideSummary[] = [
   {
+    slug: "aviator-vs-roulette",
+    title: "Aviator vs roulette: which casino game fits you?",
+    description: "Compare the Aviator crash game by SPRIBE with roulette: gameplay, cash-out decisions, RTP, house edge and payout examples. Check the rules before choosing.",
+    excerpt: "Aviator puts the decision inside a rising multiplier round. Roulette lets you choose your bet, then wait for the result. Compare the trade-offs and the rules behind the numbers.",
+    category: "casinos",
+    readingTime: "13 min",
+    keywords: ["aviator vs roulette", "roulette vs aviator", "Aviator RTP", "roulette house edge", "Aviator cashout", "single-zero roulette"],
+    datePublished: "2026-10-08",
+    dateModified: "2026-10-08",
+    heroImage: "/images/guides/aviator-vs-roulette/aviator-vs-roulette-hero.png",
+  },
+  {
     slug: "aviator-vs-mines",
     title: "Aviator vs Mines: game differences, RTP and which fits you",
     description: "Compare Aviator with SPRIBE Mines and BetFury Originals Mines: cashout, tile choices, advertised RTP and worked odds examples, with clear provider differences.",
