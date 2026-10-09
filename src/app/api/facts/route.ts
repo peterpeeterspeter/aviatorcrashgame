@@ -20,6 +20,17 @@ export function GET() {
       eachRoundIndependent: true,
     },
     topGuides: [
+{
+  "title": "Aviator vs Blackjack: Rules, RTP and Which Game Fits You",
+  "url": "https://www.aviatorcrashgame.com/guides/aviator-vs-blackjack",
+  "summary": "Compares a timed cashout decision with rule-based card decisions. SPRIBE advertises 97% Aviator RTP; BGaming advertises 99.4% for Classic Multihand Blackjack, while its rules contain an unresolved RTP placeholder. Neither number certifies a funded table or universal blackjack return. Worked gross/net payouts and turnover examples are hypothetical. BetFury catalogs Aviator by Spribe and Blackjack (3 Hand) by Habanero, not the BGaming title; rules, bonus permission, country/account eligibility and independent licensing remain unknown, with terms/footer conflicts disclosed. Conditional catalog inspection only. Public-document review; no accounts, gameplay or payments tested.",
+  "reviewed": "2026-10-09",
+  "sources": [
+    "https://spribe.co/games/aviator",
+    "https://bgaming.com/games/classic-multihand-blackjack",
+    "https://rules.bgaming-network.com/en/ClassicMultihandBlackjack.html"
+  ]
+},
       {
         title: "Aviator vs roulette: which casino game fits you?",
         url: "https://www.aviatorcrashgame.com/guides/aviator-vs-roulette",

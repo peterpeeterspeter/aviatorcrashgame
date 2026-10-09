@@ -1,5 +1,11 @@
 # Aviator Crash Game
 
+## Aviator vs blackjack (reviewed 9 October 2026)
+
+Compares a timed cashout decision with rule-based card decisions. SPRIBE advertises 97% Aviator RTP; BGaming advertises 99.4% for Classic Multihand Blackjack, while its rules contain an unresolved RTP placeholder. Neither number certifies a funded table or universal blackjack return. Worked gross/net payouts and turnover examples are hypothetical. BetFury catalogs Aviator by Spribe and Blackjack (3 Hand) by Habanero, not the BGaming title; rules, bonus permission, country/account eligibility and independent licensing remain unknown, with terms/footer conflicts disclosed. Conditional catalog inspection only. Public-document review; no accounts, gameplay or payments tested.
+
+Guide: https://www.aviatorcrashgame.com/guides/aviator-vs-blackjack
+
 ## Aviator vs roulette (reviewed 3 October 2026)
 
 Aviator asks when to cash out during a rising multiplier; roulette asks what result to back before a spin. SPRIBE publishes 97% Aviator RTP. A conditional standard single-zero wheel paying 35:1 net on a straight-up win returns 36/37, about 97.30%. Double-zero and special variants differ; La Partage affects qualifying even-money bets only. These model calculations are not verified BetFury Roulette configuration. Its public catalog lists Aviator by SPRIBE and Roulette by Evolution, but named-game bonus permission/contribution, local/account eligibility and independent licensing remain unknown; policy/footer wording conflicts are disclosed. No exact Aviator multiplier-hit formula was verified. Public-document comparison, not account, gameplay, deposit or withdrawal testing.

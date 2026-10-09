@@ -13,6 +13,24 @@ export interface GuideSummary {
 }
 
 export const guides: GuideSummary[] = [
+{
+  "slug": "aviator-vs-blackjack",
+  "title": "Aviator vs Blackjack: Rules, RTP and Which Game Fits You",
+  "description": "Compare Aviator and blackjack by gameplay, named-game rules, advertised RTP and real stake exposure. See payout examples and what to check before choosing.",
+  "excerpt": "Compare a timed cashout decision with rule-based card decisions, using primary rules, honest return examples and a conditional catalog option.",
+  "category": "casinos",
+  "keywords": [
+    "aviator vs blackjack",
+    "blackjack and aviator",
+    "blackjack basic strategy",
+    "casino games",
+    "online blackjack"
+  ],
+  "datePublished": "2026-10-09",
+  "dateModified": "2026-10-09",
+  "readingTime": "12 min",
+  "heroImage": "/images/guides/aviator-vs-blackjack/aviator-vs-blackjack-hero.png"
+},
   {
     slug: "aviator-vs-roulette",
     title: "Aviator vs roulette: which casino game fits you?",
