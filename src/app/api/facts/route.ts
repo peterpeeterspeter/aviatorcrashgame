@@ -222,10 +222,11 @@ export function GET() {
           "Public-document comparison of browser tabs, home-screen web apps and operator apps. SPRIBE lists mobile device coverage; Apple and Google document browser-installed web apps. BetFury has a public Aviator by Spribe listing and Chrome/Safari installation instructions, subject to country, local-law and account eligibility checks. Catalog access is not a tested game launch. No app-store inventory, device performance, payment timing or bonus entitlement was verified. BetFury restricts many countries, including NL, BE, UK and US; no jurisdiction is certified eligible here.",
       },
       {
-        title: "Aviator No Deposit Bonus: Which Free Offers Actually Work?",
+        title: "Aviator No Deposit Bonus: Free Bets, Demos and Offer Checks",
         url: "https://www.aviatorcrashgame.com/guides/aviator-no-deposit-bonus",
+        reviewed: "2026-10-10",
         summary:
-          "Historical no-deposit guide awaiting current offer verification. A slot free-spin allocation does not establish Aviator eligibility. Check the exact reward's game permission, contribution, caps and withdrawal rules; no universal no-deposit rate or faucet eligibility is certified here.",
+          "Public-document review: compares noncash demo credits, SPRIBE Free Bets and Rain Promo, slot spins, platform tokens and bonus cash. Developer promotion tools do not establish a current operator entitlement; no active Aviator-specific cashable no-deposit offer was verified. BetFury is one conditional catalog example, not a verified bonus recommendation: FUNFURY is documented for Originals, and the reviewed welcome pack requires separate deposits. Named Aviator bonus permission and contribution remain unknown. Operator terms restrict NL, BE, UK and US among other countries; unlisted countries are not certified eligible. No accounts, gameplay, rewards, deposits, KYC or withdrawals tested.",
       },
       {
         title: "Aviator in the Netherlands & Belgium: Where You Can Actually Play (2026)",
