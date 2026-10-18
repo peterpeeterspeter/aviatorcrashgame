@@ -182,10 +182,17 @@ export function GET() {
         ],
       },
       {
-        title: "Aviator Auto-Cashout: Hit Rates, Target Selection, and Why It Beats Manual",
+        title: "Aviator Auto Cashout: Setup, Targets and Payout Examples",
         url: "https://www.aviatorcrashgame.com/guides/aviator-auto-cashout-guide",
         summary:
-          "Auto-cashout removes timing errors but does not change the 3% house edge. Hit rate at 1.5x is 64.7%, at 2x is 48.5%, at 10x is 9.7%. Every target has the same -3% expected value. The override pattern (cancelling auto-cashout mid-round to chase higher multipliers) is how most auto-cashout strategies fail.",
+          "Auto Cashout sets an exit coefficient; Auto Bet places bets. YesPlay-hosted Aviator rules document their separate operation and stake-times-coefficient gross returns. Payout examples are hypothetical, not exact hit rates or a proven best target. SPRIBE advertises 97% RTP; this is not a complete probability table or a tested funded-game configuration. BetFury is a conditional catalog option, not a tested game launch or verified bonus: named-game permission, contribution and personal eligibility remain unknown. No accounts, gameplay, KYC, deposits or withdrawals tested. Not a recommendation for readers in NL, BE, UK, US or India.",
+        reviewed: "2026-10-14",
+        sources: [
+          "https://spribe.co/games/aviator",
+          "https://yesplay.bet/assets/documents/spribe-Aviator.pdf",
+          "https://docs.betfury.com/betfury/terms-of-services/terms-and-conditions",
+          "https://docs.betfury.com/betfury/bonus-system/welcome-pack-terms-and-conditions",
+        ],
       },
       {
         title: "Aviator Minimum Deposit: Payment Methods and Withdrawal Checks",

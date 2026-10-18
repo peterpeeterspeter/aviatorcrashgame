@@ -304,14 +304,17 @@ export const guides: GuideSummary[] = [
   },
   {
     slug: "aviator-auto-cashout-guide",
-    title: "Aviator Auto-Cashout: Hit Rates, Target Selection, and Why It Beats Manual",
+    title: "Aviator Auto Cashout: Setup, Targets and Payout Examples",
     description:
-      "How Aviator auto-cashout works, the exact hit rate at every common multiplier from 1.2x to 100x, why every target has the same -3% expected value, and the override failure mode that ruins most auto-cashout strategies.",
+      "Learn how Aviator auto cashout differs from Auto Bet, compare target payouts and net profit, and check game rules and bonus eligibility before choosing a casino.",
     category: "strategy",
     readingTime: "10 min",
     excerpt:
-      "Auto-cashout removes timing errors but does not change the 3% house edge. Here are the hit rates at every common target, the math behind why no target beats any other, and the override pattern that quietly wrecks most auto-cashout strategies.",
-    keywords: ["aviator auto cashout", "aviator auto cash out", "aviator cashout target", "aviator hit rate"],
+      "Auto cashout sets the multiplier at which an accepted bet should settle. Auto Bet places bets. Neither guarantees a winning round: compare the controls, understand the payout arithmetic, then check the operator's rules.",
+    keywords: ["aviator auto cashout", "aviator auto cash out", "aviator cashout target", "aviator cashout payout"],
+    datePublished: "2026-07-07",
+    dateModified: "2026-10-18",
+    heroImage: "/images/guides/aviator-auto-cashout-guide/hero.png",
   },
   {
     slug: "aviator-payments-deposits-withdrawals",

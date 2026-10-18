@@ -1,106 +1,96 @@
 export const guideContent = {
-  sections: [
+  "sections": [
     {
-      heading: `What auto-cashout actually does, and what it does not`,
-      paragraphs: [
-        `Auto-cashout is a feature built into Aviator by <a href="https://spribe.co/games/aviator" target="_blank" rel="noopener noreferrer">Spribe</a>. You set a target multiplier before the round starts. When the round begins and the multiplier climbs from 1.00x, your bet settles automatically the instant the multiplier reaches your target. If the round crashes first, the bet loses. No click required on the way up.`,
-        `The feature is part of the game itself, not a casino-side add-on. That means it works identically at every casino that runs the standard Aviator game. You do not need to check whether a specific casino supports it. If the casino offers Aviator, auto-cashout is there.`,
-        `What auto-cashout does is remove timing errors. It removes the half-second of hesitation that costs you a cashout when the multiplier crashes a moment after you decided to press the button. It removes the temptation to hold on for a slightly bigger multiplier when you see the number climbing past your target. Both of those failure modes are where most Aviator players bleed money, and auto-cashout eliminates both.`,
-        `What auto-cashout does not do is change your expected return. The crash point distribution is engineered so that the probability of reaching any multiplier M is approximately 0.97 divided by M, which is derived from the 97% RTP. We walk through the full math in our <a href="/guides/aviator-rtp-house-edge">Aviator RTP and house edge guide</a>, but the short version: every cashout target, from 1.5x to 100x, has the same negative 3% expected value per unit wagered. Auto-cashout is a discipline tool, not an edge tool.`,
-      ],
+      "heading": "What Aviator auto cashout does",
+      "paragraphs": [
+        "Aviator auto cashout lets you enter a multiplier at which your bet is automatically cashed out if that target is reached. You do not need to press Cashout at that moment. If the plane flies away before your bet is cashed out, you lose that stake. It is a preset exit, not a prediction of when the round will end.",
+        "Choose auto cashout when you want to commit to an exit before the outcome unfolds. Choose manual cashout when you want to initiate the exit yourself. Neither is a proven profit strategy. If the game is new to you, start with our <a href=\"/guides/how-to-play-aviator\">Aviator rules and beginner's guide</a> before comparing controls.",
+        "<figure><img src=\"/images/guides/aviator-auto-cashout-guide/hero.png\" width=\"1536\" height=\"1024\" alt=\"Conceptual plane and curved ribbon beside an unlabeled dial and blank notebook\" loading=\"lazy\" /><figcaption>AI-generated conceptual illustration of choosing a preset exit; not a game screenshot or evidence of a working control.</figcaption></figure>",
+        "<strong>Research and disclosure:</strong> reviewed on 14 October 2026 using SPRIBE's public product information, an undated YesPlay-hosted Aviator rules PDF, BetFury's public catalog and policies, and four competing articles. We did not open accounts, play rounds, deposit, complete KYC or test withdrawals. Partner links may earn us commission. The conditional operator option below is not a recommendation for readers in the Netherlands, Belgium, UK, US or India; eligibility elsewhere still needs checking."
+      ]
     },
     {
-      heading: `How to set up auto-cashout, and the auto-bet distinction most guides blur`,
-      paragraphs: [
-        `The setup is the same at every casino. During the betting window between rounds, look at the bet panel where you would normally type your stake. Next to or above the stake field there is a smaller input labeled Auto or Auto Cash Out with a toggle. Type your target multiplier into that field, toggle it on, enter your stake, and click Bet. The entire configuration takes under 30 seconds.`,
-        `When the round starts, the bet panel shows your auto-cashout target alongside a live Cash Out button. You can ignore the button. If the round reaches your target, the cashout executes automatically and the winnings land in your balance before the next round begins. You can change the target between rounds at any time. You cannot change it during a round, which is the point. If you could change it mid-round, you would be back to manual cashout with all its timing problems.`,
-        `One thing worth checking before your first session: many casinos also offer an auto-bet toggle that places the bet for you each round without clicking Bet. Auto-cashout and auto-bet are separate features that do different things. Auto-cashout controls when your bet exits a round. Auto-bet controls whether a new bet is placed at the start of the next round. You can use either without the other.`,
-        `Running auto-cashout alone is the setup most players should start with. You click Bet each round, the bet auto-cashes at your target if reached, and you decide whether to bet again next round. This keeps you actively engaged with the decision to bet. Running both together turns the game into fully unattended auto-play, which is risky. Aviator rounds run every 10 to 15 seconds, so an unattended auto-bet plus auto-cashout setup can burn through 100 rounds in under 25 minutes. If you use auto-bet, set a hard round limit and stay in front of the screen.`,
-      ],
+      "heading": "Auto cashout vs manual cashout vs Auto Bet",
+      "paragraphs": [
+        "The <a href=\"https://yesplay.bet/assets/documents/spribe-Aviator.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">YesPlay-hosted Aviator game rules</a> distinguish placing a bet from cashing it out. That distinction matters more than whether a screen labels the area Auto, Auto Play or Auto Cash Out. These are documented rules, not a test of every casino interface.",
+        "<div class=\"overflow-x-auto\" tabindex=\"0\" role=\"region\" aria-label=\"Cashout controls comparison\"><table><thead><tr><th>Control</th><th>Action</th><th>Decision left to you</th><th>What it does not establish</th></tr></thead><tbody><tr><td>Manual Cashout</td><td>You press Cashout to request settlement</td><td>When to attempt the exit</td><td>A successful exit after the plane has flown away</td></tr><tr><td>Auto Cashout</td><td>Cashout at the entered coefficient when reached</td><td>Target and whether to place a bet</td><td>That the round will reach the target</td></tr><tr><td>Auto Bet</td><td>Places bets automatically</td><td>Whether to enable repeated betting</td><td>Automatic cashout unless that option is also enabled</td></tr></tbody></table></div>",
+        "On narrow screens, scroll the comparison sideways to see every column. Auto Bet alone is not a cashout strategy: the documented rules still require a manual cashout unless you use the separate auto-cashout option. Our <a href=\"/guides/aviator-autoplay\">Aviator autoplay guide</a> deals with repeated betting; this page focuses on exiting an individual bet."
+      ]
     },
     {
-      heading: `Hit rates at every common multiplier`,
-      paragraphs: [
-        `The probability of a round reaching any multiplier M is approximately 0.97 divided by M. This is derived directly from Aviator's 97% RTP, and it matches the observed data from thousands of real rounds. We cover the full derivation in our <a href="/guides/aviator-multiplier-guide">multiplier guide</a>. Here are the numbers you will actually use when picking a target.`,
-        `<table style="border-collapse:collapse;width:100%;font-size:0.95rem;margin:1rem 0"><thead><tr style="background:hsl(var(--muted));text-align:left"><th style="padding:8px;border:1px solid hsl(var(--border))">Target</th><th style="padding:8px;border:1px solid hsl(var(--border))">Hit rate</th><th style="padding:8px;border:1px solid hsl(var(--border))">Frequency</th><th style="padding:8px;border:1px solid hsl(var(--border))">Payout on hit</th></tr></thead><tbody>
-<tr><td style="padding:8px;border:1px solid hsl(var(--border))">1.2x</td><td style="padding:8px;border:1px solid hsl(var(--border))">80.8%</td><td style="padding:8px;border:1px solid hsl(var(--border))">about 4 in 5 rounds</td><td style="padding:8px;border:1px solid hsl(var(--border))">0.2x profit</td></tr>
-<tr><td style="padding:8px;border:1px solid hsl(var(--border))">1.5x</td><td style="padding:8px;border:1px solid hsl(var(--border))">64.7%</td><td style="padding:8px;border:1px solid hsl(var(--border))">about 2 in 3 rounds</td><td style="padding:8px;border:1px solid hsl(var(--border))">0.5x profit</td></tr>
-<tr><td style="padding:8px;border:1px solid hsl(var(--border))">2x</td><td style="padding:8px;border:1px solid hsl(var(--border))">48.5%</td><td style="padding:8px;border:1px solid hsl(var(--border))">about 1 in 2 rounds</td><td style="padding:8px;border:1px solid hsl(var(--border))">1x profit</td></tr>
-<tr><td style="padding:8px;border:1px solid hsl(var(--border))">3x</td><td style="padding:8px;border:1px solid hsl(var(--border))">32.3%</td><td style="padding:8px;border:1px solid hsl(var(--border))">about 1 in 3 rounds</td><td style="padding:8px;border:1px solid hsl(var(--border))">2x profit</td></tr>
-<tr><td style="padding:8px;border:1px solid hsl(var(--border))">5x</td><td style="padding:8px;border:1px solid hsl(var(--border))">19.4%</td><td style="padding:8px;border:1px solid hsl(var(--border))">about 1 in 5 rounds</td><td style="padding:8px;border:1px solid hsl(var(--border))">4x profit</td></tr>
-<tr><td style="padding:8px;border:1px solid hsl(var(--border))">10x</td><td style="padding:8px;border:1px solid hsl(var(--border))">9.7%</td><td style="padding:8px;border:1px solid hsl(var(--border))">about 1 in 10 rounds</td><td style="padding:8px;border:1px solid hsl(var(--border))">9x profit</td></tr>
-<tr><td style="padding:8px;border:1px solid hsl(var(--border))">50x</td><td style="padding:8px;border:1px solid hsl(var(--border))">1.94%</td><td style="padding:8px;border:1px solid hsl(var(--border))">about 1 in 50 rounds</td><td style="padding:8px;border:1px solid hsl(var(--border))">49x profit</td></tr>
-<tr><td style="padding:8px;border:1px solid hsl(var(--border))">100x</td><td style="padding:8px;border:1px solid hsl(var(--border))">0.97%</td><td style="padding:8px;border:1px solid hsl(var(--border))">about 1 in 103 rounds</td><td style="padding:8px;border:1px solid hsl(var(--border))">99x profit</td></tr>
-</tbody></table>`,
-        `The hit rate drops fast as the target climbs. Doubling your target roughly halves your chance of hitting it. The jump from 1.5x to 2x looks modest, but the jump from 10x to 20x is where most players underestimate how dry the dry spells get. At 100x, you wait an average of 103 rounds between hits, and the variance around that average is wide.`,
-        `Here is the counterintuitive part. Lower targets do not just hit more often; they produce more stable bankroll curves. A player auto-cashing at 1.5x sees their balance bounce inside a tight band, because two-thirds of rounds return a small profit. A player auto-cashing at 10x sees their balance march steadily downward, punctuated by occasional spikes that may or may not recover the losses. Same expected return, very different ride.`,
-      ],
+      "heading": "How to set auto cashout: check the panel before betting",
+      "paragraphs": [
+        "The hosted rules place Auto Cashout in the Auto tab of a bet panel. They say to activate it and enter the coefficient. Use that as a documented starting point, then read the help inside the game you actually opened. We have not verified identical labels, limits or editing permissions at every operator.",
+        "<div><ol style=\"list-style-type:decimal;padding-left:1.5rem\"><li>Confirm the title is Aviator by SPRIBE and open its game rules, rather than instructions for another crash game.</li><li>Locate Auto Cashout in the relevant bet panel. Do not confuse its multiplier field with the stake or Auto Bet setting.</li><li>Enter the target you intend to use and confirm the option is enabled before placing the bet.</li><li>Check the stake, selected panel and bet acceptance. A typed amount or target alone is not proof that a bet was accepted.</li><li>After the round, compare the recorded stake, cashout coefficient and return with what you intended.</li></ol></div>",
+        "The same rules describe two simultaneous bets using a second panel. If you choose that setup, check each panel separately; do not assume configuring one configures both. On a smaller screen, ensure you can read the actual fields and recorded result. See our <a href=\"/guides/aviator-mobile-guide\">browser and mobile options</a> before downloading an app from an unfamiliar site.",
+        "Do not rely on changing an active target midway through a round: we did not establish that this is permitted in your interface. Equally, once a bet has successfully settled at its target, that bet is no longer waiting for a higher multiplier. Changing a later setting does not reopen its result."
+      ]
     },
     {
-      heading: `Why every target has the same negative 3% expected value`,
-      paragraphs: [
-        `Run the math at 1.5x. You win 1.5 times your stake 64.7% of the time and lose your stake 35.3% of the time. Expected value per unit wagered is payout-on-win times probability-of-win minus stake times probability-of-loss. That gives 0.5 times 0.647 minus 1 times 0.353, which equals minus 0.03. About a 3% loss per unit wagered.`,
-        `Run the same math at 10x. You win 9 times your stake 9.7% of the time and lose your stake 90.3% of the time. Expected value: 9 times 0.097 minus 1 times 0.903, which equals 0.873 minus 0.903, which equals minus 0.03. Same answer. At 100x: 99 times 0.0097 minus 1 times 0.9903, which equals 0.9603 minus 0.9903, which equals minus 0.03. Same answer again.`,
-        `This is not a coincidence. The 0.97 factor is built into the probability distribution itself, so every target produces the same expected return of minus 3% per unit wagered. The choice of target changes your variance, not your edge.`,
-        `Worth saying plainly because a lot of marketing implies otherwise. "Play smart, target low, grind out a profit" is not true. "Wait for the big multipliers, that's where the money is" is also not true. Both styles lose 3% of wagered money over the long run. The difference is whether you lose it in small frequent amounts or large occasional chunks.`,
-      ],
+      "heading": "Cashout target examples: gross return is not profit",
+      "paragraphs": [
+        "The documented payout formula is stake multiplied by cashout coefficient. That is the gross return, including the stake. Net profit on that bet is gross return minus stake. The following examples use a hypothetical 10-unit cash stake and successful settlement exactly at the stated target; they are arithmetic, not measured hit rates, predictions or recommended stakes.",
+        "<div class=\"overflow-x-auto\" tabindex=\"0\" role=\"region\" aria-label=\"Hypothetical cashout payout examples\"><table><thead><tr><th>Target</th><th>Stake</th><th>Gross return if settled</th><th>Net profit if settled</th><th>Loss if not cashed out</th></tr></thead><tbody><tr><td>1.5×</td><td>10 units</td><td>15 units</td><td>5 units</td><td>10 units</td></tr><tr><td>2×</td><td>10 units</td><td>20 units</td><td>10 units</td><td>10 units</td></tr><tr><td>3×</td><td>10 units</td><td>30 units</td><td>20 units</td><td>10 units</td></tr><tr><td>5×</td><td>10 units</td><td>50 units</td><td>40 units</td><td>10 units</td></tr></tbody></table></div>",
+        "Scroll sideways if needed. The larger number is conditional on a later successful exit, not extra money you have already earned while watching the multiplier rise. Keep these in-game returns separate from casino withdrawals: a game cashout does not itself transfer funds to a bank account or crypto wallet.",
+        "Two bets do not create a guaranteed safety floor. Suppose you stake 5 units in each panel. If one settles at 2× and the other loses, your total return is 10 units against 10 staked: no net profit. If both lose before cashout, all 10 units are lost. Both bets share the same round, so splitting them is not diversification into independent outcomes."
+      ]
     },
     {
-      heading: `The override: how auto-cashout strategies actually fail`,
-      paragraphs: [
-        `Here is the failure mode almost no competitor talks about. A player sets auto-cashout at 2x, plays a few rounds, and watches the multiplier climb past 2x, past 3x, past 5x, and then crash at 8x. They feel like they missed a big win. The next round, when the multiplier climbs past 2x again, they click Cancel Auto and hold for higher. The round crashes at 2.1x. They lose what would have been a winning bet.`,
-        `This is the override. It is the single most common way auto-cashout strategies fall apart, and it is entirely psychological. The auto-cashout did exactly what it was supposed to do. The player broke their own system, because watching a multiplier climb past your target feels like leaving money on the table.`,
-        `The math says the override is a mistake. The rounds where the multiplier climbs to 8x or higher are rare (about 12% of rounds), and you have no way to know in advance which rounds those will be. By cancelling auto-cashout to chase the occasional big multiplier, you expose yourself to the far more common outcome: the round crashes shortly after your original target, and you lose. The rounds you remember are the 8x crashes you missed. The rounds you forget are the 2.1x crashes you ate because you cancelled. Over time, the latter outnumber the former.`,
-        `The fix is mechanical. Once you set auto-cashout, do not touch it during the round. If you find yourself reaching for the Cancel button regularly, that is the signal to close the game for the session. The override is tilt wearing a rationalization costume. We cover the broader tilt pattern in our <a href="/guides/aviator-common-mistakes">common mistakes guide</a>, and it is the pattern that turns a structured auto-cashout strategy into an unstructured losing one.`,
-      ],
+      "heading": "Is there a best auto cashout multiplier?",
+      "paragraphs": [
+        "Not one established by this research. A smaller target offers a smaller gross return for the same stake if it settles; a larger target requires the round to continue further. Neither makes the stake safe. Select a target to express the exit you want, not because a list of previous multipliers supposedly makes the next outcome due.",
+        "<a href=\"https://spribe.co/games/aviator\" target=\"_blank\" rel=\"noopener noreferrer\">SPRIBE's public Aviator product information</a> gives 97% RTP. This is not a promised session return or a complete probability table. We have not established an exact hit rate for every cashout target, or measured the configuration of a funded BetFury game. The <a href=\"/guides/aviator-rtp-house-edge\">RTP and house-edge explainer</a> covers the distinction between long-run return and your own results.",
+        "Auto cashout removes the need to make the manual click at the selected target. That can suit someone who wants a preset decision. It does not establish zero latency, guaranteed settlement in every fault condition, or an advantage over the game's underlying rules. Keep the stake within a pre-set bankroll limit and make the decision to place another bet separately."
+      ]
     },
     {
-      heading: `Picking a target that matches your bankroll`,
-      paragraphs: [
-        `Your auto-cashout target should be tied to your bankroll size and your session goals, not to a gut feeling about today's multiplier. The principle is simple: lower targets produce smaller, more frequent swings that a modest bankroll can absorb. Higher targets produce larger, rarer swings that require a bigger bankroll to survive the dry spells.`,
-        `If your session bankroll is 100 units and you bet 1 unit per round, a 1.5x auto-cashout target lets you play for a long time. Two-thirds of your rounds return a small profit, so your bankroll drifts down slowly rather than cratering. The same bankroll at a 10x target is usually gone inside 100 rounds, because you lose roughly 90% of rounds outright and the rare 10x hit only returns 9 units of profit.`,
-        `The honest recommendation for most players: target 1.5x to 2x. This is not because those targets are luckier. It is because they produce a hit rate high enough that your session lasts long enough to be entertaining, and the swings are small enough that tilt does not take over. If you want to chase higher multipliers, our <a href="/guides/aviator-dual-bet-strategy">dual bet strategy guide</a> explains how to do that with a small side bet while keeping most of your stake on a safer target. The bankroll management guide has the broader framework for sizing bets and setting stop-losses.`,
-        `For the actual bankroll sizing, the standard rule is 1 to 2% of your session bankroll per round. That is small enough to survive normal losing streaks, which at a 1.5x target means streaks of 5 to 10 rounds and occasionally longer. Bet more than that and a single bad streak ends the session before the math has a chance to play out.`,
-      ],
+      "heading": "Choosing a casino: a conditional BetFury option",
+      "paragraphs": [
+        "<a href=\"https://betfury.bet/df1865703\" target=\"_blank\" rel=\"sponsored nofollow noopener noreferrer\">BetFury</a> is a candidate to investigate if you are legally eligible: its public catalog identified Aviator by Spribe during this review. The exact partner link resolved to a substantive general casino homepage, not a tested Aviator launch. This is a reason to inspect its game and terms, not a claim that we played there or verified your access.",
+        "The concrete drawback is eligibility. <a href=\"https://docs.betfury.com/betfury/terms-of-services/terms-and-conditions\" target=\"_blank\" rel=\"noopener noreferrer\">BetFury's terms</a> name the Netherlands, Belgium, UK and US among a long, non-exhaustive list of restricted jurisdictions. The terms also require compliance with local law. A country missing from that list is not permission to use the service. We do not recommend this option to readers in India either, and have not certified licensing or availability for any reader's jurisdiction.",
+        "If eligibility is confirmed, compare the actual game rules and cashout controls, available payment methods, verification requirements and withdrawal conditions. Our <a href=\"/guides/best-aviator-casinos\">Aviator casino comparison</a> and <a href=\"/guides/aviator-payments-deposits-withdrawals\">payment and deposit guide</a> separate these decisions. Do not pick an operator solely because its headline bonus is larger."
+      ]
     },
     {
-      heading: `Does auto-cashout work the same at every casino?`,
-      paragraphs: [
-        `Yes. Auto-cashout is implemented by Spribe inside the Aviator game itself, not by the casino. The casino provides the bet handling and the wallet, but the auto-cashout trigger is part of the game's code. It executes identically at <a href="/go/bitstarz">BitStarz</a>, <a href="/go/cybet">Cybet</a>, <a href="/go/mirax">Mirax</a>, <a href="/go/trustdice">TrustDice</a>, and everywhere else Aviator is offered.`,
-        `What does differ between casinos is everything around the game. Payout speed varies, sometimes dramatically. Bonus contribution rate varies, and at most casinos crash games contribute only 5% toward wagering, which we break down casino by casino in our <a href="/guides/aviator-bonus-wagering">bonus wagering guide</a>. Whether the casino offers a separate auto-bet configuration alongside auto-cashout varies. The game-level auto-cashout mechanic does not vary.`,
-        `If you are choosing where to play, the two things that actually matter are how fast withdrawals arrive and whether the welcome bonus is worth taking for crash game play. In our testing, BitStarz consistently delivered crypto withdrawals in under 10 minutes, which is faster than every other casino on our list. Cybet is the only casino where we verified crash games contribute 100% toward wagering, which makes it the one place where taking the bonus actually works for Aviator players. TrustDice is the pick for provably fair, crypto-native play without KYC friction. The full rankings are in our <a href="/guides/best-aviator-casinos">best Aviator casinos guide</a>.`,
-      ],
+      "heading": "Can you use auto cashout with a casino bonus?",
+      "paragraphs": [
+        "A native game control and permission to wager a bonus are different questions. BetFury's <a href=\"https://docs.betfury.com/betfury/bonus-system/welcome-pack-terms-and-conditions\" target=\"_blank\" rel=\"noopener noreferrer\">Welcome Pack policy</a> says bonus balance works only in selected games and that individual bonus details set wagering rules. We did not verify SPRIBE Aviator's permission or contribution for a current personalized offer. Do not assign the BetFury Originals coefficient to a third-party SPRIBE game.",
+        "Before accepting an offer, check the exact game, permitted bet size, wagering basis, contribution, expiry and withdrawal restrictions. Unknown contribution is not the same as zero contribution or prohibited play. A successful in-game cashout does not make a locked bonus freely withdrawable. Our <a href=\"/guides/aviator-bonus-wagering\">Aviator bonus-wagering comparison</a> explains the separate checks.",
+        "If the game and your jurisdiction qualify, <a href=\"https://betfury.bet/df1865703\" target=\"_blank\" rel=\"sponsored nofollow noopener noreferrer\">review BetFury's current game and offer details</a> before registering. Skip the offer if its Aviator rules cannot be established; an attractive advertised amount does not fill that evidence gap."
+      ]
     },
     {
-      heading: `When manual cashout makes sense (the narrow case)`,
-      paragraphs: [
-        `Auto-cashout is the right default for almost everyone. There is one narrow case where manual cashout genuinely makes sense, and it involves the dual bet feature.`,
-        `Aviator lets you place two independent bets per round. A common setup is to put one bet on auto-cashout at 1.5x as a safety net, and let the second bet ride with a manual cashout decision based on how the round develops. This works because the auto-cashout bet guarantees you exit at your safe target regardless of what happens, while the manual bet lets you react to the actual multiplier behavior. The guaranteed floor keeps the round from being a total loss; the manual bet gives you upside if the multiplier runs.`,
-        `Outside of this specific setup, manual cashout is almost always worse than auto-cashout. The reason is reaction time. The Aviator multiplier updates several times per second, and the gap between "I should cash out" and actually clicking the button is long enough that the multiplier can crash in between. Auto-cashout has no reaction time; it triggers the instant the target is reached.`,
-        `If you are new, ignore manual cashout entirely. Set auto-cashout on both bet panels if you are using dual bets, pick modest targets, and let the game execute your plan. Our <a href="/guides/how-to-play-aviator">how to play Aviator guide</a> walks through the basic mechanics, and our <a href="/guides/aviator-strategy-tips">strategy tips guide</a> covers the broader framework. Once you have played several hundred rounds and the mechanics feel automatic, you can experiment with one manual bet alongside an auto-cashout bet. Until then, manual cashout is mostly a way to lose money slightly faster than you need to. And if auto-cashout discipline starts feeling like a fight, that is a good moment to step away entirely. <a href="https://www.begambleaware.org/" target="_blank" rel="noopener noreferrer">BeGambleAware</a> has free, confidential resources if gambling stops being fun.`,
-      ],
+      "heading": "When auto cashout appears not to work",
+      "paragraphs": [
+        "First separate a losing bet from a disputed settlement. Did the round reach the target before fly-away? Was the setting enabled on the accepted bet's panel? Does the recorded result differ from the animation you saw? Keep the round or bet ID, target, stake and relevant screenshots for the operator's official support channel. These checks identify the issue; they do not promise a refund.",
+        "Connection rules need particular care. The YesPlay-hosted PDF says an interrupted connection with an active bet triggers cashout at the current coefficient, but it also says hardware or software malfunctions void affected bets and payouts, with affected stakes refunded. Those clauses belong to that hosted rules version. They are not a verified BetFury connection guarantee, and disconnecting is not a strategy.",
+        "Read your operator's applicable rules instead of repeatedly changing settings to chase a disputed result. Avoid third-party tools claiming to guarantee cashouts or predict the next crash. The useful choice is between documented controls you understand, not a promised system that eliminates losses."
+      ]
     },
+    {
+      "heading": "The practical choice",
+      "paragraphs": [
+        "Use auto cashout for a preset exit, manual cashout for a player-initiated attempt, and assess Auto Bet separately. Check the panel and recorded settlement, calculate profit after subtracting the stake, and choose an operator only when the game, policies and your eligibility line up. No universal target or bonus shortcut was verified here.",
+        "<strong>Adults only:</strong> 18+ or the higher legal age where you live. Aviator is gambling; you can lose the full stake. Set money and time limits you can afford and never use it to recover earlier losses."
+      ]
+    }
   ],
-  faqs: [
+  "faqs": [
     {
-      question: `What is the best auto-cashout target for beginners?`,
-      answer: `1.5x to 2x. A 1.5x target wins roughly 65% of rounds, and a 2x target wins roughly 48%. Both produce enough hits to keep your bankroll relatively stable and give you a long session. Higher targets sound more exciting but drain your bankroll faster between rare wins. Start at 1.5x, and only move up once you are comfortable with the mechanics and your bankroll management is solid.`,
+      "question": "What does auto cashout mean in Aviator?",
+      "answer": "It is a preset coefficient at which your bet is automatically cashed out when reached. In the hosted rules reviewed, it is available through the Auto tab in a bet panel. If the plane flies away before your cashout, the stake is lost. Check the rules in your actual game."
     },
     {
-      question: `Does auto-cashout improve your RTP?`,
-      answer: `No. Aviator's 97% RTP applies to every cashout target equally, whether automated or manual. Auto-cashout does not change the math; it removes the timing errors and emotional overrides that cause players to lose money faster than the math predicts. The expected return per unit wagered is minus 3% no matter how you cash out.`,
+      "question": "Does Auto Bet automatically cash out winnings?",
+      "answer": "Not by itself. The documented Auto Bet option places bets automatically. The rules say you still need to cash out manually each round unless the separate auto-cashout option is used. Turning on repeated betting is therefore a separate decision from choosing an exit target."
     },
     {
-      question: `Can you cancel auto-cashout mid-round?`,
-      answer: `Yes, the casino interface includes a Cancel button that disables auto-cashout for the current round. Doing this is almost always a mistake. The urge to cancel usually appears when the multiplier is climbing past your target, which is exactly when the math says to stick with your plan. If you find yourself cancelling regularly, treat it as a tilt signal and end the session.`,
+      "question": "Is 2× auto cashout guaranteed to double my money?",
+      "answer": "No. A 10-unit bet successfully settled at 2× returns 20 units in total, including the original stake: net profit is 10 units. If the bet is not cashed out before fly-away, the 10-unit stake is lost. The example gives payout arithmetic, not a success probability."
     },
     {
-      question: `What is the difference between auto-cashout and auto-bet?`,
-      answer: `Auto-cashout controls when your bet exits the round, automatically paying out when the multiplier reaches your target. Auto-bet controls whether a new bet is placed automatically at the start of each round. They are independent features; you can use either without the other. Combining both turns the game into fully unattended auto-play, which is risky because rounds are fast and your bankroll can drain quickly while you are not watching.`,
-    },
-    {
-      question: `Is auto-cashout available at every casino that offers Aviator?`,
-      answer: `Yes. Auto-cashout is built into Aviator by Spribe and is part of the game itself, not a casino-side feature. Every casino that runs standard Aviator provides the auto-cashout function. You do not need to verify whether a specific casino supports it before signing up.`,
-    },
-  ],
+      "question": "Can I hold the same bet longer after it auto-cashes out?",
+      "answer": "No: a successfully settled bet has already exited the round. Changing a later target does not reopen that result. Whether you can edit a still-active target or manually exit before it is reached depends on controls and rules we have not verified for every operator."
+    }
+  ]
 };
