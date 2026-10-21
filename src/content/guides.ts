@@ -14,6 +14,25 @@ export interface GuideSummary {
 
 export const guides: GuideSummary[] = [
 {
+  "slug": "aviator-vs-dice",
+  "title": "Aviator vs Dice: Cashout, RTP and Which Game Fits You",
+  "description": "Compare SPRIBE Aviator with crypto dice by cashout, advertised RTP, automation and payout examples. Separate named versions before choosing a game or casino.",
+  "category": "casinos",
+  "readingTime": "13 min",
+  "excerpt": "Aviator asks when to cash out during a shared round. Crypto dice asks you to choose a chance and payout before the result. Compare the named versions, not slogans.",
+  "keywords": [
+    "aviator vs dice",
+    "dice vs aviator",
+    "SPRIBE Dice",
+    "crypto dice",
+    "Aviator cashout",
+    "casino game comparison"
+  ],
+  "datePublished": "2026-10-21",
+  "dateModified": "2026-10-21",
+  "heroImage": "/images/guides/aviator-vs-dice/aviator-vs-dice-hero.png"
+},
+{
   "slug": "aviator-vs-blackjack",
   "title": "Aviator vs Blackjack: Rules, RTP and Which Game Fits You",
   "description": "Compare Aviator and blackjack by gameplay, named-game rules, advertised RTP and real stake exposure. See payout examples and what to check before choosing.",

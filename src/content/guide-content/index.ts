@@ -1,4 +1,5 @@
 // Static import map for all guide content - needed for Next.js SSG
+import { guideContent as aviatorVsDice } from "./aviator-vs-dice";
 import { guideContent as aviatorVsBlackjack } from "./aviator-vs-blackjack";
 import { guideContent as aviatorVsRoulette } from "./aviator-vs-roulette";
 import { guideContent as aviatorVsMines } from "./aviator-vs-mines";
@@ -43,6 +44,7 @@ export interface GuideContent {
 }
 
 export const guideContentMap: Record<string, GuideContent> = {
+  "aviator-vs-dice": aviatorVsDice,
   "aviator-vs-blackjack": aviatorVsBlackjack,
   "aviator-vs-roulette": aviatorVsRoulette,
   "aviator-vs-mines": aviatorVsMines,

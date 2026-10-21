@@ -21,6 +21,18 @@ export function GET() {
     },
     topGuides: [
 {
+  "title": "Aviator vs Dice: Cashout, RTP and Which Game Fits You",
+  "url": "https://www.aviatorcrashgame.com/guides/aviator-vs-dice",
+  "summary": "SPRIBE Aviator and SPRIBE Dice both advertise 97% RTP. Aviator uses shared-round cashout; crypto higher/lower dice sets chance and payout before the result. BetFury Originals Dice is a separate title, advertised at 99.02% on its captured homepage card, not a tested configuration. Gross/net examples are hypothetical. Public catalog and affiliate landing-page observations do not establish game launch, licensing, bonus permission or country/account eligibility. BetFury terms prohibit many markets including NL, BE, UK and US; terms/footer licensing conflicts and payment caps are disclosed. Public-document research, no accounts, gameplay or payments tested.",
+  "reviewed": "2026-10-20",
+  "sources": [
+    "https://spribe.co/games/aviator",
+    "https://spribe.co/games/dice",
+    "https://spribe.co/provably-fair",
+    "https://cdn.yesplay.bet/assets/documents/spribe-Aviator.pdf"
+  ]
+},
+{
   "title": "Aviator vs Blackjack: Rules, RTP and Which Game Fits You",
   "url": "https://www.aviatorcrashgame.com/guides/aviator-vs-blackjack",
   "summary": "Compares a timed cashout decision with rule-based card decisions. SPRIBE advertises 97% Aviator RTP; BGaming advertises 99.4% for Classic Multihand Blackjack, while its rules contain an unresolved RTP placeholder. Neither number certifies a funded table or universal blackjack return. Worked gross/net payouts and turnover examples are hypothetical. BetFury catalogs Aviator by Spribe and Blackjack (3 Hand) by Habanero, not the BGaming title; rules, bonus permission, country/account eligibility and independent licensing remain unknown, with terms/footer conflicts disclosed. Conditional catalog inspection only. Public-document review; no accounts, gameplay or payments tested.",
