@@ -274,14 +274,16 @@ export const guides: GuideSummary[] = [
   },
   {
     slug: "aviator-dual-bet-strategy",
-    title: "Aviator Dual Bet Strategy: How Two Bets Actually Work",
+    title: "Aviator Dual Bet Strategy: Two Stakes, One Crash and Net Returns",
     description:
-      "How Aviator's dual bet works: two independent bets per round, the math behind splitting stakes, best configurations, and why it doesn't beat the 3% house edge.",
+      "Compare Aviator dual betting with one fixed stake. See combined payout examples, separate cashout controls and what to check before choosing an operator.",
     category: "strategy",
-    readingTime: "10 min",
+    readingTime: "13 min",
+    dateModified: "2026-10-22",
+    heroImage: "/images/guides/aviator-dual-bet-strategy/aviator-dual-bet-hero.png",
     excerpt:
-      "The dual bet feature lets you place two independent bets per round, each with its own stake and cashout target. It does not reduce the house edge, but it changes your variance profile. Here is how to use it effectively.",
-    keywords: ["aviator dual bet", "aviator two bets", "aviator double bet"],
+      "Two Aviator panels let you choose different stakes and cashout targets, but both share one crash. Compare the combined return, not just the winning panel.",
+    keywords: ["aviator dual bet strategy", "aviator two bets", "dual betting", "two simultaneous bets", "aviator cashout", "net payout"],
   },
   {
     slug: "aviator-vs-jetx-vs-spaceman",

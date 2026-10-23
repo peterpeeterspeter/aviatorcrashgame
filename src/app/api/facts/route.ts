@@ -165,7 +165,8 @@ export function GET() {
         title: "Aviator Dual Bet Strategy",
         url: "https://www.aviatorcrashgame.com/guides/aviator-dual-bet-strategy",
         summary:
-          "Aviator's dual bet feature lets you place two independent bets per round. Splitting bets does not change your expected value (-3% always), but it changes your variance profile.",
+          "Two Aviator panels share one crash round while allowing separate stakes and cashout controls. This public-document comparison holds total spending fixed, distinguishes gross payout from combined net return and separates Auto Bet from Auto Cashout. BetFury is a conditional public catalog option, not an account or game-launch test; its terms prohibit residents of markets including the Netherlands and Belgium, and eligibility elsewhere remains unverified. No target hit probabilities, operator-specific RTP, bonus permission or contribution rate are established.",
+        reviewed: "2026-10-22",
       },
       {
         title: "Aviator casino bonuses: wagering requirements and game rules",

@@ -1,82 +1,132 @@
 export const guideContent = {
-  sections: [
+  "sections": [
     {
-      heading: `What dual betting actually is`,
-      paragraphs: [
-        `Aviator lets you place two independent bets in the same round. You see two bet panels side by side on the game screen, and each one has its own stake, its own auto-cashout target, and its own cash-out button. When the round starts, both bets are live simultaneously against the same crash point. When the plane flies away, each bet is settled independently based on whether you cashed out before the crash.`,
-        `This is a built-in feature of the game, not a trick or an exploit. Spribe designed Aviator with dual betting from the start, and every casino that offers Aviator supports it. The feature exists because it opens up strategic options that a single bet does not. You can hedge by cashing out one bet early while letting the other ride toward a higher multiplier. You can run two identical bets to double your volume per round. Or you can use one bet for steady small wins and the other for occasional large payouts.`,
-        `The important thing to understand before we get into strategy is what dual betting does not do. It does not increase your chances of winning. It does not reduce the house edge. It does not protect you from losing. Two bets are simply two bets, and each one carries the same 3% mathematical disadvantage as a single bet. What changes is the shape of your results, not the long-run average. We will get into exactly how and why in the math section below.`,
-      ],
+      "heading": "What the Aviator dual bet strategy changes",
+      "paragraphs": [
+        "The Aviator dual bet strategy splits a round's stake across two panels, usually with an earlier cashout on one and a higher target on the other. It changes which combinations of returns you can receive. It does not give you two independent chances against two different crashes: both stakes are exposed to the same round.",
+        "The practical choice is between one simple exit and two separately managed exits. If you want the first cashout to cover both stakes, calculate that before playing. A winning panel can still leave the round at a net loss. Below, the comparison keeps the total stake fixed and shows exactly what happens when neither, one or both bets settle.",
+        "New to the controls? Start with our <a href=\"/guides/how-to-play-aviator\">Aviator playing guide</a>. This article is for adults considering the two-panel feature where gambling and the selected operator are permitted. Affiliate disclosure: we may earn a commission through the operator links, without changing the comparison's arithmetic.",
+        "<figure><img src=\"/images/guides/aviator-dual-bet-strategy/aviator-dual-bet-hero.png\" alt=\"Conceptual paper airplane beside two bowls of silver discs representing split stakes\" width=\"1536\" height=\"1024\" loading=\"lazy\" style=\"width:100%;height:auto;border-radius:12px\"/><figcaption>AI-generated conceptual illustration, not a game screenshot, test result or technical diagram. The bowls and discs are props, not demonstrated payouts.</figcaption></figure>"
+      ]
     },
     {
-      heading: `How to set up a dual bet, step by step`,
-      paragraphs: [
-        `During the betting window between rounds, you will see two bet panels labeled Bet 1 and Bet 2. For each panel, you set three things: the stake amount, whether to use auto-cashout, and if so, the target multiplier. Type your stake into the input field or use the plus and minus buttons to adjust it. Set the auto-cashout target by typing a number into the auto-cashout field on that panel. Then click the Bet button on each panel you want to activate.`,
-        `A common configuration for a first attempt is Bet 1 at your base stake with auto-cashout at 1.5x, and Bet 2 at the same stake with auto-cashout at 3x. This gives you a 64.7% chance of getting half your money back on Bet 1 and a 32.3% chance of a larger win on Bet 2. When the round reaches 1.5x, Bet 1 cashes out automatically. If the round continues to 3x, Bet 2 also cashes out. If the round crashes before 1.5x, both bets lose.`,
-        `You can also run one bet on auto-cashout and the other on manual. This lets you lock in a guaranteed exit on one side while making a real-time decision on the other. Some players prefer this because it keeps them engaged with the round. The downside is that manual cashout is where most timing mistakes happen, so if you are new, put both bets on auto-cashout until the mechanics feel automatic.`,
-      ],
+      "heading": "What we checked, and what we did not test",
+      "paragraphs": [
+        "We reviewed public documents on 22 October 2026: SPRIBE's Aviator description and route-specific RTP display, the Aviator rules PDF hosted by YesPlay, BetFury's public SPRIBE Aviator listing, and BetFury's general and bonus policies. We also read five competing strategy articles, including two returned by our NeuronWriter query and three supplemental topical sources. Competitor claims helped identify gaps; they did not establish game rules or operator eligibility.",
+        "This was a public-document review. We did not create accounts, launch a funded game, place bets, make deposits, submit identity documents or test withdrawals. The examples are calculated scenarios, not observed results. A readable catalog page confirms a public listing, not access from your country or the exact settings of your account.",
+        "The <a href=\"https://cdn.yesplay.bet/assets/documents/spribe-Aviator.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">captured operator-hosted Aviator rules</a> explicitly describe making two simultaneous bets by adding a second panel. We attribute those instructions to that captured rules version, rather than claiming every operator has an identical interface. <a href=\"https://spribe.co/games/aviator\" target=\"_blank\" rel=\"noopener noreferrer\">SPRIBE's public game page</a> describes the increasing multiplier and the need to cash out before the plane leaves."
+      ]
     },
     {
-      heading: `The math: why splitting bets does not change your expected value`,
-      paragraphs: [
-        `Every bet in Aviator has the same expected value: negative 3% of the amount wagered. This is true regardless of your cashout target, your bet size, or how many bets you place in a round. The reason is that the crash point distribution is engineered so that the probability of reaching any multiplier M is approximately 0.97 divided by M. The 0.97 factor is the RTP, baked directly into the probability formula, which means every cashout target returns 97% of what you wager over the long run.`,
-        `When you place two bets, each one independently has this same negative 3% expectation. If you wager 1 unit on Bet 1 and 1 unit on Bet 2, your total expected loss is 0.06 units per round, which is exactly 3% of the 2 units you wagered. Compare this to a single bet of 2 units at any target: the expected loss is also 0.06 units. The dual bet does not save you money in expectation. You can verify this yourself with a simple calculation we will walk through next.`,
-        `Here are the actual numbers for a dual bet of 1 unit at 1.5x and 1 unit at 5x. There are three possible outcomes. The round reaches 5x or higher 19.4% of the time, and both bets win, returning 6.5 units total. The round reaches 1.5x but crashes before 5x in 45.3% of rounds, so only Bet 1 wins, returning 1.5 units. And the round crashes before 1.5x in 35.3% of rounds, and both bets lose. The expected return across all outcomes is 0.194 times 6.5 plus 0.453 times 1.5 plus 0.353 times 0, which equals 1.94 units. You wagered 2 units, so your expected loss is 0.06 units, or 3%. Identical to a single bet.`,
-      ],
+      "heading": "Two bet panels still share one crash round",
+      "paragraphs": [
+        "Separate controls and independent outcomes are different things. BetFury's authored Aviator page describes each panel as having its own stake, target and Cash Out button. That supports separately managed panels in its public explanation. It does not mean one panel receives a different crash point from the other.",
+        "Consider targets of 1.50x and 4.00x. For the higher target to be reached in that round, the multiplier must first pass the lower one. If the round ends before the lower exit settles, both exposed stakes can lose. If the first bet has already settled and the second is still open, only the second remains exposed. An earlier return is not retroactively lost because the remaining bet crashes.",
+        "This is why counting two wins as separate coin flips is wrong. The outcomes are linked through one rising curve. Our <a href=\"/guides/aviator-multiplier-guide\">multiplier guide</a> explains the displayed coefficient; here, the useful question is what each settled bet contributes to your combined balance. A configured target is not already a settlement, and an open bet is not a banked return."
+      ]
     },
     {
-      heading: `The cover bet myth and what dual betting really does to your variance`,
-      paragraphs: [
-        `Many strategy guides describe dual betting as a way to reduce risk. The pitch goes like this: place a safe bet at 1.5x to cover your stake, then use a second bet to chase a higher multiplier. The safe bet allegedly protects you. This framing is misleading, and the math shows why. Your 1.5x bet wins 64.7% of the time, which sounds reassuring, but the remaining 35.3% of rounds wipe out both bets entirely. The safe bet does not protect the growth bet. They are independent wagers on the same random event.`,
-        `What dual betting actually changes is the distribution of your per-round outcomes, also called variance. Whether this helps or hurts depends entirely on which targets you choose. A conservative configuration like 1 unit at 1.5x plus 1 unit at 2x has lower variance than a single 2-unit bet at 2x, because both targets are close together and the payout range is narrow. But an aggressive configuration like 1 unit at 1.5x plus 1 unit at 5x has higher variance than that same single bet, because the 5x payout creates a much wider spread of possible returns despite the frequent small wins on the 1.5x side.`,
-        `The practical implication is that you should choose your dual bet configuration based on the variance profile you want, not based on an illusion of protection. If your goal is to grind out many small wins and extend your session, use two bets with close, low targets like 1.5x and 2x. If your goal is to chase occasional large payouts while maintaining frequent small returns, the asymmetric setup works, but understand that you are increasing your overall variance, not reducing it. Either way, your expected loss per unit wagered is 3%.`,
-      ],
+      "heading": "Single bet versus dual bet: compare the same total stake",
+      "paragraphs": [
+        "A fair comparison starts with the same round budget. Comparing one $1 bet with two $1 bets doubles the money exposed and tells you little about the split itself. The table below holds the total at $2. All targets and stake sizes are hypothetical choices, not recommended hit rates or verified operator minima.",
+        "<div style=\"max-width:100%;overflow-x:auto\"><table style=\"min-width:640px\"><caption>Fixed $2 total: combined net result after the stated exits settle</caption><thead><tr><th>Arrangement</th><th>Neither exit settles</th><th>Only the 1.50x exit settles</th><th>Both dual exits settle</th></tr></thead><tbody><tr><td>One $2 bet at 1.50x</td><td>−$2.00</td><td>+$1.00</td><td>Not applicable: one bet</td></tr><tr><td>$1 at 1.50x + $1 at 4.00x</td><td>−$2.00</td><td>−$0.50</td><td>+$3.50</td></tr><tr><td>$1.50 at 1.50x + $0.50 at 4.00x</td><td>−$2.00</td><td>+$0.25</td><td>+$2.25</td></tr></tbody></table></div>",
+        "On smaller screens or within a narrow article column, scroll the table sideways to see every outcome. The trade-off is straightforward: allocating more of the budget to the early exit improves the early-only result, but leaves less on the higher target. The single early bet pays more than either split when only the early exit succeeds. The equal split pays more in the displayed both-exits scenario.",
+        "Those are conditional returns, not an overall ranking. Without reliable probabilities for each outcome, this table does not show which arrangement has the best expected result or the lowest measured variance. It does show why an equal split is not automatically the safest option and why a larger high-target return is not proof of a better strategy."
+      ]
     },
     {
-      heading: `When dual betting helps and when single betting is better`,
-      paragraphs: [
-        `Dual betting genuinely helps in two situations. First, when you want finer control over your risk profile per round. Two bets give you two exit points, which means two guaranteed cashout moments instead of one. If you want part of your stake exiting at 1.5x and part at 3x, the only way to do that within a single round is the dual bet feature. Second, when you want to reduce the all-or-nothing feeling that makes Aviator emotionally difficult. Losing every bet on a round feels worse than losing one and winning the other, even if the financial outcome is similar.`,
-        `Single betting is the better choice when you want to minimize the total amount you wager per round. This is a point most guides gloss over: two bets means you are putting more money into action each round, which means your bankroll burns faster relative to the number of rounds you survive. If your bankroll is 100 units and you bet 1 unit per round, you can expect roughly 100 to 200 rounds before going broke, depending on your target. If you switch to two 1-unit bets per round, that range drops to roughly 50 to 100 rounds. You are not losing more per unit wagered, but you are wagering more units per round.`,
-        `Single betting is also better when your goal is simplicity. Managing two bets adds cognitive load. You have to set two stakes, two auto-cashout targets, and track two positions during the round. For players who want to relax and play at a measured pace, one bet per round with a pre-set auto-cashout is the lowest-friction approach. The dual bet feature is a tool, not an obligation. Use it when the added control is worth the added complexity and the faster bankroll consumption.`,
-      ],
+      "heading": "Gross payout is not your combined net profit",
+      "paragraphs": [
+        "The hosted rules define a win as the stake multiplied by the cashout coefficient. That is the gross returned amount, including the winning stake. For two bets, calculate: <strong>combined net return = all gross returns received − both original stakes</strong>. Do not subtract only the losing stake and call the remainder profit.",
+        "With $1 on each panel, a first cashout at 1.50x returns $1.50. If the other $1 bet loses, the round's net result is $1.50 minus $2, or a $0.50 loss. Calling this a profitable round because the first panel won hides half of the spending. If the second bet also settles at 4.00x, gross returns are $1.50 plus $4, making $5.50 returned and $3.50 net.",
+        "The same distinction applies at very low targets. A $2 early bet at 1.20x returns $2.40. Add a separate $0.50 bet that loses, and the combined result is $2.40 minus $2.50: a $0.10 loss. The first panel can look successful while the full arrangement still loses money.",
+        "Keep a round record with both stakes, each actual cashout and the total net return. If you want to separate round spending from the session budget, our <a href=\"/guides/aviator-bankroll-management\">bankroll management guide</a> is the relevant next read. A session result needs every round included, not just screenshots of winning exits."
+      ]
     },
     {
-      heading: `Bankroll considerations specific to dual betting`,
-      paragraphs: [
-        `The 5% rule from our bankroll management guide applies to your total stake per round, not per bet. If your bankroll is 100 units and you follow the 5% rule, your maximum total stake per round is 5 units. With dual betting, that 5 units is split across both bets. You might put 3 units on Bet 1 and 2 units on Bet 2, or split it evenly at 2.5 each. The key is that the combined stake stays at or below your per-round limit.`,
-        `A common mistake is treating each bet panel independently for bankroll purposes. A player with a 100-unit bankroll might bet 5 units on Bet 1 and 5 units on Bet 2, thinking each one follows the 5% rule. In reality, they are wagering 10 units per round, which is 10% of their bankroll. At that rate, a short losing streak can wipe out a third of the bankroll in minutes. Always calculate your bankroll percentage based on the combined stake of all active bets in the round.`,
-        `If you are using an asymmetric split where Bet 1 is larger and targets a low multiplier while Bet 2 is smaller and targets a high multiplier, the math works in your favor for session length. The larger low-target bet wins more often, which means more of your per-round stake is coming back to you on most rounds. This extends your session compared to putting the same total amount on a single high-target bet. But remember: the expected loss is still 3% of total wagered. You are extending the session, not improving the outcome.`,
-      ],
+      "heading": "Can the first cashout cover both stakes?",
+      "paragraphs": [
+        "Yes, conditionally: the first bet's gross return must at least equal the total placed on both panels, and that cashout must actually settle. Let the early stake be A, the second stake B and the early coefficient X. The early-only net is A × X − A − B. Its break-even coefficient is 1 + B ÷ A. This is bookkeeping, not a prediction that the round will reach the target.",
+        "<div style=\"max-width:100%;overflow-x:auto\"><table style=\"min-width:560px\"><caption>Hypothetical early-only break-even points, before fees or special balance rules</caption><thead><tr><th>Early stake</th><th>Second stake</th><th>Early coefficient needed</th><th>Gross return at that coefficient</th></tr></thead><tbody><tr><td>$1.00</td><td>$1.00</td><td>2.00x</td><td>$2.00</td></tr><tr><td>$1.50</td><td>$0.50</td><td>About 1.3333x</td><td>$2.00 at the exact ratio</td></tr><tr><td>$2.00</td><td>$0.50</td><td>1.25x</td><td>$2.50</td></tr></tbody></table></div>",
+        "An interface may allow only certain target increments. The recurring 1.3333x figure is a mathematical ratio, not a claim that an operator lets you enter that exact value. For the $1.50/$0.50 example, a settled 1.50x early exit returns $2.25 and produces the $0.25 early-only net shown above. Verify permitted coefficients and settlement rounding in the selected game.",
+        "The formula helps only after the exit settles. Neither a break-even formula nor an enabled Auto Cashout creates a guaranteed floor: if the round ends before settlement, the full amount can still be lost. Describe a successfully settled covering return as covering that round's spending, not as free money or an invitation to raise the next stake."
+      ]
     },
     {
-      heading: `Mistakes to avoid with dual betting`,
-      paragraphs: [
-        `The most common mistake is increasing total stake per round when switching from single to dual betting. If you were betting 2 units per round as a single bet and then start placing two 2-unit bets, you have doubled your wagering volume without changing your strategy. Your bankroll will deplete twice as fast. When you adopt dual betting, reduce each individual bet so the combined stake matches what you were wagering before, or matches your bankroll management limit.`,
-        `A second mistake is chasing losses on the growth bet while treating the safety bet wins as house money. When Bet 1 wins at 1.5x and returns 1.5 units, that is real money, not bonus money. Some players mentally categorize those small wins as free chips and use them to justify larger stakes on Bet 2. This is how a structured dual bet strategy devolves into uncontrolled chasing. Track your net position for the session, not per bet, and stick to your stop-loss regardless of how many times Bet 1 has cashed out.`,
-        `The third mistake is assuming dual betting is inherently more sophisticated or advanced than single betting. It is not. The house edge is the same. The RTP is the same. The feature gives you more options for shaping your per-round outcomes, but it does not give you an edge. Players who feel they have graduated to a higher level of play because they use two bets instead of one are engaging with the game emotionally, not strategically. Use dual betting because it fits your bankroll plan and your tolerance for complexity, not because it feels more advanced.`,
-      ],
+      "heading": "Auto Bet and Auto Cashout do different jobs",
+      "paragraphs": [
+        "In the captured Aviator rules, Auto Bet places bets automatically. Auto Cashout settles a bet when the entered coefficient is reached. Enabling one is not proof the other is active. The rules explicitly say that automatic bet placement still requires manual cashout unless the Auto Cashout option is used.",
+        "For a two-target arrangement, check the displayed stake and intended exit for each panel separately. If you choose manual cashout, distinguish the button you pressed from the panel you intended to settle. If you use automated settlement, verify each panel's active target in the actual interface rather than assuming the first panel's setting carries across.",
+        "We did not verify target-editing behavior during an open round, manual override priority, disconnect guarantees or account-specific Auto Bet stop conditions. Those details should come from the current operator rules or its support, not from this example. Our <a href=\"/guides/aviator-auto-cashout-guide\">Auto Cashout setup and payout guide</a> covers the controls in more detail. Third-party bots are not the same thing as a native option described in the rules."
+      ]
     },
+    {
+      "heading": "A useful split depends on the decision you want to make",
+      "paragraphs": [
+        "Choose one bet if your priority is one stake, one exit and fewer settings to manage. Consider an unequal split if your specific aim is a better early-only return while retaining a smaller exposure to a higher target. An equal split puts more money on the higher exit, but the first example demonstrates that the early-only return can remain negative. None is a documented route to guaranteed profit.",
+        "Decide the total round stake first, then divide it. Otherwise the phrase 'second bet' can quietly become extra spending rather than a split. Keep the arrangement fixed while checking whether you understand its returns; increasing the next stake after a loss changes the comparison and does not recover anything by itself.",
+        "If a demo is available to you, it can help you learn where the two controls are and read the displayed settings. It does not establish funded-account eligibility, bonus permission, real withdrawal behavior or a future sequence of results. See our <a href=\"/guides/aviator-demo-vs-real-money\">demo versus real-money comparison</a> for those boundaries. No demo or paid-game test was performed for this review.",
+        "Do not pick the higher target because a recent round ended early or because another player cashed out late. The records reviewed do not establish that those observations forecast the next crash. A useful personal rule controls your actions and budget; it is not evidence that you have predicted the game's outcome."
+      ]
+    },
+    {
+      "heading": "One public catalog option to compare: BetFury",
+      "paragraphs": [
+        "<a href=\"https://betfury.bet/df1865703\" target=\"_blank\" rel=\"sponsored nofollow noopener noreferrer\">BetFury</a> has a public catalog route naming Aviator by SPRIBE. Its authored page also describes two panels with separate stakes and Cash Out controls. For an eligible adult comparing operators, that makes it a concrete catalog option to investigate rather than a generic casino name added to a strategy article.",
+        "The landing page has a limitation. The exact registered affiliate destination resolved to a substantive general casino landing page during our check, not directly to a launched Aviator game. We did not verify a logged-in interface, conversion attribution or live dual-panel configuration. Navigate to the named game and confirm your account's controls before relying on the operator description.",
+        "The captured <a href=\"https://docs.betfury.com/betfury/terms-of-services/terms-and-conditions\" target=\"_blank\" rel=\"noopener noreferrer\">BetFury general terms</a> prohibit accounts for residents of many jurisdictions, including the Netherlands, Belgium, United Kingdom and United States. The list is non-exhaustive, and the terms also make checking local legality the player's responsibility. This is not a recommendation for residents of those prohibited markets. Absence from that list is not confirmation of permission elsewhere.",
+        "Compare this public listing only after confirming local and account eligibility and checking that the offered game meets your needs. The public page's useful control explanation is a plus; unverified account settings and a general rather than game-specific affiliate landing are drawbacks. We have not independently certified licensing or measured payout speed, so neither is a reason to choose it here."
+      ]
+    },
+    {
+      "heading": "Do casino bonuses work with two Aviator bets?",
+      "paragraphs": [
+        "Do not assume they do. BetFury's <a href=\"https://docs.betfury.com/betfury/bonus-system/welcome-pack-terms-and-conditions\" target=\"_blank\" rel=\"noopener noreferrer\">captured welcome-pack terms</a> limit bonus-balance play to selected games and say each bonus can have individual wagering rules. We did not verify permission or a contribution rate for SPRIBE Aviator under a selected current offer.",
+        "A coefficient for BetFury Originals must not be assigned to a third-party SPRIBE title. Likewise, a general bonus policy prohibiting bots or third-party bonus collection does not independently settle whether native Auto Bet is allowed for your selected offer. Ask for the exact game and offer, and keep written permission separate from how much wagering progress a permitted bet earns.",
+        "This guide therefore quotes no welcome amount, game-specific wagering percentage or calculated bonus turnover. Ordinary cash stakes, bonus balance and promotional stakes can have different restrictions; the net examples above assume ordinary stakes and gross returns without special caps or fees. Our <a href=\"/guides/aviator-bonus-wagering\">Aviator bonus-wagering comparison</a> explains excluded play, zero contribution and unknown contribution separately."
+      ]
+    },
+    {
+      "heading": "Why 97% RTP does not supply a target probability table",
+      "paragraphs": [
+        "SPRIBE's public Aviator template displays 97% RTP. That advertised aggregate figure is not a complete crash-point distribution, a verified setting for every operator or a promise about your session. The captured public materials do not establish exact hit rates at 1.50x, 2.00x or 4.00x for the account you would use.",
+        "For that reason, we have not converted RTP into a 'chance to win' at each target, assigned a measured variance reduction to the split or estimated how many minutes a bankroll will survive. The outcome tables remain useful because they calculate what each settlement would return, not how often it happens. More rounds also mean more money wagered; our evidence does not demonstrate that simply playing longer improves your results.",
+        "Fairness verification is a separate issue. Our <a href=\"/guides/aviator-provably-fair\">provably fair explanation</a> covers checking past-round information. A verification procedure does not reveal the next result in advance or make two panels independent. Keep published specifications, actual configuration and prediction claims separate when comparing another site's strategy advice."
+      ]
+    },
+    {
+      "heading": "The choice in plain terms",
+      "paragraphs": [
+        "Dual betting is useful when you deliberately want two exit targets inside one fixed spending limit. It is unnecessary when you simply want an early exit and a simpler interface. Check the combined net return first: equal stakes at a low first target may not cover the second stake at all.",
+        "If local law and the full current restrictions permit your participation, <a href=\"https://betfury.bet/df1865703\" target=\"_blank\" rel=\"sponsored nofollow noopener noreferrer\">compare BetFury's public catalog option</a>, then verify the named game, each panel's controls and the selected balance or offer rules. Do not treat this link as eligibility approval or a tested game launch. A bigger bonus headline cannot answer those questions.",
+        "Adults only. Aviator is gambling, and you can lose both stakes before an exit settles. Use money you can afford to lose, keep spending within your chosen limit and never use a larger next bet as a plan to recover losses."
+      ]
+    }
   ],
-  faqs: [
+  "faqs": [
     {
-      question: `Does placing two bets in Aviator increase your chances of winning?`,
-      answer: `No. Each bet in Aviator has a 97% RTP regardless of target or number of bets. Placing two bets simply means you have two independent wagers, each with the same negative 3% expected value. Your total expected loss per round is 3% of the combined amount wagered on both bets. Dual betting changes the distribution of your outcomes, not the long-run average.`,
+      "question": "Can you place two bets in the same Aviator round?",
+      "answer": "The captured Aviator rules hosted by YesPlay describe two simultaneous bets by adding a second panel. BetFury's authored public page also describes one or two bets and separate panel controls. These are public-document observations, not a logged-in test of every operator or confirmation of your account's current interface."
     },
     {
-      question: `What is the best dual bet configuration for beginners?`,
-      answer: `Start with equal stakes on both bets and conservative targets close together, such as 1.5x on Bet 1 and 2x on Bet 2. This gives you a high hit rate on both bets and the lowest variance of any dual bet setup. Once you are comfortable with the mechanics, you can experiment with wider target spreads, but keep the combined stake within your bankroll management limit.`,
+      "question": "Are the two Aviator bets independent?",
+      "answer": "Their stakes and cashout controls can be managed separately, but both are exposed to the same crash round. A higher target must pass the lower target on that curve. Separate buttons do not mean separate crash results or independent chances of winning."
     },
     {
-      question: `Can you place different bet sizes on each bet panel?`,
-      answer: `Yes. Each bet panel accepts its own stake independently. A common approach is to place a larger stake on the lower-target bet and a smaller stake on the higher-target bet. For example, 3 units at 1.5x and 1 unit at 5x. This weights your wagering toward the higher-probability outcome while keeping a small position open for a larger payout.`,
+      "question": "Does an early cashout make the second bet free?",
+      "answer": "Only a successfully settled return can cover spending. With $1 on each panel, an early 1.50x cashout returns $1.50 against $2 spent, leaving a $0.50 net loss if the other bet loses. An equal split needs a settled 2.00x first exit to cover both stakes, before fees or special rules."
     },
     {
-      question: `Do all casinos that offer Aviator support dual betting?`,
-      answer: `Yes. Dual betting is a core feature of Aviator built by Spribe, not a casino-side addition. Every casino that runs the standard Aviator game provides both bet panels. There is no need to check whether a specific casino supports it. If the casino offers Aviator, dual betting is available.`,
+      "question": "Is dual betting better than one bet?",
+      "answer": "It depends on which conditional returns and controls you want, not a guaranteed advantage. At the same total stake, a single early bet can return more in an early-only outcome, while a split retains exposure to a higher exit. We have not verified outcome probabilities or measured an expected-return improvement for dual betting."
     },
     {
-      question: `Should I use auto-cashout on both bets?`,
-      answer: `For most players, yes. Auto-cashout removes reaction time and emotion from the cashout decision, which is where the majority of timing errors occur. Running both bets on auto-cashout lets you set your strategy before the round starts and then simply watch the result. You can always switch one bet to manual if you want real-time control, but the default recommendation is full automation.`,
+      "question": "Does Auto Bet also cash out both stakes?",
+      "answer": "Not by itself in the captured rules. Auto Bet places bets automatically; Auto Cashout settles at the entered coefficient. Confirm the active settings on each panel in your actual interface. We did not verify disconnect behavior, manual overrides, stop conditions or permission under a selected casino bonus."
     },
-  ],
+    {
+      "question": "Can I use an Aviator bonus for both panels?",
+      "answer": "That remains unverified for a selected current BetFury offer. Its public terms require selected-game eligibility and can apply individual bonus rules. Verify named SPRIBE Aviator permission, contribution, maximum stake and any automation restrictions before bonus play; a catalog listing alone does not answer those questions."
+    }
+  ]
 };
