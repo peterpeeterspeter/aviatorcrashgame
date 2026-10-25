@@ -1,5 +1,12 @@
 # Aviator Crash Game
 
+## Beginner controls (reviewed 24 October 2026)
+
+Bet before takeoff and cash out before the plane disappears. Gross return includes stake; two panels share a crash and an early cashout can still leave a combined loss. Auto Bet repeats placement; Auto Cashout settles at a reached target. Public-document review, not gameplay or payment testing. BetFury publicly catalogs Aviator by SPRIBE but restricts NL, BE, UK and US among other markets; local/account eligibility and exact bonus permission/contribution are not established. Stakes and limits are operator-specific.
+
+Guide: https://www.aviatorcrashgame.com/guides/how-to-play-aviator
+Rules: https://yesplay.bet/assets/documents/spribe-Aviator.pdf
+
 ## Aviator vs dice (reviewed 20 October 2026)
 
 SPRIBE Aviator and SPRIBE Dice both advertise 97% RTP. Aviator uses shared-round cashout; crypto higher/lower dice sets chance and payout before the result. BetFury Originals Dice is a separate title, advertised at 99.02% on its captured homepage card, not a tested configuration. Gross/net examples are hypothetical. Public catalog and affiliate landing-page observations do not establish game launch, licensing, bonus permission or country/account eligibility. BetFury terms prohibit many markets including NL, BE, UK and US; terms/footer licensing conflicts and payment caps are disclosed. Public-document research, no accounts, gameplay or payments tested.
@@ -132,7 +139,7 @@ Aviator has a 3% house edge. Over thousands of rounds, you will lose approximate
 
 - [Aviator vs roulette: which casino game fits you?](https://www.aviatorcrashgame.com/guides/aviator-vs-roulette)
 - [Aviator vs Mines: game differences, RTP and which fits you](https://www.aviatorcrashgame.com/guides/aviator-vs-mines)
-- [How to Play Aviator](https://www.aviatorcrashgame.com/how-to-play)
+- [How to Play Aviator](https://www.aviatorcrashgame.com/guides/how-to-play-aviator)
 - [Free Demo (no real money)](https://www.aviatorcrashgame.com/how-to-play/demo)
 - [Aviator Strategy and Tips](https://www.aviatorcrashgame.com/strategy)
 - [Casino Reviews](https://www.aviatorcrashgame.com/casinos)

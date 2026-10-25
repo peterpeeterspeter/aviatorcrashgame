@@ -15,7 +15,7 @@ export function GET() {
       rtp: "97%",
       houseEdge: "3%",
       provablyFair: true,
-      minBet: "$0.10",
+      minBet: null, // Current operator-specific stake limits are not established.
       predictable: false,
       eachRoundIndependent: true,
     },
@@ -126,11 +126,16 @@ export function GET() {
         ],
       },
       {
-        title: "How to Play Aviator: Complete Beginner Guide",
-        url: "https://www.aviatorcrashgame.com/how-to-play",
-        summary:
-          "Step-by-step explanation of how Aviator works: place a bet, watch the multiplier rise, cash out before it crashes.",
-      },
+        "title": "How to Play Aviator: Bets, Cashout and Beginner Controls",
+        "url": "https://www.aviatorcrashgame.com/guides/how-to-play-aviator",
+        "summary": "Bet before takeoff and cash out before the plane disappears. Gross return includes stake; two panels share a crash and an early cashout can still leave a combined loss. Auto Bet repeats placement; Auto Cashout settles at a reached target. Public-document review, not gameplay or payment testing. BetFury publicly catalogs Aviator by SPRIBE but restricts NL, BE, UK and US among other markets; local/account eligibility and exact bonus permission/contribution are not established. Stakes and limits are operator-specific.",
+        "reviewed": "2026-10-24",
+        "sources": [
+                "https://spribe.co/games/aviator",
+                "https://spribe.co/provably-fair",
+                "https://yesplay.bet/assets/documents/spribe-Aviator.pdf"
+        ]
+},
       {
         title: "Aviator Predictor Apps: The Honest Truth",
         url: "https://www.aviatorcrashgame.com/guides/aviator-predictor-apps-truth",

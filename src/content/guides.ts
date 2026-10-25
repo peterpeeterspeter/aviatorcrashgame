@@ -152,16 +152,22 @@ export const guides: GuideSummary[] = [
     heroImage: "/images/guides/aviator-india/hero.jpg",
   },
   {
-    slug: "how-to-play-aviator",
-    title: "How to Play Aviator: Complete Beginner Guide",
-    description:
-      "Everything a complete beginner needs to know about Aviator. How the game works, how to place bets, when to cash out, and the basic mechanics explained in plain language.",
-    category: "basics",
-    readingTime: "8 min",
-    excerpt:
-      "Aviator is a crash game where a multiplier rises from 1.00x and you must cash out before it crashes. Learn the exact mechanics, bet placement, and auto-cashout in this step-by-step guide.",
-    keywords: ["how to play aviator", "aviator beginner", "aviator rules"],
-  },
+    "slug": "how-to-play-aviator",
+    "title": "How to Play Aviator: Bets, Cashout and Beginner Controls",
+    "description": "Learn how SPRIBE Aviator bets, manual cashout and auto controls work, with two-bet payout examples and checks before choosing an eligible casino operator.",
+    "category": "basics",
+    "readingTime": "11 min",
+    "excerpt": "Choose a stake, bet before takeoff and cash out before the plane disappears. Understand Auto Bet, Auto Cashout, two-panel net returns and operator eligibility before choosing where to play.",
+    "keywords": [
+        "how to play aviator",
+        "aviator beginner",
+        "aviator rules",
+        "aviator cashout"
+    ],
+    "datePublished": "2026-07-07",
+    "dateModified": "2026-10-24",
+    "heroImage": "/images/guides/how-to-play-aviator-hero.png"
+},
   {
     slug: "aviator-strategy-tips",
     title: "Aviator Strategy: 7 Tips That Actually Work",
