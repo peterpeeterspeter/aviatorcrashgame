@@ -21,6 +21,17 @@ export function GET() {
     },
     topGuides: [
 {
+  "title": "Aviator vs Limbo: cashout, target multipliers and game choice",
+  "url": "https://www.aviatorcrashgame.com/guides/aviator-vs-limbo",
+  "summary": "SPRIBE Aviator uses shared-round cashout; BetFury Original Limbo sets the target before betting. SPRIBE advertises 97% RTP; Limbo advertises up to 99.02%, not a verified exact live configuration. Exact target equality remains undocumented in the reviewed description. Gross/net examples are hypothetical. BetFury catalogs Original Limbo; this review does not verify its SPRIBE Aviator listing, game launch, licensing, bonus permission or account/local eligibility. Terms restrict many markets including NL, BE, UK and US. Public-document research only, no accounts, gameplay or payments tested.",
+  "reviewed": "2026-10-26",
+  "sources": [
+    "https://spribe.co/games/aviator",
+    "https://betfury.com/casino/games/limbo",
+    "https://cdn.yesplay.bet/assets/documents/spribe-Aviator.pdf"
+  ]
+},
+{
   "title": "Aviator vs Dice: Cashout, RTP and Which Game Fits You",
   "url": "https://www.aviatorcrashgame.com/guides/aviator-vs-dice",
   "summary": "SPRIBE Aviator and SPRIBE Dice both advertise 97% RTP. Aviator uses shared-round cashout; crypto higher/lower dice sets chance and payout before the result. BetFury Originals Dice is a separate title, advertised at 99.02% on its captured homepage card, not a tested configuration. Gross/net examples are hypothetical. Public catalog and affiliate landing-page observations do not establish game launch, licensing, bonus permission or country/account eligibility. BetFury terms prohibit many markets including NL, BE, UK and US; terms/footer licensing conflicts and payment caps are disclosed. Public-document research, no accounts, gameplay or payments tested.",

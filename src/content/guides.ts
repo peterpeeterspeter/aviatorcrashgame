@@ -14,6 +14,25 @@ export interface GuideSummary {
 
 export const guides: GuideSummary[] = [
 {
+  "slug": "aviator-vs-limbo",
+  "title": "Aviator vs Limbo: cashout, target multipliers and game choice",
+  "description": "Compare SPRIBE Aviator with BetFury Original Limbo: live cashout versus preset targets, qualified RTP, payout examples, automation and operator checks.",
+  "category": "casinos",
+  "readingTime": "13 min",
+  "excerpt": "Choose a shared rising round with an open cashout decision, or commit a multiplier target before the bet. Compare named games, qualified return figures and operator conditions.",
+  "keywords": [
+    "aviator vs limbo",
+    "limbo vs aviator",
+    "BetFury Original Limbo",
+    "SPRIBE Aviator",
+    "cashout",
+    "target multiplier"
+  ],
+  "datePublished": "2026-10-26",
+  "dateModified": "2026-10-26",
+  "heroImage": "/images/aviator-vs-limbo-hero.png"
+},
+{
   "slug": "aviator-vs-dice",
   "title": "Aviator vs Dice: Cashout, RTP and Which Game Fits You",
   "description": "Compare SPRIBE Aviator with crypto dice by cashout, advertised RTP, automation and payout examples. Separate named versions before choosing a game or casino.",

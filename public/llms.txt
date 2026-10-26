@@ -1,5 +1,11 @@
 # Aviator Crash Game
 
+## Aviator vs Limbo (reviewed 26 October 2026)
+
+SPRIBE Aviator uses shared-round cashout; BetFury Original Limbo sets the target before betting. SPRIBE advertises 97% RTP; Limbo advertises up to 99.02%, not a verified exact live configuration. Exact target equality remains undocumented in the reviewed description. Gross/net examples are hypothetical. BetFury catalogs Original Limbo; this review does not verify its SPRIBE Aviator listing, game launch, licensing, bonus permission or account/local eligibility. Terms restrict many markets including NL, BE, UK and US. Public-document research only, no accounts, gameplay or payments tested.
+
+Guide: https://www.aviatorcrashgame.com/guides/aviator-vs-limbo
+
 ## Beginner controls (reviewed 24 October 2026)
 
 Bet before takeoff and cash out before the plane disappears. Gross return includes stake; two panels share a crash and an early cashout can still leave a combined loss. Auto Bet repeats placement; Auto Cashout settles at a reached target. Public-document review, not gameplay or payment testing. BetFury publicly catalogs Aviator by SPRIBE but restricts NL, BE, UK and US among other markets; local/account eligibility and exact bonus permission/contribution are not established. Stakes and limits are operator-specific.
