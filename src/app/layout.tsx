@@ -62,20 +62,20 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
-        {/* GA4 - existing property from WP site */}
+        {/* GA4 - aviatorcrashgame.com web stream */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-4DRZM5XN1E');
+              gtag('config', 'G-XJPM1V07RX');
             `,
           }}
         />
         <script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-4DRZM5XN1E"
+          src="https://www.googletagmanager.com/gtag/js?id=G-XJPM1V07RX"
         />
       </head>
       <body className="flex min-h-screen flex-col bg-background font-sans text-foreground antialiased">
