@@ -10,9 +10,9 @@ import {
 } from "@/lib/seo";
 
 export const metadata: Metadata = constructMetadata({
-  title: "Best Aviator Casinos in 2026 - Tested and Ranked",
+  title: "Best Aviator Casinos in 2026 - Compared and Ranked",
   description:
-    "We tested every major casino that offers Aviator. See our ranked list of the top crypto and fiat casinos for Aviator players, with honest bonus terms, payout speeds, and wagering contributions.",
+    "Compare the leading casinos that offer SPRIBE Aviator: advertised bonuses, payment options, and what each casino is best for. Clear recommendations, no paid placements.",
   path: "/casinos",
 });
 
@@ -21,25 +21,25 @@ const ratingCriteria = [
     number: "01",
     title: "Licensing & Regulation",
     description:
-      "Every casino on this list holds a valid gambling license, typically from Curacao eGaming. We verify the license is active and confirm the operator has no unresolved player disputes at major watchdog sites.",
+      "Every casino on this list publishes a gambling license, typically from Curacao eGaming, the standard for crypto-focused operators. We also weigh how long the brand has been operating.",
   },
   {
     number: "02",
-    title: "Payout Speed",
+    title: "Payments",
     description:
-      "We test real withdrawal times across crypto and fiat methods. If a casino advertises instant payouts, we confirm it actually delivers. Slow or unpredictable withdrawals drop a casino out of the top ranks.",
+      "We compare advertised minimum deposits, supported coins and cards, and the payout speeds each operator publishes. Crypto withdrawals are the fastest advertised option nearly everywhere.",
   },
   {
     number: "03",
     title: "Bonus Fairness",
     description:
-      "A big headline bonus means nothing if the terms are hostile. We read the fine print on wagering requirements, maximum cashouts, and how much Aviator and other crash games contribute toward clearing the bonus.",
+      "A big headline bonus means little if the terms are hostile. We read the published bonus terms: wagering requirements, expiry, and whether crash games like Aviator are confirmed to contribute.",
   },
   {
     number: "04",
     title: "Game Variety & Aviator Quality",
     description:
-      "We confirm Aviator runs smoothly on both desktop and mobile, check for provably fair verification, and review the broader game library so you are not stuck with a thin selection after the novelty wears off.",
+      "We confirm the casino lists SPRIBE's Aviator, not just a lookalike crash title, and look at the surrounding lobby, features and mobile access so you are not stuck with a thin selection.",
   },
 ];
 
@@ -47,27 +47,27 @@ const casinoFaqs = [
   {
     question: "How do you rank these Aviator casinos?",
     answer:
-      "We rank casinos using four criteria: licensing, real payout speed, bonus fairness (including how much crash games contribute to wagering), and overall game variety. We test withdrawals ourselves and read the full bonus terms rather than relying on advertised headline numbers. Casinos that exclude Aviator from bonuses or have slow payouts rank lower regardless of their brand size.",
+      "We compare casinos on four criteria: published licensing and track record, payment options, published bonus terms (including whether Aviator's wagering contribution is confirmed), and Aviator fit. We read operator terms and public documentation rather than relying on headline numbers. Casinos with clearer terms and a better Aviator fit rank higher.",
   },
   {
     question: "Are these casinos safe and legal to play at?",
     answer:
-      "Every casino listed here holds a valid Curacao eGaming license, which is the standard for crypto-focused gambling operators. Legality in your specific country depends on local law. We do not provide legal advice, so check whether online gambling is permitted in your jurisdiction before signing up. Always gamble only with money you can afford to lose.",
+      "Every casino listed here publishes a Curacao eGaming license, the standard for crypto-focused gambling operators. Legality in your country depends on local law, and some operators restrict specific markets. Check both before signing up, and only gamble with money you can afford to lose.",
   },
   {
     question: "Which casino pays out the fastest?",
     answer:
-      "TrustDice advertises instant crypto payouts and consistently delivers. BitStarz processes most crypto withdrawals in under 10 minutes, and Cybet completes crypto cashouts within two hours. Fiat withdrawals are always slower than crypto across every operator because of banking settlement times.",
+      "Crypto is the fastest advertised payout option at every casino here; several advertise near-instant processing. Actual times depend on the operator's review process, your verification status and the network, so treat advertised speeds as best-case, and use crypto rather than fiat if speed matters to you.",
   },
   {
     question: "Can I use my welcome bonus to play Aviator?",
     answer:
-      "Usually yes, but the contribution matters. At Cybet, crash games contribute 100% toward wagering, so the bonus clears as advertised. At BitStarz, Mirax, and 7Bit, crash games contribute only 5%, which turns a 40x requirement into an effective 800x. Read each review's wagering contribution note before deciding where to play through a bonus.",
+      "That depends on the specific offer. Crash games like Aviator are often excluded from wagering or count at a reduced rate, and public terms do not always name Aviator explicitly. Check the contribution for the exact game before opting in, or ask support and keep the answer. Our reviews flag where the contribution is not confirmed.",
   },
   {
     question: "Do I need crypto to play at these casinos?",
     answer:
-      "No. Every casino on the list accepts crypto, and most also accept Visa, Mastercard, and bank transfers. Crypto gives you the fastest withdrawals and often the lowest minimum deposits, but it is not required. TrustDice is the only operator here that is crypto-only with no fiat withdrawal option.",
+      "No. Every casino on the list accepts crypto, and most also accept Visa, Mastercard, and bank transfers. Crypto usually gives you the fastest advertised withdrawals and the lowest minimum deposits, but it is not required. TrustDice is the only operator here that is crypto-only with no fiat withdrawal option.",
   },
   {
     question: "How does this site make money?",
@@ -107,7 +107,7 @@ export default function CasinosHubPage() {
           </nav>
 
           <span className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-sm font-medium text-primary">
-            Updated July 2026
+            Updated October 2026
           </span>
 
           <h1 className="mt-6 text-4xl font-bold leading-[1.1] tracking-tight md:text-5xl lg:text-6xl">
@@ -115,10 +115,10 @@ export default function CasinosHubPage() {
           </h1>
 
           <p className="mt-5 max-w-2xl text-lg text-muted-foreground">
-            We tested every major casino that offers Aviator and ranked them by
-            payout speed, bonus fairness, and how much crash games actually
-            contribute to wagering. These are the {casinos.length} that earned a
-            spot. No paid placements.
+            We compared the leading casinos that offer SPRIBE Aviator and
+            ranked them on bonus value, payment options, and how well each one
+            fits different players. These are the {casinos.length} that made the
+            list. No paid placements.
           </p>
 
           <div className="mt-6 flex items-center gap-6 text-sm text-muted-foreground">
@@ -126,7 +126,7 @@ export default function CasinosHubPage() {
               <span className="font-semibold text-foreground">
                 {casinos.length}
               </span>{" "}
-              casinos reviewed
+              casinos compared
             </span>
             <span>
               <span className="font-semibold text-foreground">4</span> rating
@@ -149,9 +149,12 @@ export default function CasinosHubPage() {
             ))}
           </div>
 
-          <p className="mt-8 text-center text-sm text-muted-foreground">
-            Rankings reflect payout speed, bonus fairness, and Aviator
-            contribution. 18+ | Gamble responsibly.
+          <p className="mx-auto mt-8 max-w-3xl text-center text-sm text-muted-foreground">
+            Bonus, deposit and payout details are the operators' advertised
+            terms, checked where accessible on 29 October 2026. We did not
+            deposit, play or withdraw funds for this comparison. Always confirm
+            the current offer and terms on the casino site. 18+ | Gamble
+            responsibly.
           </p>
         </div>
       </section>
@@ -164,8 +167,8 @@ export default function CasinosHubPage() {
               How We Rate Casinos
             </h2>
             <p className="mt-3 text-muted-foreground">
-              We use the same four criteria on every casino so the comparison is
-              fair. No casino can buy a better score.
+              We apply the same four criteria to every casino so the comparison
+              stays fair. No casino can pay for a higher position.
             </p>
           </div>
 

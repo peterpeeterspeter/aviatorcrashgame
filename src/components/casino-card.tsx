@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { Star, ArrowRight } from "@phosphor-icons/react";
+import { ArrowRight } from "@phosphor-icons/react";
 import { motion } from "motion/react";
 import type { Casino } from "@/content/casinos";
 import { affiliateHref } from "@/lib/affiliate-links";
@@ -27,15 +27,14 @@ export function CasinoCard({ casino }: { casino: Casino }) {
             <h3 className="text-xl font-bold">{casino.name}</h3>
             <p className="text-sm text-muted-foreground">{casino.tagline}</p>
           </div>
-          <div className="flex items-center gap-1">
-            <Star size={16} weight="fill" className="text-primary" />
-            <span className="font-semibold">{casino.rating}</span>
-          </div>
+          <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
+            #{casino.rank} pick
+          </span>
         </div>
 
         {/* Bonus */}
         <div className="rounded-lg bg-secondary px-4 py-3">
-          <p className="text-xs text-muted-foreground">Welcome Bonus</p>
+          <p className="text-xs text-muted-foreground">Advertised Welcome Bonus</p>
           <p className="text-sm font-semibold">{casino.bonus}</p>
         </div>
 
@@ -50,6 +49,12 @@ export function CasinoCard({ casino }: { casino: Casino }) {
             <p className="font-medium">{casino.payouts}</p>
           </div>
         </div>
+
+        {/* Best for */}
+        <p className="text-xs leading-relaxed text-muted-foreground">
+          <span className="font-medium text-foreground">Best for:</span>{" "}
+          {casino.bestFor}
+        </p>
 
         {/* CTAs */}
         <div className="mt-auto flex flex-col gap-2 pt-2">
