@@ -14,6 +14,25 @@ export interface GuideSummary {
 
 export const guides: GuideSummary[] = [
 {
+  "slug": "aviator-vs-chicken-road",
+  "title": "Aviator vs Chicken Road: cashout, RTP and which game fits you",
+  "description": "Compare SPRIBE Aviator with original InOut Chicken Road: cashout controls, difficulty, published RTP and payout examples to help choose a game and operator.",
+  "category": "casinos",
+  "readingTime": "13 min",
+  "excerpt": "Choose a shared rising round in Aviator or individual advance-or-cashout decisions in original Chicken Road. Compare the named games, published RTP and operator rules.",
+  "keywords": [
+    "aviator vs chicken road",
+    "chicken road vs aviator",
+    "InOut Chicken Road",
+    "SPRIBE Aviator",
+    "Chicken Road RTP",
+    "cashout controls"
+  ],
+  "datePublished": "2026-10-29",
+  "dateModified": "2026-10-29",
+  "heroImage": "/images/guides/aviator-vs-chicken-road-hero.png"
+},
+{
   "slug": "aviator-vs-limbo",
   "title": "Aviator vs Limbo: cashout, target multipliers and game choice",
   "description": "Compare SPRIBE Aviator with BetFury Original Limbo: live cashout versus preset targets, qualified RTP, payout examples, automation and operator checks.",

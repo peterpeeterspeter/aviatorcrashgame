@@ -21,6 +21,18 @@ export function GET() {
     },
     topGuides: [
 {
+  "title": "Aviator vs Chicken Road: cashout, RTP and which game fits you",
+  "url": "https://www.aviatorcrashgame.com/guides/aviator-vs-chicken-road",
+  "summary": "SPRIBE Aviator follows a shared growing multiplier; original InOut Chicken Road is single player with four named difficulties. InOut publishes 98% product RTP; BetFury lists SPRIBE Aviator at 97%, not a verified live configuration. Advance/cashout and automation descriptions are operator-attributed. Maximum Chicken Road claims conflict; gross/net examples are hypothetical. BetFury catalogs both titles, not proof of launch, licensing, bonus or account/local eligibility. Its terms restrict many markets including NL, BE, UK and US. Public-document research only; no accounts, gameplay or payments tested.",
+  "reviewed": "2026-10-29",
+  "sources": [
+    "https://inout.games/en/game/chicken-road",
+    "https://spribe.co/games/aviator",
+    "https://betfury.com/casino/games/chicken-road-by-inout",
+    "https://betfury.com/casino/games/aviator-by-spribe"
+  ]
+},
+{
   "title": "Aviator vs Limbo: cashout, target multipliers and game choice",
   "url": "https://www.aviatorcrashgame.com/guides/aviator-vs-limbo",
   "summary": "SPRIBE Aviator uses shared-round cashout; BetFury Original Limbo sets the target before betting. SPRIBE advertises 97% RTP; Limbo advertises up to 99.02%, not a verified exact live configuration. Exact target equality remains undocumented in the reviewed description. Gross/net examples are hypothetical. BetFury catalogs Original Limbo; this review does not verify its SPRIBE Aviator listing, game launch, licensing, bonus permission or account/local eligibility. Terms restrict many markets including NL, BE, UK and US. Public-document research only, no accounts, gameplay or payments tested.",
