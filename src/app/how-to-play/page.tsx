@@ -68,7 +68,7 @@ const concepts = [
 const tips = [
   {
     title: "Use auto-cashout at a low target",
-    body: "Set auto-cashout at 1.5x or 2.0x for most rounds. On paper a 2.0x cashout succeeds about 48.5% of the time (derived from the 97% RTP), which keeps variance manageable while still paying twice your bet on wins.",
+    body: "Set auto-cashout at 1.5x or 2.0x for most rounds. In a simplified model built on the published 97% RTP, a 2.0x cashout succeeds about 48.5% of the time, which keeps variance manageable while still paying twice your bet on wins.",
   },
   {
     title: "Cap each bet at 5% of your bankroll",
@@ -111,7 +111,7 @@ const faqs = [
   {
     question: "What is a good cashout target for beginners?",
     answer:
-      "Start with auto-cashout between 1.5x and 2.0x. On paper a 2.0x target succeeds about 48.5% of rounds (derived from the 97% RTP), which keeps your bankroll relatively stable while you learn. Higher targets like 5x or 10x pay more but hit far less often, and the longer dry spells are hard for new players to handle emotionally.",
+      "Start with auto-cashout between 1.5x and 2.0x. In a simplified model built on the published 97% RTP, a 2.0x target succeeds about 48.5% of rounds, which keeps your bankroll relatively stable while you learn. Higher targets like 5x or 10x pay more but hit far less often, and the longer dry spells are hard for new players to handle emotionally.",
   },
   {
     question: "Is Aviator rigged?",
@@ -330,36 +330,37 @@ export default function HowToPlayPage() {
           </h2>
           <div className="mt-6 space-y-4 leading-relaxed text-muted-foreground">
             <p>
-              The probability of reaching a given multiplier is roughly
-              inversely proportional to its value, adjusted for the house
-              edge. In plain terms, low multipliers happen often and high
-              multipliers happen rarely. The figures below are simple math
-              derived from SPRIBE's published 97% RTP, not measured
-              frequencies.
+              Low multipliers happen often and high multipliers happen
+              rarely. To get a feel for how rare, we use a simplified model:
+              assume the multiplier distribution is built so the long-run
+              return equals SPRIBE's published 97% RTP. Under that model the
+              chance of a round reaching at least a given multiplier m is
+              about 0.97 divided by m. These are model estimates, not
+              measured frequencies; the actual distribution is fixed by the
+              game's provably fair algorithm.
             </p>
             <p>
-              On paper the chance of a round reaching at least 2x is about
+              Under that model the chance of reaching at least 2x is about
               48.5% (0.97 divided by 2). For 5x it works out to roughly 19%,
-              for 10x about 9.7%, and for 100x about 1%. This is why chasing
-              huge multipliers is so dangerous. The math does not care how
-              lucky you feel.
+              for 10x about 9.7%, and for 100x about 1%. Whether or not the
+              real distribution matches exactly, the practical point stands:
+              chasing huge multipliers means accepting long losing runs.
             </p>
             <p>
               Some rounds crash instantly at 1.00x, meaning everyone still
-              in loses immediately with no chance to cash out. Under the
-              same RTP math that happens a few times per hundred rounds. It
-              is part of the game and is baked into the house edge, and it
-              is why staking your entire bankroll on a single round is a
-              terrible idea.
+              in loses immediately with no chance to cash out. It is part of
+              the game and is baked into the house edge, and it is why
+              staking your entire bankroll on a single round is a terrible
+              idea.
             </p>
           </div>
 
           <div className="mt-8 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-border bg-border md:grid-cols-4">
             {[
-              { label: "Chance of 2x", value: "~48.5%" },
-              { label: "Chance of 5x", value: "~19%" },
-              { label: "Chance of 10x", value: "~9.7%" },
-              { label: "Chance of 100x", value: "~1%" },
+              { label: "Reaching 2x (model)", value: "~48.5%" },
+              { label: "Reaching 5x (model)", value: "~19%" },
+              { label: "Reaching 10x (model)", value: "~9.7%" },
+              { label: "Reaching 100x (model)", value: "~1%" },
             ].map((stat) => (
               <div key={stat.label} className="bg-card p-5">
                 <p className="text-xs uppercase tracking-wide text-muted-foreground">

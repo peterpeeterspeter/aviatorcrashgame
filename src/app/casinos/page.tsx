@@ -52,7 +52,7 @@ const casinoFaqs = [
   {
     question: "Are these casinos safe and legal to play at?",
     answer:
-      "Every casino listed here publishes a Curacao eGaming license, the standard for crypto-focused gambling operators. Legality in your country depends on local law, and some operators restrict specific markets. Check both before signing up, and only gamble with money you can afford to lose.",
+      "Casinos on this list publish offshore licenses, usually Curacao eGaming; Cybet operates under an Anjouan (Comoros) license, a weaker protection tier, which its review notes. Legality in your country depends on local law, and some operators restrict specific markets. Check both before signing up, and only gamble with money you can afford to lose.",
   },
   {
     question: "Which casino pays out the fastest?",
@@ -62,7 +62,7 @@ const casinoFaqs = [
   {
     question: "Can I use my welcome bonus to play Aviator?",
     answer:
-      "That depends on the specific offer. Crash games like Aviator are often excluded from wagering or count at a reduced rate, and public terms do not always name Aviator explicitly. Check the contribution for the exact game before opting in, or ask support and keep the answer. Our reviews flag where the contribution is not confirmed.",
+      "That depends on the specific offer. Crash games like Aviator are often excluded from wagering or count at a reduced rate: 7Bit's published terms, for example, give video slots full contribution and all other games 5% without naming Aviator (verified 29 October 2026). Check the contribution for the exact game before opting in, or ask support and keep the answer.",
   },
   {
     question: "Do I need crypto to play at these casinos?",
@@ -72,7 +72,7 @@ const casinoFaqs = [
   {
     question: "How does this site make money?",
     answer:
-      "We earn affiliate commissions when you sign up and play at a casino through our links. This never affects our rankings or ratings. Casinos cannot pay for a higher position on this list, and several operators that offered us larger revenue shares were ranked below competitors because their bonus terms or payout speeds were worse for players.",
+      "We earn affiliate commissions when you sign up and play at a casino through our links, at no extra cost to you. That is how this site funds itself. The ranking order follows the four criteria on this page, and the disclosure applies to every casino link you see.",
   },
 ];
 
@@ -118,7 +118,7 @@ export default function CasinosHubPage() {
             We compared the leading casinos that offer SPRIBE Aviator and
             ranked them on bonus value, payment options, and how well each one
             fits different players. These are the {casinos.length} that made the
-            list. No paid placements.
+            list. We may earn a commission through affiliate links.
           </p>
 
           <div className="mt-6 flex items-center gap-6 text-sm text-muted-foreground">
@@ -133,8 +133,8 @@ export default function CasinosHubPage() {
               criteria
             </span>
             <span>
-              <span className="font-semibold text-foreground">100%</span>{" "}
-              independent
+              Affiliate links{" "}
+              <span className="font-semibold text-foreground">disclosed</span>
             </span>
           </div>
         </div>
@@ -144,14 +144,18 @@ export default function CasinosHubPage() {
       <section className="border-b border-border py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {casinos.map((casino) => (
-              <CasinoCard key={casino.slug} casino={casino} />
-            ))}
+            {[...casinos]
+              .sort((a, b) => a.rank - b.rank)
+              .map((casino) => (
+                <CasinoCard key={casino.slug} casino={casino} />
+              ))}
           </div>
 
           <p className="mx-auto mt-8 max-w-3xl text-center text-sm text-muted-foreground">
-            Bonus, deposit and payout details are the operators' advertised
-            terms, checked where accessible on 29 October 2026. We did not
+            Bonus, deposit and payout details are advertised or independently
+            reported terms. 7Bit's bonus terms were re-verified on 29 October
+            2026; the other operator pages blocked automated checks today, so
+            their figures are labelled as advertised or reported. We did not
             deposit, play or withdraw funds for this comparison. Always confirm
             the current offer and terms on the casino site. 18+ | Gamble
             responsibly.
@@ -168,7 +172,7 @@ export default function CasinosHubPage() {
             </h2>
             <p className="mt-3 text-muted-foreground">
               We apply the same four criteria to every casino so the comparison
-              stays fair. No casino can pay for a higher position.
+              stays fair.
             </p>
           </div>
 
