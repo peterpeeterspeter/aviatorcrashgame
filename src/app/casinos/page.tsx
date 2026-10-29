@@ -152,13 +152,13 @@ export default function CasinosHubPage() {
           </div>
 
           <p className="mx-auto mt-8 max-w-3xl text-center text-sm text-muted-foreground">
-            Bonus, deposit and payout details are advertised or independently
-            reported terms. 7Bit's bonus terms were re-verified on 29 October
-            2026; the other operator pages blocked automated checks today, so
-            their figures are labelled as advertised or reported. We did not
-            deposit, play or withdraw funds for this comparison. Always confirm
-            the current offer and terms on the casino site. 18+ | Gamble
-            responsibly.
+            Sources and dates: 7Bit's bonus terms were re-verified on its own
+            site on 29 October 2026, and BetFury's terms on 28 September 2026.
+            BitStarz, Mirax, TrustDice and Cybet figures come from dated
+            third-party reviews (June-October 2026) because those operator
+            pages blocked automated checks today. We did not deposit, play or
+            withdraw funds. Always confirm the current offer and terms on the
+            casino site. 18+ | Gamble responsibly.
           </p>
         </div>
       </section>

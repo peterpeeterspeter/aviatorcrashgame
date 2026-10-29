@@ -34,7 +34,7 @@ export function CasinoCard({ casino }: { casino: Casino }) {
 
         {/* Bonus */}
         <div className="rounded-lg bg-secondary px-4 py-3">
-          <p className="text-xs text-muted-foreground">Advertised Welcome Bonus</p>
+          <p className="text-xs text-muted-foreground">Welcome Bonus</p>
           <p className="text-sm font-semibold">{casino.bonus}</p>
         </div>
 
