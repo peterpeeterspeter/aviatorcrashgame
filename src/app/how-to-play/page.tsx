@@ -19,7 +19,7 @@ const steps = [
     number: "01",
     title: "Place Your Bet",
     summary:
-      "Before each round starts, choose your stake and confirm. Bets typically open for about five seconds between rounds.",
+      "Before each round starts, choose your stake and confirm. A short betting window opens between rounds.",
     body: "The bet window opens after the previous round settles. You set your stake, anywhere from around $0.10 up to whatever the table maximum is, and you can place one or two bets in the same round. Once the betting window closes, no more bets are accepted for that round. Many players place two simultaneous bets so they can cash out one early and let the other ride for a higher multiplier. This is optional and entirely a personal choice.",
   },
   {
@@ -41,7 +41,7 @@ const steps = [
 const concepts = [
   {
     term: "Multiplier",
-    body: "The number that determines your payout. It starts at 1.00x and rises during the round. A cash out at 2.00x doubles your money, 5.00x multiplies it by five, and so on. The multiplier is what makes Aviator exciting, because even a small stake can return a large amount if you time the cashout correctly. It is also what makes the game dangerous, because the chance of a high multiplier is low and the temptation to wait is strong.",
+    body: "The number that determines your payout. It starts at 1.00x and rises during the round. A cashout at 2.00x pays twice your bet in total, at 5.00x five times, and so on. The multiplier is what makes Aviator exciting, because even a small stake can return a large amount if you time the cashout correctly. It is also what makes the game dangerous, because the chance of a high multiplier is low and the temptation to wait is strong.",
   },
   {
     term: "Crash Point",
@@ -53,7 +53,7 @@ const concepts = [
   },
   {
     term: "Provably Fair",
-    body: "A cryptographic system that lets you verify every round was generated fairly and was not tampered with. Before each round, the casino publishes a hash of the server seed. After the round, you can check that the crash point was derived from that committed seed combined with a client seed, and that the result matches the published hash. You do not have to trust the casino. You can mathematically prove each round was honest.",
+    body: "A cryptographic system that lets you verify every round was generated fairly. According to SPRIBE's provably fair documentation, a hashed version of the server seed is published before the round, and the result is generated from a SHA512 hash of the server seed combined with the players' client seeds. After the round you can open the game's history and confirm the result matches the committed seeds. You do not have to take the casino's word for it.",
   },
   {
     term: "RTP and House Edge",
@@ -68,7 +68,7 @@ const concepts = [
 const tips = [
   {
     title: "Use auto-cashout at a low target",
-    body: "Set auto-cashout at 1.5x or 2.0x for most rounds. At 2.0x you win roughly 49% of the time, which keeps variance manageable while still doubling your money on wins.",
+    body: "Set auto-cashout at 1.5x or 2.0x for most rounds. In a simplified model built on the published 97% RTP, a 2.0x cashout succeeds about 48.5% of the time, which keeps variance manageable while still paying twice your bet on wins.",
   },
   {
     title: "Cap each bet at 5% of your bankroll",
@@ -80,7 +80,7 @@ const tips = [
   },
   {
     title: "Ignore predictor apps and signals",
-    body: "Any app, bot, Telegram group, or Discord server that claims to predict Aviator crashes is lying. Each round is independent and determined by a provably fair RNG. We tested the popular tools and they perform no better than random guessing.",
+    body: "Any app, bot, Telegram group, or Discord server that claims to predict Aviator crashes is lying. Each round's result is generated from committed seeds before the round plays out, so no tool can see it in advance. Save your money and ignore them.",
   },
   {
     title: "Try the demo first",
@@ -111,7 +111,7 @@ const faqs = [
   {
     question: "What is a good cashout target for beginners?",
     answer:
-      "Start with auto-cashout between 1.5x and 2.0x. At 2.0x you win about 49% of rounds, which keeps your bankroll relatively stable while you learn. Higher targets like 5x or 10x pay more but hit far less often, and the longer dry spells are hard for new players to handle emotionally.",
+      "Start with auto-cashout between 1.5x and 2.0x. In a simplified model built on the published 97% RTP, a 2.0x target succeeds about 48.5% of rounds, which keeps your bankroll relatively stable while you learn. Higher targets like 5x or 10x pay more but hit far less often, and the longer dry spells are hard for new players to handle emotionally.",
   },
   {
     question: "Is Aviator rigged?",
@@ -330,33 +330,37 @@ export default function HowToPlayPage() {
           </h2>
           <div className="mt-6 space-y-4 leading-relaxed text-muted-foreground">
             <p>
-              The probability of any given multiplier is inversely
-              proportional to its value, adjusted for the 3% house edge. In
-              plain terms, low multipliers happen often and high multipliers
-              happen rarely. Here are some rough reference points so you
-              know what to expect.
+              Low multipliers happen often and high multipliers happen
+              rarely. To get a feel for how rare, we use a simplified model:
+              assume the multiplier distribution is built so the long-run
+              return equals SPRIBE's published 97% RTP. Under that model the
+              chance of a round reaching at least a given multiplier m is
+              about 0.97 divided by m. These are model estimates, not
+              measured frequencies; the actual distribution is fixed by the
+              game's provably fair algorithm.
             </p>
             <p>
-              The chance of reaching 2x is about 49%. For 5x it is around
-              19%, for 10x about 4.8%, and for 100x less than half a
-              percent. This is why chasing huge multipliers is so
-              dangerous. The math does not care how lucky you feel.
+              Under that model the chance of reaching at least 2x is about
+              48.5% (0.97 divided by 2). For 5x it works out to roughly 19%,
+              for 10x about 9.7%, and for 100x about 1%. Whether or not the
+              real distribution matches exactly, the practical point stands:
+              chasing huge multipliers means accepting long losing runs.
             </p>
             <p>
-              Roughly one round in a hundred crashes instantly at 1.00x,
-              meaning everyone who bet loses immediately with no chance to
-              cash out. This is part of the game and is baked into the
-              house edge. It is also why staking your entire bankroll on a
-              single round is a terrible idea.
+              Some rounds crash instantly at 1.00x, meaning everyone still
+              in loses immediately with no chance to cash out. It is part of
+              the game and is baked into the house edge, and it is why
+              staking your entire bankroll on a single round is a terrible
+              idea.
             </p>
           </div>
 
           <div className="mt-8 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-border bg-border md:grid-cols-4">
             {[
-              { label: "Chance of 2x", value: "~49%" },
-              { label: "Chance of 5x", value: "~19%" },
-              { label: "Chance of 10x", value: "~4.8%" },
-              { label: "Chance of 100x", value: "<0.5%" },
+              { label: "Reaching 2x (model)", value: "~48.5%" },
+              { label: "Reaching 5x (model)", value: "~19%" },
+              { label: "Reaching 10x (model)", value: "~9.7%" },
+              { label: "Reaching 100x (model)", value: "~1%" },
             ].map((stat) => (
               <div key={stat.label} className="bg-card p-5">
                 <p className="text-xs uppercase tracking-wide text-muted-foreground">
@@ -403,6 +407,42 @@ export default function HowToPlayPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Where to play */}
+      <section className="border-b border-border bg-secondary/30 py-16 lg:py-20">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6">
+          <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
+            Where to Play Aviator
+          </h2>
+          <div className="mt-6 space-y-4 leading-relaxed text-muted-foreground">
+            <p>
+              Once the mechanics click, the next step is choosing a casino
+              that actually offers SPRIBE&apos;s Aviator and fits how you want
+              to play. We compared the leading options on bonus value,
+              payment methods, and who each one suits best.
+            </p>
+          </div>
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <Link
+              href="/casinos"
+              className="inline-flex items-center justify-center rounded-xl bg-primary px-6 py-3.5 font-semibold text-primary-foreground transition-transform hover:scale-[1.02] active:scale-[0.98]"
+            >
+              Compare Aviator Casinos
+            </Link>
+            <Link
+              href="/guides/best-aviator-casinos"
+              className="inline-flex items-center justify-center rounded-xl border border-border bg-card px-6 py-3.5 font-semibold transition-colors hover:border-primary/50"
+            >
+              How to Choose a Casino
+            </Link>
+          </div>
+          <p className="mt-6 text-sm text-muted-foreground">
+            Affiliate disclosure: we may earn a commission if you sign up
+            through our links. 18+ only, in markets where play is legal and
+            permitted by the operator.
+          </p>
         </div>
       </section>
 
@@ -496,7 +536,7 @@ export default function HowToPlayPage() {
                 href="/casinos"
                 className="inline-flex items-center justify-center rounded-xl border border-border bg-background px-6 py-3.5 font-semibold transition-colors hover:border-primary/50"
               >
-                Browse Casinos
+                Compare Aviator Casinos
               </Link>
             </div>
           </div>
