@@ -13,6 +13,7 @@ export function GET() {
       game: "Aviator",
       provider: "Spribe",
       rtp: "97%",
+      specificationScope: "Published SPRIBE product specification; not a measured return or verified funded operator configuration. Provably-fair documentation is not an independent engine audit.",
       houseEdge: "3%",
       provablyFair: true,
       minBet: null, // Current operator-specific stake limits are not established.
@@ -20,6 +21,17 @@ export function GET() {
       eachRoundIndependent: true,
     },
     topGuides: [
+{
+  "title": "Aviator vs Crazy Time: Casino Games, RTP & Bonuses (2026)",
+  "url": "https://www.aviatorcrashgame.com/guides/aviator-vs-crazy-time",
+  "summary": "SPRIBE Aviator offers shared-round cashout; original Evolution Crazy Time offers a live host, a 54-segment wheel and four bonus rounds. SPRIBE publishes 97% Aviator RTP; Evolution lists bet-dependent 94.41%–96.08% for original Crazy Time, not a measured session or verified live configuration. Explains bet-specific and stake-weighted return, gross versus combined net payout, bonus rounds versus operator bonuses, and distinct settlement and withdrawal. BetFury publicly catalogs both exact titles; this does not establish launch, licensing, bonus permission or country/account eligibility. Terms restrict many markets including NL, BE, UK and US. Public-document research only; no accounts, gameplay or payments tested.",
+  "reviewed": "2026-10-30",
+  "sources": [
+    "https://spribe.co/games/aviator",
+    "https://games.evolution.com/live-casino/game-shows/crazy-time/how-to-play/",
+    "https://games.evolution.com/live-casino/game-shows/crazy-time/"
+  ]
+},
 {
   "title": "Aviator vs Chicken Road: cashout, RTP and which game fits you",
   "url": "https://www.aviatorcrashgame.com/guides/aviator-vs-chicken-road",

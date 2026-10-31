@@ -14,6 +14,26 @@ export interface GuideSummary {
 
 export const guides: GuideSummary[] = [
 {
+  "slug": "aviator-vs-crazy-time",
+  "title": "Aviator vs Crazy Time: Casino Games, RTP & Bonuses (2026)",
+  "description": "Compare Aviator and Crazy Time casino games: cashout, live game show bonuses, published RTP, payout examples and choosing an eligible online casino.",
+  "category": "casinos",
+  "readingTime": "17 min",
+  "excerpt": "Choose a rising flight and a cashout decision, or a live game show with four bonus rounds. Compare RTP, payout accounting and an eligible casino catalog.",
+  "keywords": [
+    "aviator vs crazy time",
+    "crazy time vs aviator",
+    "SPRIBE Aviator",
+    "Evolution Crazy Time",
+    "Crazy Time RTP",
+    "cashout",
+    "bonus rounds"
+  ],
+  "datePublished": "2026-10-31",
+  "dateModified": "2026-10-31",
+  "heroImage": "/images/guides/aviator-vs-crazy-time-hero.png"
+},
+{
   "slug": "aviator-vs-chicken-road",
   "title": "Aviator vs Chicken Road: cashout, RTP and which game fits you",
   "description": "Compare SPRIBE Aviator with original InOut Chicken Road: cashout controls, difficulty, published RTP and payout examples to help choose a game and operator.",
