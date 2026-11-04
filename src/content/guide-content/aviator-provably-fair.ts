@@ -9,48 +9,27 @@ export const guideContent = {
       ],
     },
     {
-      heading: `The three ingredients: server seed, client seed, and nonce`,
+      heading: `The core idea: committed in advance, checkable afterwards`,
       paragraphs: [
-        `Every provably fair round in Aviator is generated from three values. Understanding them is the whole game.`,
-        `The first is the server seed. Before a round begins, the operator's server generates a long random string and keeps it secret. It then publishes a hash of that seed (more on hashing below) so you can see a fingerprint of it without seeing the seed itself. Because the hash is published before the round, the server cannot change the seed later without producing a different hash. The seed is committed in advance.`,
-        `The second is the client seed. This is a random value contributed by you, the player. Most casinos let you set or rotate your own client seed, or assign one to your account that you can change at will. The point is that the client seed is outside the operator's control, which means the server cannot predict the final outcome even though it chose its own seed first.`,
-        `The third is the nonce, short for "number used once." It is a simple counter that increments by one for each round played with the current server seed. Round one uses nonce 1, round two uses nonce 2, and so on. The nonce guarantees that each round produces a distinct result even though the two seeds stay the same for a while.`,
-        `Together, these three values form a tamper-evident chain. The operator committed to the server seed in advance, you controlled the client seed, and the nonce makes sure every round is unique. No single party can rig the outcome on its own.`,
+        `Every provably fair system rests on two properties. The first is commitment. Before a round begins, the game generates a secret value, called the server seed, and publishes a cryptographic hash of it. A hash is a fixed-length fingerprint: the same input always produces the same fingerprint, but the fingerprint cannot be reversed to recover the input, and changing one character of the input produces a completely different fingerprint. Publishing the hash before the round means the seed cannot be swapped later without the fingerprint failing to match.`,
+        `The second property in the general provably fair design is mixed input: the outcome is derived from the server seed combined with random input generated on the player side, so no single party controls the result, and neither the operator nor the provider knows the outcome when betting opens. Whether Aviator implements the system exactly this way is not documented on Spribe's public website, so read this as the general design the term refers to, not as a verified account of Aviator's implementation.`,
+        `After the round ends, the secret values are revealed. Anyone can then recompute the hash and the result from the published values and confirm that the round was generated from the committed inputs. The process is deterministic: the same inputs always produce the same result, so a genuine round reproduces exactly.`,
+        `One honest limitation of this guide: Spribe does not publish the full algorithmic detail of Aviator's fairness system on its public website, so we deliberately explain the properties you can rely on rather than repeating technical claims we cannot verify at the source. The game's own fairness information inside Aviator is the authoritative reference for the exact steps.`,
       ],
     },
     {
-      heading: `SHA-256: the cryptographic glue`,
+      heading: `What verification establishes, and what it stays silent on`,
       paragraphs: [
-        `The hash you see is produced by SHA-256, a widely used cryptographic hash function. A hash function takes any input and produces a fixed-length 64-character fingerprint. The same input always produces the same output, but the output looks completely random and cannot be reversed to recover the input. A single character change in the input produces a totally different hash.`,
-        `This is why hashing is perfect for committing to a secret. The casino publishes the SHA-256 hash of its server seed before the round. You cannot reverse the hash to learn the seed, so the secret is safe. But once the seed is revealed after the round, you hash it yourself and check that it matches the fingerprint you were shown. If they match, the casino used exactly the seed it promised. If they do not match, you have caught tampering.`,
-        `SHA-256 is not proprietary casino technology. It is the same algorithm that secures Bitcoin and countless other systems, and it is freely available in every programming language and in free online tools. You do not have to trust the casino's implementation. You can recompute the hash in any tool you choose.`,
-      ],
-    },
-    {
-      heading: `How a round result is computed`,
-      paragraphs: [
-        `Once the three values are fixed, the crash point for the round is derived from them deterministically. The standard approach in crash games is to concatenate the server seed, client seed, and nonce, hash that combined input, and convert the resulting hash bytes into a number. That number is then mapped to a crash multiplier using the game's distribution formula.`,
-        `For Aviator, the cumulative probability is straightforward: the chance that a round reaches at least a multiplier M is approximately 0.97 divided by M. So the chance of reaching 2x is about 48.5%, the chance of reaching 10x is about 9.7%, and the chance of reaching 100x is about 0.97%. That 0.97 is not a coincidence; it is the RTP, and it is built directly into how the random number maps to a multiplier. The remaining 3% is the house edge.`,
-        `The key property is determinism. For a given server seed, client seed, and nonce, there is exactly one possible crash point. There is no second chance, no fudge factor, no "adjust the result to beat the player" step. The math either produces the number you saw or it does not.`,
-      ],
-    },
-    {
-      heading: `How to verify a round yourself, step by step`,
-      paragraphs: [
-        `Verifying a round is not complicated, and you do not need to be a programmer. Here is the process.`,
-        `Step 1: Before you rotate your server seed, find the current server seed hash. Most provably fair casinos display it in a "Fairness" or "Provably fair" panel, often accessible from the game's menu. Copy that hash string and save it somewhere.`,
-        `Step 2: Note your client seed and the nonce of the specific round you want to check. The nonce is usually shown in your bet history alongside the round result.`,
-        `Step 3: Rotate, or "unseed," the server seed. This is the crucial step. The casino will not reveal the raw server seed while you are still playing rounds on it, because doing so would let you predict future rounds. When you rotate the seed, the old raw seed is revealed and a new hashed seed takes over for future rounds.`,
-        `Step 4: Hash the revealed server seed with SHA-256. Paste it into any free SHA-256 tool online, or run a single command locally. Compare the output to the hash you saved in step 1. If they match, the casino used the seed it committed to. This confirms the seed was not swapped after the round.`,
-        `Step 5: Recompute the round result from the seed, client seed, and nonce. The casino's fairness page usually provides a built-in verifier for this, or you can use an independent third-party verifier tool. Enter the server seed, client seed, and nonce, and it will output the crash multiplier. If that number matches the actual round result, the round was fair.`,
-        `If either check fails, the round was provably not fair. In practice, with licensed Spribe Aviator integrations, the checks always pass, which is the entire point.`,
+        `Recomputing a finished round proves the integrity of that round: the result was fixed before it played out, it came from the committed inputs, and it was not altered afterwards. That is a strong guarantee, and it applies retroactively to any round whose values you can still open.`,
+        `Verification says nothing about the future. In this design, only the fingerprint of an upcoming round's server input is public in advance, and a fingerprint cannot be reversed. Past rounds reveal nothing about coming ones either, because each round is generated independently from fresh secret values. No pattern reading, seed analysis, or software can turn provably fair data into a prediction, and any product that claims otherwise misuses the term.`,
+        `Verification also says nothing about money. A verified round still carries the built-in house edge, and a successful check does not tell you whether an operator pays out withdrawals, which is a separate question of licensing and reputation.`,
       ],
     },
     {
       heading: `Why this prevents manipulation`,
       paragraphs: [
-        `Provably fair defeats manipulation by removing every party's ability to change the outcome unnoticed. For the operator to rig a round against you, it would need to know your client seed in advance and then pick a server seed that produces a bad result. But the operator commits its server seed hash before the round and before your client seed is applied to that round, so it cannot search for a favourable seed after the fact without breaking the hash it already published.`,
-        `If the operator tried to change the server seed after seeing your bet, the revealed seed would no longer hash to the committed value, and step 4 of verification would catch it instantly. If the operator tried to alter the client seed or nonce, the recomputed result in step 5 would not match the displayed multiplier, and you would catch that too.`,
+        `In this general design, manipulation is defeated by removing every party's ability to change the outcome unnoticed. The operator commits to its server input before the round, so swapping it after bets are placed would break the published fingerprint and be caught on recomputation.`,
+        `Nor can the operator choose an input that produces a bad round for you, because in this design the outcome also depends on player-side input that does not exist when the commitment is published. When the fingerprint appeared, nobody could know the combined input, so nobody could aim the result at a chosen multiplier.`,
         `The system is designed so that cheating is either impossible or trivially detectable. There is no middle ground where an operator can nudge results in its favour without leaving proof.`,
       ],
     },
@@ -65,28 +44,28 @@ export const guideContent = {
     {
       heading: `What provably fair does and does not prove`,
       paragraphs: [
-        `It is worth being honest about the limits. Provably fair proves that a specific round was generated honestly from its seeds and was not altered. It proves the crash multiplier was locked in before the round started and could not be changed. It proves the seed was committed in advance.`,
-        `It does not prove the game is profitable for you. The 3% house edge is fully present in every provably fair round. It does not prove the operator pays out withdrawals, which is a separate matter of licensing and reputation. And it does not protect you from your own decisions; a fair game can still drain a poorly managed bankroll.`,
+        `It is worth being honest about the limits. Provably fair proves that a specific round was generated honestly from its committed inputs and was not altered. It proves the crash multiplier was locked in before the round started and could not be changed.`,
+        `It does not prove the game is profitable for you. Spribe publishes Aviator's return to player as 97%, so the 3% house edge is fully present in every provably fair round. It does not make future rounds predictable. It does not prove the operator pays out withdrawals, which is a separate matter of licensing and reputation. And it does not protect you from your own decisions; a fair game can still drain a poorly managed bankroll.`,
         `Treat provably fair as exactly what it is: a strong, checkable guarantee that the round itself was not rigged. Pair it with a licensed operator and sound money management, and you have done everything a player reasonably can to play on honest terms.`,
       ],
     },
   ],
   faqs: [
     {
-      question: `Can I verify a round while I am still playing on that server seed?`,
-      answer: `No, and that is by design. The raw server seed is only revealed when you rotate to a new one, otherwise you could predict future rounds. You can still save the seed hash before each session and verify any past round after you rotate the seed.`,
+      question: `Can provably fair data help me predict the next round?`,
+      answer: `No. Before a round starts, only a cryptographic fingerprint of its server input is public, and a fingerprint cannot be reversed to reveal the input. Each round is generated independently, so past results carry no information about future ones. Any tool or service claiming to predict crash points from provably fair data misuses the term.`,
     },
     {
       question: `Does provably fair mean Aviator is a good bet?`,
-      answer: `It means the round is honest, not that it favours you. Aviator still carries a 3% house edge, so the expected return over many rounds is 97% of total wagers. Provably fair confirms fairness; it does not remove the built-in advantage.`,
+      answer: `It means the round is honest, not that it favours you. Aviator's published RTP is 97%, so the expected return over many rounds is 97% of total wagers. Provably fair confirms fairness; it does not remove the built-in advantage.`,
     },
     {
-      question: `Do I need to know how to code to verify a round?`,
-      answer: `Not at all. You can paste the server seed into any free online SHA-256 tool, and most casinos offer a built-in verifier where you enter the seed, client seed, and nonce to see the recomputed multiplier. Coding is only needed if you want to build your own verifier from scratch.`,
+      question: `Do I need to know how to code to check a round?`,
+      answer: `No. Provably fair games typically show a finished round's fairness values in a panel, and independent verifier tools can recompute them for you. Coding is only needed if you want to build your own verifier from scratch.`,
     },
     {
       question: `What should I do if a verification check fails?`,
-      answer: `Stop playing immediately, screenshot everything, and contact the operator's support. A failed check is strong evidence of tampering. If the operator is licensed, report it to the regulator. In practice, genuine failures on licensed Spribe integrations are extremely rare.`,
+      answer: `Stop playing immediately, screenshot everything, and contact the operator's support. A failed check is strong evidence of tampering. If the operator is licensed, report it to the regulator.`,
     },
   ],
 };
