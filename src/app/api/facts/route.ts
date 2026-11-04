@@ -22,6 +22,17 @@ export function GET() {
     },
     topGuides: [
 {
+  "title": "Aviator vs baccarat: casino games, payouts and which fits you",
+  "url": "https://www.aviatorcrashgame.com/guides/aviator-vs-baccarat",
+  "summary": "Compare Aviator and baccarat rules, cashout, Banker and Player payouts, house edge and bonus checks. Choose the game format that suits how you want to play.",
+  "reviewed": "2026-11-03",
+  "sources": [
+    "https://spribe.co/games/aviator",
+    "https://rules.bgaming-network.com/baccarat",
+    "https://wizardofodds.com/games/baccarat/basics/"
+  ]
+},
+{
   "title": "Aviator vs Crazy Time: Casino Games, RTP & Bonuses (2026)",
   "url": "https://www.aviatorcrashgame.com/guides/aviator-vs-crazy-time",
   "summary": "SPRIBE Aviator offers shared-round cashout; original Evolution Crazy Time offers a live host, a 54-segment wheel and four bonus rounds. SPRIBE publishes 97% Aviator RTP; Evolution lists bet-dependent 94.41%–96.08% for original Crazy Time, not a measured session or verified live configuration. Explains bet-specific and stake-weighted return, gross versus combined net payout, bonus rounds versus operator bonuses, and distinct settlement and withdrawal. BetFury publicly catalogs both exact titles; this does not establish launch, licensing, bonus permission or country/account eligibility. Terms restrict many markets including NL, BE, UK and US. Public-document research only; no accounts, gameplay or payments tested.",

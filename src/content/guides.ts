@@ -14,6 +14,18 @@ export interface GuideSummary {
 
 export const guides: GuideSummary[] = [
 {
+  "slug": "aviator-vs-baccarat",
+  "title": "Aviator vs baccarat: casino games, payouts and which fits you",
+  "description": "Compare Aviator and baccarat rules, cashout, Banker and Player payouts, house edge and bonus checks. Choose the game format that suits how you want to play.",
+  "category": "casinos",
+  "readingTime": "14 min",
+  "excerpt": "Compare Aviator and baccarat rules, cashout, Banker and Player payouts, house edge and bonus checks. Choose the game format that suits how you want to",
+  "keywords": ["aviator vs baccarat", "baccarat vs aviator", "SPRIBE Aviator", "baccarat house edge"],
+  "datePublished": "2026-11-03",
+  "dateModified": "2026-11-03",
+  "heroImage": "/images/guides/aviator-vs-baccarat-hero.png",
+},
+{
   "slug": "aviator-vs-crazy-time",
   "title": "Aviator vs Crazy Time: Casino Games, RTP & Bonuses (2026)",
   "description": "Compare Aviator and Crazy Time casino games: cashout, live game show bonuses, published RTP, payout examples and choosing an eligible online casino.",
