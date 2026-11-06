@@ -14,6 +14,18 @@ export interface GuideSummary {
 
 export const guides: GuideSummary[] = [
 {
+  slug: "aviator-vs-cash-or-crash",
+  title: "Aviator vs Cash or Crash: crash game vs live game show (2026)",
+  description: "Compare SPRIBE Aviator and Evolution Cash or Crash: fixed 97% RTP vs a 94.51%–99.59% strategy band, cashout, fairness and which game fits you.",
+  category: "casinos",
+  readingTime: "15 min",
+  excerpt: "Aviator gives a flat 97% return whatever you do. Cash or Crash offers a higher ceiling you have to earn. Compare the mechanics, the maths and the real decision.",
+  keywords: ["aviator vs cash or crash", "cash or crash vs aviator", "SPRIBE Aviator", "Evolution Cash or Crash", "crash game RTP"],
+  datePublished: "2026-11-06",
+  dateModified: "2026-11-06",
+  heroImage: "/images/guides/aviator-vs-cash-or-crash-hero.png",
+},
+{
   "slug": "aviator-vs-baccarat",
   "title": "Aviator vs baccarat: casino games, payouts and which fits you",
   "description": "Compare Aviator and baccarat rules, cashout, Banker and Player payouts, house edge and bonus checks. Choose the game format that suits how you want to play.",
