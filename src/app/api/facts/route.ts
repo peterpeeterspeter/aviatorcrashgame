@@ -90,6 +90,13 @@ export function GET() {
   ]
 },
       {
+        title: "Aviator vs JetX vs Spaceman: Which Crash Game to Pick (2026)",
+        url: "https://www.aviatorcrashgame.com/guides/aviator-vs-jetx-vs-spaceman",
+        summary: "Public-source comparison reviewed 29 September 2026: SPRIBE advertises 97% RTP for Aviator; the reviewed SmartSoft JetX material gives no JetX RTP figure; Pragmatic Play advertises 95% for Spaceman while BetFury lists 96.50% (unresolved). Compares supplier-advertised returns, simultaneous-bet panels, partial cashout and provably-fair checks. Explains why a 95% vs 97% house-edge gap is a two-percentage-point difference, not a '40% larger' edge, and works a labeled hypothetical equal-turnover example. BetFury and 7Bit terms exclude the Netherlands, Belgium, the UK and the US; catalog listings are not eligibility. Catalog presence is not a playable launch; no account, gameplay or payment testing was performed.",
+        reviewed: "2026-09-29",
+        sources: ["https://spribe.co/games/aviator", "https://www.smartsoftgaming.com/games/jetx", "https://www.pragmaticplay.com/en/games/spaceman/"],
+      },
+      {
         title: "Aviator vs roulette: which casino game fits you?",
         url: "https://www.aviatorcrashgame.com/guides/aviator-vs-roulette",
         summary: "Compares an in-round cashout decision with pre-spin bet selection. SPRIBE publishes 97% Aviator RTP. Standard single-zero roulette at 35:1 net straight-up payout yields a conditional 97.30% RTP; this is not the verified configuration of BetFury's Roulette by Evolution listing. Covers wheel variants, La Partage, hit probabilities, gross/net returns and total turnover. BetFury is a conditional catalog option only: licensing wording and bonus-balance rules conflict, named-game bonus permission/contribution and country/account eligibility remain unknown. Public-document research, no accounts, gameplay or payments tested.",
